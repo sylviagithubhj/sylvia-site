@@ -33,6 +33,14 @@
   @media (prefers-reduced-motion: no-preference) { .r1 { animation: rise 1.2s cubic-bezier(0,0.5,0.22,1) both; } .r2 { animation: rise 800ms cubic-bezier(0.2,1,1,1) 0.2s both; } }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
+<!-- Amplitude Analytics -->
+<script src="https://cdn.amplitude.com/script/717abebc881e6927f05facf0f4add9cd.js"></script>
+<script>
+  window.amplitude.init('717abebc881e6927f05facf0f4add9cd', {
+    fetchRemoteConfig: true,
+    autocapture: true,
+  });
+</script>
 </head>
 <body>
 
