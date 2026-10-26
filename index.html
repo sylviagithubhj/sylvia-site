@@ -1,228 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SylviaLab — AI로 만들고, 다른 시장에서도 통하게</title>
-<meta name="description" content="프로덕트 전략, AI 프로토타이핑, 바이브코딩, 로컬라이제이션. 국내외 실무에서 쓰던 방법 그대로 가르치는 강희주의 AI 프로덕트 교육, SylviaLab.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Crect x='6' y='6' width='12' height='12' rx='4' fill='%23ffffff'/%3E%3Crect x='14' y='14' width='12' height='12' rx='4' fill='%236798ff'/%3E%3C/svg%3E">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SylviaLab — AI로 만들고, 다른 시장에서도 통하게">
-<meta property="og:description" content="프로덕트 전략, AI 프로토타이핑, 바이브코딩, 로컬라이제이션. 국내외 실무에서 쓰던 방법 그대로.">
-<meta property="og:url" content="https://sylvialab.kr/">
-<meta property="og:image" content="https://sylvialab.kr/images/profile.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" hreflang="ko" href="https://sylvialab.kr/">
+<title>SylviaLab · Sylvia의 국내외 프로덕트 교육</title>
+<meta name="description" content="Sylvia(IBM · KB국민은행 · 코빗)의 AI 프로덕트 디자인 부트캠프, 워크숍, 커리어 전략 컨설팅.">
 <link rel="alternate" hreflang="en" href="https://sylvialab.kr/en/">
-<link rel="alternate" hreflang="x-default" href="https://sylvialab.kr/">
 <link rel="canonical" href="https://sylvialab.kr/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="styles.css">
-<script src="https://cdn.amplitude.com/script/717abebc881e6927f05facf0f4add9cd.js"></script>
-<script>window.amplitude.init('717abebc881e6927f05facf0f4add9cd',{fetchRemoteConfig:true,autocapture:true});</script>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="SylviaLab · Sylvia의 국내외 프로덕트 교육">
+<meta property="og:description" content="Sylvia(IBM · KB국민은행 · 코빗)의 AI 프로덕트 디자인 부트캠프, 워크숍, 커리어 전략 컨설팅.">
+<meta property="og:url" content="https://sylvialab.kr/">
+<meta property="og:image" content="https://sylvialab.kr/assets/img/tech-ux.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/site.css">
+<script src="https://cdn.jsdelivr.net/npm/@amplitude/analytics-browser@2.11.1/lib/scripts/amplitude-min.js"></script>
+<script>window.amplitude && window.amplitude.init('717abebc881e6927f05facf0f4add9cd', {"autocapture": true});</script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://sylvialab.kr/#org", "name": "SylviaLab", "url": "https://sylvialab.kr/", "email": "heejuk@mail.hongik.ac.kr", "sameAs": ["https://brunch.co.kr/@sylviasolution/"], "founder": {"@id": "https://sylvialab.kr/#heeju"}, "description": "AI 프로덕트 디자인·전략·바이브코딩·로컬라이제이션 교육과 커리어 자문"}, {"@type": "Person", "@id": "https://sylvialab.kr/#heeju", "name": "강희주", "alternateName": "Heeju Kang", "jobTitle": "AI 프로덕트 교육자·커리어 멘토", "email": "heejuk@mail.hongik.ac.kr", "worksFor": {"@id": "https://sylvialab.kr/#org"}, "url": "https://sylvialab.kr/about.html", "sameAs": ["https://brunch.co.kr/@sylviasolution/"], "alumniOf": "Hongik University IDAS", "knowsAbout": ["AI 프로덕트 디자인", "프로덕트 전략", "바이브코딩", "로컬라이제이션", "커리어 멘토링"]}, {"@type": "WebSite", "@id": "https://sylvialab.kr/#site", "name": "SylviaLab", "url": "https://sylvialab.kr/", "inLanguage": ["ko", "en"], "publisher": {"@id": "https://sylvialab.kr/#org"}}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://sylvialab.kr/#org", "name": "SylviaLab", "url": "https://sylvialab.kr/", "email": "heejuk@mail.hongik.ac.kr", "founder": {"@id": "https://sylvialab.kr/#sylvia"}, "description": "프로덕트 디자이너를 위한 AI 실무 교육 — 부트캠프·워크숍·커리어 전략 컨설팅"}, {"@type": "Person", "@id": "https://sylvialab.kr/#sylvia", "name": "Sylvia", "jobTitle": "교수 · AI 프로덕트 교육자", "email": "heejuk@mail.hongik.ac.kr", "worksFor": {"@id": "https://sylvialab.kr/#org"}, "url": "https://sylvialab.kr/about.html", "affiliation": [{"@type": "CollegeOrUniversity", "name": "Busan Institute of Science and Technology"}, {"@type": "CollegeOrUniversity", "name": "Hongik University IDAS"}], "alumniOf": "Hongik University IDAS", "knowsAbout": ["AI 프로덕트 디자인", "AI 디자인 시스템", "AI 디자인 엔지니어링", "프로덕트 전략", "HRI", "커리어 전략 컨설팅"], "description": "前 IBM GBS 컨설턴트, 금융회사 PM. HRI·Physical AI 연구자. 멘토링 3,000명+."}, {"@type": "WebSite", "@id": "https://sylvialab.kr/#site", "name": "SylviaLab", "url": "https://sylvialab.kr/", "inLanguage": ["ko", "en"], "publisher": {"@id": "https://sylvialab.kr/#org"}}]}
 </script>
 </head>
 <body>
-<div class="app">
-
-<!-- TOP BANNER -->
-<div style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; background: #141414; border-bottom: 1px solid #313131; font-size: 13px; color: #a7a7a7">
-<span style="padding: 2px 8px; border-radius: 66px; background: #6798ff; color: #0a0a0a; font-size: 11px; font-weight: 600">New</span>
-<a href="advisory.html" style="color: #ffffff; font-weight: 500">국내외 커리어 선택 자문</a>
+<a href="#main" class="eyebrow" style="position:absolute;left:-9999px">본문으로 건너뛰기</a>
+<div class="top"><span class="new">New</span><a href="advisory.html" data-track="banner_click">커리어 전략 컨설팅</a></div>
+<header class="nav"><div class="wrap">
+<a href="./" class="brand" aria-label="SylviaLab 홈"><i aria-hidden="true"><b></b><b></b></i>SylviaLab</a>
+<nav class="links" aria-label="주 메뉴"><a href="bootcamps.html">AI 부트캠프</a><a href="workshops.html">워크숍</a><a href="career.html">커리어</a><a href="advisory.html">커리어 전략 컨설팅</a><a href="about.html">소개</a></nav>
+<div class="nav-r">
+<a class="lang ib" href="en/" lang="en" style="width:auto;padding:0 10px;font-size:13px;color:#fff" data-track="lang_en">EN</a><button class="ib" data-open="search" data-focus="#q" aria-label="검색"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg></button>
+<a href="contact.html" class="btn b1" style="min-height:40px;padding:0 16px;font-size:14px" data-track="nav_contact">문의</a>
+<button class="ib menu-btn" data-open="menu" aria-label="메뉴 열기" style="color:#fff"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div>
-
-<!-- NAV -->
-<nav class="nav" aria-label="주요">
-<a href="index.html" class="brand" aria-label="SylviaLab 홈"><span class="brand-dots" aria-hidden="true"><span style="background:#fff"></span><span style="background:#6798ff"></span></span>SylviaLab</a>
-<div style="display: flex; align-items: center; gap: 8px">
-<a href="search.html" class="ib" aria-label="검색"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg></a>
-<a href="menu.html" class="ib" aria-label="메뉴 열기" style="color:#fff"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></a>
-</div>
-</nav>
-
-<!-- HERO -->
-<section style="padding: 40px 20px 28px; display: flex; flex-direction: column; gap: 0">
-<a href="career.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px 5px 5px; border: 1px solid #313131; border-radius: 66px; font-size: 13px; color: #a7a7a7; margin-bottom: 24px">
-<span style="padding: 3px 9px; border-radius: 66px; background: #6798ff; color: #0a0a0a; font-size: 11px; font-weight: 600">New</span>
-<strong style="color: #ffffff; font-weight: 500">글로벌 프로덕트 커리어 패스</strong>
-<span style="color: #6798ff" aria-hidden="true">→</span>
-</a>
-<h1 style="margin: 0; font-weight: 600; font-size: 38px; line-height: 1.1; letter-spacing: -0.03em; color: #ffffff">AI로 만들고, 다른 시장에서도 통하게.</h1>
-<p style="margin: 18px 0 0; font-size: 17px; line-height: 1.5; color: #a7a7a7">프로덕트 전략, AI 프로토타이핑, 바이브코딩, 로컬라이제이션까지. 국내외 실무에서 쓰던 방법 그대로 가르쳐요.</p>
-
-<div style="display: flex; align-items: center; gap: 12px; margin-top: 24px">
-<div aria-hidden="true" style="display: flex">
-<span style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid #0a0a0a; background: linear-gradient(135deg,#6798ff,#2f4db0)"></span>
-<span style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid #0a0a0a; margin-left: -9px; background: linear-gradient(135deg,#8aa9ff,#4a6fd6)"></span>
-<span style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid #0a0a0a; margin-left: -9px; background: linear-gradient(135deg,#6798ff,#2f4db0)"></span>
-<span style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid #0a0a0a; margin-left: -9px; background: linear-gradient(135deg,#8aa9ff,#4a6fd6)"></span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 14px"><strong style="font-weight: 600">커리어 멘토링 400명+</strong></span>
-<span style="font-size: 12px; color: #7c7c7c">국내·해외 프로덕트 실무를 모두 거친 멘토</span>
-</div>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px; margin-top: 28px">
-<a href="bootcamps.html" class="btn b1">AI 부트캠프 보기</a>
-<a href="advisory.html" class="btn b2">국내외 커리어 선택 자문</a>
-</div>
+</div></header>
+<div id="menu" class="overlay" role="dialog" aria-modal="true" aria-label="메뉴" hidden>
+<div class="wrap">
+<div class="bar"><a href="./" class="brand"><i aria-hidden="true"><b></b><b></b></i>SylviaLab</a>
+<div class="nav-r"><button class="ib" data-open="search" data-focus="#q" aria-label="검색"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg></button><button class="ib" data-close aria-label="메뉴 닫기" style="color:#fff"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div></div>
+<div class="groups">
+<div class="grp"><p class="eyebrow" style="margin:0 0 4px">배우기</p>
+<a class="row" href="bootcamps.html" data-expand="menu-camps" aria-expanded="false" aria-controls="menu-camps">AI 부트캠프 <span class="sign" aria-hidden="true">+</span></a>
+<div id="menu-camps" hidden style="display:flex;flex-direction:column;gap:8px;padding:12px 0 16px;border-bottom:1px solid var(--line)"><a class="card" href="bootcamps.html#strategy"><span style="display:flex;justify-content:space-between;align-items:center"><strong style="font-size:15px">AI 프로덕트 전략</strong><span class="live"><i></i>LIVE</span></span><span class="meta" style="font-size:13px;color:var(--muted)">리서치를 종합해 문제를 정의하고, 가설·지표·실험으로 근거 있는 결정을 내려요.</span><span class="meta">3주 · 기수제</span></a><a class="card" href="ai-product-design.html"><span style="display:flex;justify-content:space-between;align-items:center"><strong style="font-size:15px">AI 프로덕트 디자인 심화</strong><span class="live"><i></i>LIVE</span></span><span class="meta" style="font-size:13px;color:var(--muted)">리서치 분석부터 Figma·코드 기반 프로토타입까지, AI를 실제 디자인 작업에 연결해요.</span><span class="meta">4주 · 기수제</span></a><a class="card" href="bootcamps.html#systems"><span style="display:flex;justify-content:space-between;align-items:center"><strong style="font-size:15px">AI 디자인 시스템</strong><span class="live"><i></i>LIVE</span></span><span class="meta" style="font-size:13px;color:var(--muted)">디자인 토큰부터 AI 컴포넌트·베리언트, React 구현까지 디자인 시스템을 AI로 만들어요.</span><span class="meta">4주 · 기수제</span></a><a class="card" href="bootcamps.html#engineering"><span style="display:flex;justify-content:space-between;align-items:center"><strong style="font-size:15px">AI 디자인 엔지니어링</strong><span class="live"><i></i>LIVE</span></span><span class="meta" style="font-size:13px;color:var(--muted)">Cursor·Claude Code로 Tailwind, shadcn/ui, Next.js 기반 UI를 직접 구현해요.</span><span class="meta">4주 · 기수제</span></a><a href="bootcamps.html" style="padding-top:4px;font-size:13px;color:var(--accent)">부트캠프 전체 보기 →</a></div>
+<a class="row" href="workshops.html">AI 워크숍 <span aria-hidden="true">›</span></a>
+<a class="row" href="career.html">커리어 부트캠프 <span aria-hidden="true">›</span></a>
+<a class="row" href="kit.html">SKILL.md 키트 <span aria-hidden="true">›</span></a></div>
+<div class="grp"><p class="eyebrow" style="margin:0 0 4px">함께 일하기</p>
+<a class="row" href="advisory.html">커리어 전략 컨설팅 <span class="new">New</span></a>
+<a class="row" href="team.html">기업 교육 <span aria-hidden="true">›</span></a>
+<a class="row" href="contact.html">프로젝트 문의 <span aria-hidden="true">›</span></a></div>
+<div class="grp"><p class="eyebrow" style="margin:0 0 4px">소개</p>
+<a class="row" href="about.html">Sylvia <span aria-hidden="true">›</span></a>
+<a class="row" href="writing.html">글 <span aria-hidden="true">›</span></a></div>
+<div style="display:flex;flex-direction:column;gap:10px"><a href="bootcamps.html" class="btn b1">AI 부트캠프 보기</a><a href="contact.html" class="btn b2">문의</a></div>
+</div></div></div>
+<div id="search" class="overlay" role="dialog" aria-modal="true" aria-label="검색" hidden>
+<div class="wrap">
+<div class="bar"><a href="./" class="brand"><i aria-hidden="true"><b></b><b></b></i>SylviaLab</a><button class="ib" data-close aria-label="검색 닫기" style="color:#fff"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<label class="search-box"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg><span class="eyebrow" style="position:absolute;left:-9999px">검색</span><input id="q" type="search" placeholder="부트캠프, 컨설팅, 글 검색" autocomplete="off"></label>
+<div class="results"><p class="eyebrow" style="margin:0 0 4px">검색 결과</p><div id="q-results"></div></div>
+<div style="margin-top:28px;max-width:640px"><p class="eyebrow" style="margin:0 0 12px">많이 찾는 것</p><div class="chips">
+<button class="chip" data-q="vibe coding">바이브코딩</button><button class="chip" data-q="claude">Claude</button><button class="chip" data-q="localization">로컬라이제이션</button><button class="chip" data-q="abroad">해외 이직</button><button class="chip" data-q="korea">한국 귀국</button></div></div>
+</div></div>
+<main id="main">
+<section class="wrap hero" style="padding:56px 20px 28px;display:flex;flex-direction:column;gap:22px">
+<a href="career.html" class="pill" style="align-self:flex-start"><span class="new">New</span><strong style="color:#fff;font-weight:500">글로벌 프로덕트 커리어 패스</strong><span style="color:var(--accent)">→</span></a>
+<h1 class="h1" style="max-width:14ch">프로덕트 디자이너를 위한 AI 실무 교육</h1>
+<p class="lead">프로덕트 전략, AI 프로토타이핑, 디자인 시스템, 디자인 엔지니어링까지. 국내외 실무에서 쓰던 방법 그대로 가르쳐요.</p>
+<p class="meta" style="color:var(--muted)"><span style="color:#fff;font-size:16px;font-weight:500">멘토링 <strong style="color:var(--accent);font-size:20px;font-weight:700">3,000명+</strong></span> · IBM · KB국민은행 · 코빗</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;max-width:640px"><a href="bootcamps.html" class="btn b1" style="flex:1 1 220px" data-track="home_cta_bootcamps">AI 부트캠프 보기</a><a href="advisory.html" class="btn b2" style="flex:1 1 220px" data-track="home_cta_advisory">커리어 전략 컨설팅</a></div>
 </section>
-
-<!-- LOGOS -->
-<section aria-label="강희주가 함께 일하고 강의한 곳" style="padding: 36px 0 32px; display: flex; align-items: center; gap: 0">
-<p class="eyebrow" style="flex: 0 0 auto; margin: 0; padding: 0 14px 0 20px; line-height: 1.4; border-right: 1px solid #313131">함께 일하고<br>강의한 곳</p>
-<div style="flex: 1 1 auto; min-width: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)">
-<svg role="img" aria-label="KB국민은행 · 삼성 · LG인화원 · NHN · 넷마블 · 홍익대학교 · 국민대학교 · 명지대학교 · 패스트캠퍼스 · 코드잇 · 인프런 · 구름 · 신한 커리어업 · 동그라미재단 · OPENPATH · 리메인 · 블루타이거" width="100%" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:block;overflow:hidden"><defs><g id="logo-set"><image href="images/logos/kb.png" x="0" y="9.0" width="124" height="22" opacity="0.9"><title>KB국민은행</title></image><image href="images/logos/samsung.png" x="160" y="11.0" width="111" height="18" opacity="0.9"><title>삼성</title></image><image href="images/logos/lg.png" x="307" y="9.0" width="91" height="22" opacity="0.9"><title>LG인화원</title></image><image href="images/logos/nhn.png" x="434" y="11.0" width="76" height="18" opacity="0.9"><title>NHN</title></image><image href="images/logos/netmarble.png" x="546" y="10.0" width="116" height="20" opacity="0.9"><title>넷마블</title></image><image href="images/logos/hongik.png" x="698" y="10.0" width="158" height="20" opacity="0.9"><title>홍익대학교</title></image><image href="images/logos/kookmin.png" x="892" y="5.0" width="100" height="30" opacity="0.9"><title>국민대학교</title></image><image href="images/logos/myongji.png" x="1028" y="2.0" width="36" height="36" opacity="0.9"><title>명지대학교</title></image><image href="images/logos/fastcampus.png" x="1100" y="10.0" width="129" height="20" opacity="0.9"><title>패스트캠퍼스</title></image><image href="images/logos/codeit.png" x="1265" y="9.0" width="77" height="22" opacity="0.9"><title>코드잇</title></image><image href="images/logos/inflearn.png" x="1378" y="9.0" width="120" height="22" opacity="0.9"><title>인프런</title></image><image href="images/logos/goorm.png" x="1534" y="9.0" width="87" height="22" opacity="0.9"><title>구름</title></image><image href="images/logos/careerup.png" x="1657" y="6.0" width="106" height="28" opacity="0.9"><title>신한 커리어업</title></image><image href="images/logos/circle.png" x="1799" y="5.0" width="89" height="30" opacity="0.9"><title>동그라미재단</title></image><image href="images/logos/openpath.png" x="1924" y="11.0" width="142" height="18" opacity="0.9"><title>OPENPATH</title></image><image href="images/logos/remain.png" x="2102" y="10.0" width="153" height="20" opacity="0.9"><title>리메인</title></image><image href="images/logos/bluetiger.png" x="2291" y="9.0" width="99" height="22" opacity="0.9"><title>블루타이거</title></image></g></defs><g><animateTransform attributeName="transform" type="translate" from="18 0" to="-2408 0" dur="87s" repeatCount="indefinite"/><use href="#logo-set" xlink:href="#logo-set"/><use href="#logo-set" xlink:href="#logo-set" x="2426"/><use href="#logo-set" xlink:href="#logo-set" x="4852"/></g></svg>
-</div>
+<section class="logos" aria-label="Sylvia가 함께 일하고 강의한 회사와 학교">
+<p class="eyebrow lbl" style="margin:0">함께 일하고<br>강의한 곳</p>
+<div class="vp"><div class="track"><img src="assets/logos/kb.png" alt="KB국민은행" class=""><img src="assets/logos/samsung.png" alt="삼성" class="s"><img src="assets/logos/lg.png" alt="LG인화원" class=""><img src="assets/logos/nhn.png" alt="NHN" class="s"><img src="assets/logos/netmarble.png" alt="넷마블" class=""><img src="assets/logos/hongik.png" alt="홍익대학교" class=""><img src="assets/logos/kookmin.png" alt="국민대학교" class="t"><img src="assets/logos/myongji.png" alt="명지대학교" class="tt"><img src="assets/logos/fastcampus.png" alt="패스트캠퍼스" class=""><img src="assets/logos/codeit.png" alt="코드잇" class=""><img src="assets/logos/inflearn.png" alt="인프런" class=""><img src="assets/logos/goorm.png" alt="구름" class=""><img src="assets/logos/careerup.png" alt="신한 커리어업" class="t"><img src="assets/logos/circle.png" alt="동그라미재단" class="t"><img src="assets/logos/openpath.png" alt="OPENPATH" class="s"><img src="assets/logos/remain.png" alt="리메인" class=""><img src="assets/logos/bluetiger.png" alt="블루타이거" class=""><img src="assets/logos/kb.png" alt="" aria-hidden="true" class=""><img src="assets/logos/samsung.png" alt="" aria-hidden="true" class="s"><img src="assets/logos/lg.png" alt="" aria-hidden="true" class=""><img src="assets/logos/nhn.png" alt="" aria-hidden="true" class="s"><img src="assets/logos/netmarble.png" alt="" aria-hidden="true" class=""><img src="assets/logos/hongik.png" alt="" aria-hidden="true" class=""><img src="assets/logos/kookmin.png" alt="" aria-hidden="true" class="t"><img src="assets/logos/myongji.png" alt="" aria-hidden="true" class="tt"><img src="assets/logos/fastcampus.png" alt="" aria-hidden="true" class=""><img src="assets/logos/codeit.png" alt="" aria-hidden="true" class=""><img src="assets/logos/inflearn.png" alt="" aria-hidden="true" class=""><img src="assets/logos/goorm.png" alt="" aria-hidden="true" class=""><img src="assets/logos/careerup.png" alt="" aria-hidden="true" class="t"><img src="assets/logos/circle.png" alt="" aria-hidden="true" class="t"><img src="assets/logos/openpath.png" alt="" aria-hidden="true" class="s"><img src="assets/logos/remain.png" alt="" aria-hidden="true" class=""><img src="assets/logos/bluetiger.png" alt="" aria-hidden="true" class=""></div></div>
 </section>
-
-<!-- AI CAMPS -->
-<section id="camps" style="padding: 56px 20px; display: flex; flex-direction: column; gap: 28px">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span class="eyebrow">AI 프로덕트 디자인 부트캠프</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">AI로 아이디어부터 프로토타입까지</h2>
+<section class="sec" id="programs"><div class="wrap"><div class="sec-head"><span class="eyebrow">프로그램</span><h2 class="h2">무엇을 배우고 싶으세요?</h2></div>
+<div class="pt-tabs" role="tablist" aria-label="프로그램"><button type="button" role="tab" id="pt-camps" aria-controls="pp-camps" aria-selected="true" tabindex="0">AI 부트캠프</button><button type="button" role="tab" id="pt-career" aria-controls="pp-career" aria-selected="false" tabindex="-1">커리어</button><button type="button" role="tab" id="pt-shops" aria-controls="pp-shops" aria-selected="false" tabindex="-1">워크숍</button><button type="button" role="tab" id="pt-team" aria-controls="pp-team" aria-selected="false" tabindex="-1">팀·키트</button></div><div class="pt-panel" role="tabpanel" id="pp-camps" aria-labelledby="pt-camps">
+<a class="pt-feat" href="ai-product-design.html"><div class="pt-img"><img src="assets/img/robot-designer.jpg" alt="" loading="lazy"></div><div class="pt-fb"><b>AI 프로덕트 디자인 심화</b><span>리서치 분석부터 Figma·코드 기반 프로토타입까지, AI를 실제 디자인 작업에 연결해요.</span><small>4주 · 라이브 + 녹화</small></div></a>
+<div class="pt-list"><a class="pt-row" href="bootcamps.html#strategy"><span class="pt-rt"><b>AI 프로덕트 전략</b><small>리서치 종합부터 근거 기반 결정까지 · 3주</small></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pt-row" href="bootcamps.html#systems"><span class="pt-rt"><b>AI 디자인 시스템</b><small>디자인 토큰 · AI 컴포넌트 · React 구현 · 4주</small></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pt-row" href="bootcamps.html#engineering"><span class="pt-rt"><b>AI 디자인 엔지니어링</b><small>Cursor · Tailwind · shadcn/ui · Next.js · 4주</small></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pt-more" href="bootcamps.html">AI 부트캠프 전체 보기 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div><div class="pt-panel" role="tabpanel" id="pp-career" aria-labelledby="pt-career" hidden>
+<a class="pt-feat" href="career.html"><div class="pt-img"><img src="assets/img/openpath.jpg" alt="" loading="lazy" style="object-position:center 22%"></div><div class="pt-fb"><b>해외에서 읽히는 포트폴리오</b><span>한국 경력을 해외 담당자가 읽는 말로 바꾸고, 케이스 스터디 하나를 끝까지 써요.</span><small>4주 · 라이브 기수</small></div></a>
+<div class="pt-list"><a class="pt-row" href="advisory.html"><span class="pt-rt"><b>커리어 전략 컨설팅</b><small>한국에 남을지, 나갈지 1:1로 · 1:1 · 한 달</small></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pt-more" href="advisory.html">커리어 전략 컨설팅 자세히 보기 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div><div class="pt-panel" role="tabpanel" id="pp-shops" aria-labelledby="pt-shops" hidden>
+<a class="pt-feat" href="workshops.html"><div class="pt-img"><img src="assets/img/enterprise-lecture.jpg" alt="" loading="lazy"></div><div class="pt-fb"><b>온라인 AI 워크숍</b><span>두 시간 동안 주제 하나만 깊게, Sylvia와 같이 직접 해봐요.</span><small>2시간 · 온라인</small></div></a>
+<div class="pt-list"><a class="pt-row" href="workshops.html"><span class="pt-rt"><b>Claude로 디자인 시스템 지키며 프로토타이핑</b><small>라이브 실습 · 2시간</small></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pt-row" href="workshops.html"><span class="pt-rt"><b>해외 서비스를 한국 사용자에게 맞게 뜯어보기</b><small>라이브 실습 · 2시간</small></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pt-row" href="workshops.html"><span class="pt-rt"><b>바이브코딩으로 첫 화면 띄우기</b><small>라이브 실습 · 2시간</small></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pt-more" href="workshops.html">워크숍 전체 보기 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div><div class="pt-panel" role="tabpanel" id="pp-team" aria-labelledby="pt-team" hidden>
+<a class="pt-feat" href="team.html"><div class="pt-img"><img src="assets/img/heeju-professor.jpg" alt="" loading="lazy"></div><div class="pt-fb"><b>기업 교육 · 강연</b><span>팀 전체가 AI로 일하도록, 워크숍부터 4주 과정까지 팀에 맞춰 진행해요.</span><small>워크숍 · 강연 · 4주 과정</small></div></a>
+<div class="pt-list"><a class="pt-row" href="kit.html"><span class="pt-rt"><b>SKILL.md 키트</b><small>Claude·Figma에 넣으면 바로 쓰는 파일 · 키트</small></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pt-row" href="contact.html"><span class="pt-rt"><b>프로젝트 문의</b><small>한국 시장 진출 · UX 진단 · 문의</small></span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="pt-more" href="contact.html?topic=team">기업 교육 문의하기 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></div></section>
+<div class="sticky-cta" role="region" aria-label="바로가기"><div class="cbar"><div class="tx"><span class="t1">어디서부터 시작해야 할지 막막하다면</span><span class="t2">지금까지 <b>3,000명+</b>이 함께했어요</span></div><a href="contact.html?topic=advisory" class="go" data-track="home_cta">무료 상담 받기</a><button class="x" data-cta-close aria-label="닫기">×</button></div></div></main><footer class="foot"><div class="wrap">
+<div class="cols">
+<div><a href="./" class="brand" style="margin-bottom:14px"><i aria-hidden="true"><b></b><b></b></i>SylviaLab</a><p style="margin:12px 0 0;max-width:30ch">다른 시장에서 통한 것을, 내 사용자에게 맞는 프로덕트로.</p></div>
+<div><h5>배우기</h5><a href="bootcamps.html">AI 부트캠프</a><a href="workshops.html">AI 워크숍</a><a href="career.html">커리어 부트캠프</a><a href="kit.html">SKILL.md 키트</a></div>
+<div><h5>함께 일하기</h5><a href="advisory.html">커리어 전략 컨설팅</a><a href="team.html">기업 교육</a><a href="contact.html">프로젝트 문의</a></div>
+<div><h5>소개</h5><a href="about.html">Sylvia</a><a href="writing.html">글</a><a href="archive.html">아카이브</a><a href="https://brunch.co.kr/@sylviasolution/" rel="noopener">브런치</a><a href="mailto:heejuk@mail.hongik.ac.kr">이메일</a></div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<a href="camp-detail.html" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
-<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE 기수</span>
-<h3 style="margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: #ffffff">AI 프로덕트 디자인</h3>
-<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">아이디어부터 완성도 높은 프로토타입까지, AI로 디자인 작업을 빠르게.</p>
-<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">4주 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 기수제</div>
-</a>
-<a href="bootcamps.html" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
-<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE 기수</span>
-<h3 style="margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: #ffffff">AI 프로덕트 전략</h3>
-<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">문제를 정하는 단계부터 AI를 써서, 더 나은 프로덕트 결정을 내려요.</p>
-<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">3주 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 기수제</div>
-</a>
-
-
-<a href="bootcamps.html" class="btn b2" style="margin-top: 4px">부트캠프 전체 보기</a>
-</div>
-</section>
-
-<!-- CAREER TRAINING -->
-<section id="business" style="padding: 56px 20px; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid #313131">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span class="eyebrow">커리어 트레이닝</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">한국에서 쌓은 경력을, 다음 무대에서도</h2>
-</div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<a href="career.html" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
-<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE 기수</span>
-<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #ffffff">해외에서 읽히는 포트폴리오 부트캠프</h3>
-<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">한국 경력을 해외 담당자가 읽는 말로 바꾸고, 케이스 스터디 하나를 끝까지 써요.</p>
-<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">4주 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 기수제</div>
-</a>
-<article style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
-<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
-<span aria-hidden="true" style="flex: none; width: 48px; height: 46px; border-radius: 8px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6798ff" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"></path></svg></span>
-<a href="advisory.html" class="btn" style="padding: 8px 14px; border: 1px solid #454545; border-radius: 66px; background: #1e1e1e; font-size: 13px; font-weight: 500; color: #ffffff">시작하기</a>
-</div>
-<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #ffffff">국내외 커리어 선택 자문</h3>
-<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">한국에 남을지, 밖으로 나갈지. 강희주와 1:1로 갈 수 있는 길을 나란히 놓고 비교해요.</p>
-<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">1:1 자문 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 3개월</div>
-</article>
-</div>
-</section>
-
-<!-- SKILLS PROMO -->
-<section style="padding: 56px 20px">
-<div style="display: flex; flex-direction: column; gap: 20px; padding: 28px; border: 1px solid #313131; border-radius: 16px; background: #141414">
-<span class="eyebrow" style="color: #6798ff">AI 프로토타이핑 스킬</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 26px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">AI 툴에 한국 사용자 규칙을 알려주세요</h2>
-<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #a7a7a7">수업에서 쓰는 SKILL.md 묶음이에요. Claude나 Figma Make에 넣으면 첫 초안부터 한국 사용자에게 맞게 나와요.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 8px">
-<span class="mono" style="padding: 6px 11px; border: 1px solid #313131; border-radius: 6px; background: #0a0a0a; font-size: 12px; color: #a7a7a7">korean-users.skill.md</span>
-<span class="mono" style="padding: 6px 11px; border: 1px solid #313131; border-radius: 6px; background: #0a0a0a; font-size: 12px; color: #a7a7a7">localization.skill.md</span>
-<span class="mono" style="padding: 6px 11px; border: 1px solid #313131; border-radius: 6px; background: #0a0a0a; font-size: 12px; color: #a7a7a7">typography-ko.skill.md</span>
-<span class="mono" style="padding: 6px 11px; border: 1px solid #313131; border-radius: 6px; background: #0a0a0a; font-size: 12px; color: #a7a7a7">components.skill.md</span>
-</div>
-<div style="display: flex; align-items: center; gap: 14px; padding-top: 4px">
-<a href="kit.html" class="btn b1" style="padding: 13px 22px; font-size: 15px">키트 받기</a>
-<span style="font-size: 12.5px; color: #7c7c7c">한 번 결제 · 업데이트 계속</span>
-</div>
-</div>
-</section>
-
-<!-- PERSONAL BRAND -->
-<section id="person" style="padding: 32px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0">
-<h2 style="margin: 0; font-weight: 600; font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">글로벌 프로덕트 리더들이 선택한 멘토, 강희주.</h2>
-<p style="margin: 16px 0 24px; font-size: 16px; line-height: 1.55; color: #a7a7a7">국내외 시장에서 쌓은 경험으로, 당신의 프로덕트와 다음 커리어 선택을 함께 설계합니다. IBM, KB국민은행, 코빗을 거쳤고 국내외 거래소 사업에서 1위 성과와 투자 유치를 경험했어요.</p>
-<a href="about.html" class="btn b2" style="padding: 13px 24px; font-size: 15px">강희주 소개 보기</a>
-</section>
-
-<!-- WORKSHOPS -->
-<section style="padding: 56px 20px; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid #313131">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span class="eyebrow">온라인 AI 워크숍</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">하루 두 시간, 한 가지만 깊게</h2>
-</div>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<a href="workshops.html" style="display: flex; flex-direction: column; gap: 12px; padding: 18px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
-<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE</span>
-<h3 style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.3; color: #ffffff">Claude로 디자인 시스템 지키며 프로토타이핑하기</h3>
-<span style="font-size: 13.5px; color: #a7a7a7">라이브 AI 워크숍 · 2시간</span>
-<div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #7c7c7c"><span aria-hidden="true" style="display: flex"><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; background: linear-gradient(135deg,#6798ff,#2f4db0)"></span><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; margin-left: -7px; background: linear-gradient(135deg,#8aa9ff,#4a6fd6)"></span></span>진행 강희주</div>
-</a>
-<a href="workshops.html" style="display: flex; flex-direction: column; gap: 12px; padding: 18px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
-<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE</span>
-<h3 style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.3; color: #ffffff">해외 서비스 하나를 한국 사용자에게 맞게 뜯어보기</h3>
-<span style="font-size: 13.5px; color: #a7a7a7">라이브 AI 워크숍 · 2시간</span>
-<div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #7c7c7c"><span aria-hidden="true" style="display: flex"><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; background: linear-gradient(135deg,#6798ff,#2f4db0)"></span><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; margin-left: -7px; background: linear-gradient(135deg,#8aa9ff,#4a6fd6)"></span></span>진행 강희주</div>
-</a>
-<a href="workshops.html" class="btn b2" style="margin-top: 4px">워크숍 전체 보기</a>
-</div>
-</section>
-
-<!-- JOBS -->
-<section style="padding: 56px 20px; display: flex; flex-direction: column; gap: 22px; border-top: 1px solid #313131">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<span class="eyebrow">열린 해외 프로젝트</span>
-<h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">수업이 끝나면, 실제 프로젝트로</h2>
-<p style="margin: 2px 0 0; font-size: 15px; line-height: 1.55; color: #a7a7a7">강희주에게 들어온 해외 프로젝트 중 공개해도 된다고 한 것만 올려요.</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border: 1px dashed #313131; border-radius: 12px; background: #141414; text-align: center">
-<span aria-hidden="true" style="align-self: center; width: 40px; height: 40px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6798ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.3"/><path d="M3.7 12h16.6"/><path d="M12 3.7c2.4 2.3 2.4 13.9 0 16.6"/><path d="M12 3.7c-2.4 2.3-2.4 13.9 0 16.6"/></svg></span>
-<strong style="font-size: 16px; font-weight: 600; color: #ffffff">곧 공개할게요</strong>
-<span style="font-size: 14px; line-height: 1.55; color: #a7a7a7">수업과 자문을 함께한 분들께 먼저 안내해요. 프로젝트를 맡기고 싶다면 편하게 문의해 주세요.</span>
-<a href="inquiry.html" class="btn b2" style="margin-top: 6px">프로젝트 문의</a>
-</div>
-</section>
-
-<!-- PROOF -->
-<section style="padding: 56px 20px 64px; display: flex; flex-direction: column; gap: 18px; border-top: 1px solid #313131; text-align: center; align-items: center">
-<h2 style="margin: 0; font-weight: 600; font-size: 26px; line-height: 1.2; letter-spacing: -0.025em; color: #ffffff">멘토링 400명+, 두 시장을 오가며 쌓은 신뢰</h2>
-<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #a7a7a7">국민대·홍익대·NHN 강의, TOKEN2049·Devcon·IVS Kyoto 발표. 현장에서 검증한 방법을 그대로 전해요.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center">
-<span class="chip">TOKEN2049</span><span class="chip">Devcon</span><span class="chip">IVS Kyoto</span><span class="chip">국민대</span><span class="chip">홍익대</span><span class="chip">NHN</span>
-</div>
-<a href="about.html" class="btn b2" style="margin-top: 6px; padding: 13px 24px; font-size: 15px">강희주 소개</a>
-</section>
-
-<!-- FOOTER -->
-<footer style="border-top: 1px solid #313131; padding: 48px 20px 36px; display: flex; flex-direction: column; gap: 36px">
-<div style="display: flex; flex-direction: column; gap: 12px">
-<h3 style="margin: 0; font-size: 22px; font-weight: 600; color: #ffffff">SylviaLab</h3>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #a7a7a7">다른 시장에서 통한 것을, 내 사용자에게 맞는 프로덕트로.</p>
-<a href="mailto:heejuk@mail.hongik.ac.kr" class="btn b2" style="align-self: flex-start; padding: 10px 18px; font-size: 14px">문의하기</a>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 28px 40px">
-<div style="display: flex; flex-direction: column; gap: 10px"><h5 class="eyebrow" style="margin: 0 0 2px">배우기</h5><a href="bootcamps.html" style="font-size: 14px; color: #a7a7a7">AI 부트캠프</a><a href="workshops.html" style="font-size: 14px; color: #a7a7a7">AI 워크숍</a><a href="career.html" style="font-size: 14px; color: #a7a7a7">커리어 부트캠프</a><a href="kit.html" style="font-size: 14px; color: #a7a7a7">SKILL.md 키트</a></div>
-<div style="display: flex; flex-direction: column; gap: 10px"><h5 class="eyebrow" style="margin: 0 0 2px">함께 일하기</h5><a href="advisory.html" style="font-size: 14px; color: #a7a7a7">1:1 커리어 자문</a><a href="team.html" style="font-size: 14px; color: #a7a7a7">기업 교육</a><a href="inquiry.html" style="font-size: 14px; color: #a7a7a7">프로젝트 문의</a></div>
-<div style="display: flex; flex-direction: column; gap: 10px"><h5 class="eyebrow" style="margin: 0 0 2px">소개</h5><a href="about.html" style="font-size: 14px; color: #a7a7a7">강희주</a><a href="writing.html" style="font-size: 14px; color: #a7a7a7">글</a><a href="https://brunch.co.kr/@sylviasolution/" style="font-size: 14px; color: #a7a7a7">브런치</a></div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 20px; border-top: 1px solid #313131; font-size: 12.5px; color: #7c7c7c">
-<span>© 2026 강희주 · SylviaLab</span>
-<span>서울에서, 국내외 프로덕트 교육.</span>
-</div>
-</footer>
-
-</div>
+<div class="base"><span>© 2026 Sylvia · SylviaLab</span><span>서울에서, 국내외 프로덕트 교육.</span></div>
+</div></footer>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
