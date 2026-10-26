@@ -3,250 +3,252 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>강희주 SylviaLab — 사람과 로봇 사이를 연구합니다</title>
-<meta name="description" content="HRI·Physical AI 연구자 강희주. 사람과 로봇 사이를 연구하고, 가르치고, 돌아오는 사람들을 만납니다.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B0C10'/%3E%3Crect x='8' y='9' width='6' height='14' rx='3' fill='%23F2F3F5'/%3E%3Crect x='18' y='9' width='6' height='14' rx='3' fill='%23F2F3F5'/%3E%3C/svg%3E">
+<title>SylviaLab — AI로 만들고, 다른 시장에서도 통하게</title>
+<meta name="description" content="프로덕트 전략, AI 프로토타이핑, 바이브코딩, 로컬라이제이션. 국내외 실무에서 쓰던 방법 그대로 가르치는 강희주의 AI 프로덕트 교육, SylviaLab.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Crect x='6' y='6' width='12' height='12' rx='4' fill='%23ffffff'/%3E%3Crect x='14' y='14' width='12' height='12' rx='4' fill='%236798ff'/%3E%3C/svg%3E">
 <meta property="og:type" content="website">
-<meta property="og:title" content="강희주 SylviaLab — 사람과 로봇 사이를 연구합니다">
-<meta property="og:description" content="HRI·Physical AI 연구자 강희주. 연구하고, 가르치고, 돌아오는 사람들을 만납니다.">
+<meta property="og:title" content="SylviaLab — AI로 만들고, 다른 시장에서도 통하게">
+<meta property="og:description" content="프로덕트 전략, AI 프로토타이핑, 바이브코딩, 로컬라이제이션. 국내외 실무에서 쓰던 방법 그대로.">
 <meta property="og:url" content="https://sylvialab.kr/">
 <meta property="og:image" content="https://sylvialab.kr/images/profile.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: #0B0C10;
-    color: #F2F3F5;
-    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', sans-serif;
-    letter-spacing: -0.01em;
-    word-break: keep-all;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-  .mono { font-family: 'JetBrains Mono', monospace; }
-  a { color: inherit; transition: color 300ms cubic-bezier(0.4,0.4,0,1); }
-  .door { transition: transform 400ms cubic-bezier(0,0.5,0.22,1), background-color 300ms cubic-bezier(0.4,0.4,0,1); }
-  .door:hover { transform: translateY(-4px); }
-  .door .go { transition: transform 400ms cubic-bezier(0,0.5,0.22,1); }
-  .door:hover .go { transform: translateX(6px); }
-  .row { transition: background-color 300ms cubic-bezier(0.4,0.4,0,1); }
-  .row:hover { background: #F5F6F9; }
-  .pill { transition: transform 200ms cubic-bezier(0.2,1,1,1), box-shadow 300ms cubic-bezier(0.4,0.4,0,1); }
-  .pill:hover { transform: translateY(-2px); box-shadow: rgba(123,108,255,0.35) 0 10px 28px; }
-  .pupil { transition: transform 180ms cubic-bezier(0,0.5,0.22,1); }
-  .logo { transition: border-color 250ms cubic-bezier(0.4,0.4,0,1), color 250ms cubic-bezier(0.4,0.4,0,1); }
-  .logo:hover { border-color: #3A3D49; color: #F2F3F5; }
-  .marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
-  .marquee-track { display: flex; gap: 12px; width: max-content; animation: scrollRight 55s linear infinite; }
-  .marquee:hover .marquee-track { animation-play-state: paused; }
-  @keyframes scrollRight { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  @keyframes blink { 0%,94%,100% { transform: scaleY(1); } 96% { transform: scaleY(0.08); } }
-  @keyframes rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
-  @media (prefers-reduced-motion: no-preference) {
-    .eye { animation: blink 5s ease-in-out infinite; }
-    .r1 { animation: rise 1.2s cubic-bezier(0,0.5,0.22,1) both; }
-    .r2 { animation: rise 800ms cubic-bezier(0.2,1,1,1) 0.2s both; }
-    .r3 { animation: rise 800ms cubic-bezier(0.2,1,1,1) 0.4s both; }
-  }
-  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .marquee-track { animation: none !important; flex-wrap: wrap; } }
-</style>
-<!-- Amplitude Analytics -->
+<link rel="stylesheet" href="styles.css">
 <script src="https://cdn.amplitude.com/script/717abebc881e6927f05facf0f4add9cd.js"></script>
-<script>
-  window.amplitude.init('717abebc881e6927f05facf0f4add9cd', {
-    fetchRemoteConfig: true,
-    autocapture: true,
-  });
-</script>
+<script>window.amplitude.init('717abebc881e6927f05facf0f4add9cd',{fetchRemoteConfig:true,autocapture:true});</script>
 </head>
 <body>
-<div style="width: 100%; min-height: 100vh; background: #0B0C10; color: #F2F3F5;">
+<div class="app">
 
-<header style="border-bottom: 1px solid #1E2028">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; min-height: 64px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
-<a href="#top" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; font-size: 18px"><span aria-hidden="true" style="display: inline-flex; gap: 3px; padding: 6px 7px; border-radius: 8px; background: #F2F3F5"><span style="width: 6px; height: 8px; border-radius: 2px; background: #0B0C10"></span><span style="width: 6px; height: 8px; border-radius: 2px; background: #0B0C10"></span></span>SylviaLab</a>
-<nav aria-label="주 메뉴" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px; color: #A0A5B1">
-<a href="#questions" style="text-decoration: none; padding: 12px 0">연구</a>
-<a href="#writing" style="text-decoration: none; padding: 12px 0">글</a>
-<a href="#together" style="text-decoration: none; padding: 12px 0">함께하는 일</a>
-<a href="#path" style="text-decoration: none; padding: 12px 0">걸어온 길</a>
-<span style="padding: 12px 0; color: #6F7482">KO / EN / 中</span>
+<!-- TOP BANNER -->
+<div style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; background: #141414; border-bottom: 1px solid #313131; font-size: 13px; color: #a7a7a7">
+<span style="padding: 2px 8px; border-radius: 66px; background: #6798ff; color: #0a0a0a; font-size: 11px; font-weight: 600">New</span>
+<a href="advisory.html" style="color: #ffffff; font-weight: 500">국내외 커리어 선택 자문</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav" aria-label="주요">
+<a href="index.html" class="brand" aria-label="SylviaLab 홈"><span class="brand-dots" aria-hidden="true"><span style="background:#fff"></span><span style="background:#6798ff"></span></span>SylviaLab</a>
+<div style="display: flex; align-items: center; gap: 8px">
+<a href="search.html" class="ib" aria-label="검색"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path></svg></a>
+<a href="menu.html" class="ib" aria-label="메뉴 열기" style="color:#fff"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></a>
+</div>
 </nav>
-</div>
-</header>
 
-<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 88px 20px 96px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
-<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<div class="r1" role="img" aria-label="방문자를 바라보는 로봇 눈" style="display: flex; align-items: center; gap: 14px">
-<div style="display: flex; gap: 10px">
-<div class="eye" style="width: 48px; height: 60px; border-radius: 18px; background: #F2F3F5; display: flex; align-items: center; justify-content: center"><span class="pupil" style="width: 20px; height: 20px; border-radius: 50%; background: #0B0C10; box-shadow: 0 0 0 3px #7B6CFF inset; transform: translate(0,0)"></span></div>
-<div class="eye" style="width: 48px; height: 60px; border-radius: 18px; background: #F2F3F5; display: flex; align-items: center; justify-content: center"><span class="pupil" style="width: 20px; height: 20px; border-radius: 50%; background: #0B0C10; box-shadow: 0 0 0 3px #7B6CFF inset; transform: translate(0,0)"></span></div>
-</div>
-<span class="mono" style="font-size: 13px; color: #A0A5B1">삐빅, 안녕하세요</span>
-</div>
-<h1 class="r1" style="margin: 0; font-weight: 900; font-size: clamp(40px, 5.6vw, 72px); line-height: 1.14; letter-spacing: -0.045em">강희주입니다.<br>사람과 로봇 사이를<br>연구합니다.</h1>
-<p class="r2" style="margin: 0; max-width: 580px; font-size: 19px; line-height: 1.75; color: #C9CCD6">그 말이 왜 나왔는지 궁금해서 이 연구를 시작했습니다. 요즘은 학생들을 가르치고, 해외에서 돌아왔거나 로봇 일로 넘어오려는 사람들을 자주 만납니다.</p>
-<div class="r3" style="display: flex; flex-wrap: wrap; gap: 8px">
-<span style="padding: 8px 14px; border-radius: 999px; border: 1px solid #3A3D49; font-size: 14px">HRI, Physical AI 연구자</span>
-<span style="padding: 8px 14px; border-radius: 999px; border: 1px solid #3A3D49; font-size: 14px">부산과학기술대학교 교수</span>
-<span style="padding: 8px 14px; border-radius: 999px; border: 1px solid #3A3D49; font-size: 14px">홍익대 IDAS 박사과정</span>
-<span style="padding: 8px 14px; border-radius: 999px; border: 1px solid #3A3D49; font-size: 14px">前 IBM GBS</span>
-</div>
-</div>
-<img class="r2" src="images/profile.jpg" alt="강희주 프로필 사진" style="flex: 0 1 440px; width: 440px; max-width: 100%; min-width: 0; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 18%; border-radius: 32px">
-</section>
+<!-- HERO -->
+<section style="padding: 40px 20px 28px; display: flex; flex-direction: column; gap: 0">
+<a href="career.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px 5px 5px; border: 1px solid #313131; border-radius: 66px; font-size: 13px; color: #a7a7a7; margin-bottom: 24px">
+<span style="padding: 3px 9px; border-radius: 66px; background: #6798ff; color: #0a0a0a; font-size: 11px; font-weight: 600">New</span>
+<strong style="color: #ffffff; font-weight: 500">글로벌 프로덕트 커리어 패스</strong>
+<span style="color: #6798ff" aria-hidden="true">→</span>
+</a>
+<h1 style="margin: 0; font-weight: 600; font-size: 38px; line-height: 1.1; letter-spacing: -0.03em; color: #ffffff">AI로 만들고, 다른 시장에서도 통하게.</h1>
+<p style="margin: 18px 0 0; font-size: 17px; line-height: 1.5; color: #a7a7a7">프로덕트 전략, AI 프로토타이핑, 바이브코딩, 로컬라이제이션까지. 국내외 실무에서 쓰던 방법 그대로 가르쳐요.</p>
 
-<section aria-label="숫자" style="border-top: 1px solid #1E2028; border-bottom: 1px solid #1E2028">
-<div style="max-width: 1200px; margin: 0 auto; padding: 28px 20px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px 24px">
-<div><div style="font-size: 32px; font-weight: 900; letter-spacing: -0.03em">3,000+</div><div style="font-size: 14px; color: #A0A5B1">커뮤니티 멤버</div></div>
-<div><div style="font-size: 32px; font-weight: 900; letter-spacing: -0.03em">2,000+</div><div style="font-size: 14px; color: #A0A5B1">누적 멘티</div></div>
-<div><div style="font-size: 32px; font-weight: 900; letter-spacing: -0.03em">05</div><div style="font-size: 14px; color: #A0A5B1">컨퍼런스 개최</div></div>
-<div><div style="font-size: 32px; font-weight: 900; letter-spacing: -0.03em">30+</div><div style="font-size: 14px; color: #A0A5B1">강의·자문처</div></div>
+<div style="display: flex; align-items: center; gap: 12px; margin-top: 24px">
+<div aria-hidden="true" style="display: flex">
+<span style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid #0a0a0a; background: linear-gradient(135deg,#6798ff,#2f4db0)"></span>
+<span style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid #0a0a0a; margin-left: -9px; background: linear-gradient(135deg,#8aa9ff,#4a6fd6)"></span>
+<span style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid #0a0a0a; margin-left: -9px; background: linear-gradient(135deg,#6798ff,#2f4db0)"></span>
+<span style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid #0a0a0a; margin-left: -9px; background: linear-gradient(135deg,#8aa9ff,#4a6fd6)"></span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 14px"><strong style="font-weight: 600">커리어 멘토링 400명+</strong></span>
+<span style="font-size: 12px; color: #7c7c7c">국내·해외 프로덕트 실무를 모두 거친 멘토</span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px; margin-top: 28px">
+<a href="bootcamps.html" class="btn b1">AI 부트캠프 보기</a>
+<a href="advisory.html" class="btn b2">국내외 커리어 선택 자문</a>
 </div>
 </section>
 
-<section aria-label="강의하고 자문한 곳" style="max-width: 1200px; margin: 0 auto; padding: 80px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
-<h2 style="margin: 0; font-weight: 900; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em">강의하고 자문한 곳</h2>
-<div class="marquee">
-<div class="marquee-track">
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">NHN</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">Samsung</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">LG인화원</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">코드잇</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">패스트캠퍼스</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">인프런</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">구름</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">신한커리어업</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">동그라미재단</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">오픈패스</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">리메인</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">블루타이거</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">홍익대학교</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">국민대학교</div>
-<div class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">명지대학교</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">NHN</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">Samsung</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">LG인화원</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">코드잇</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">패스트캠퍼스</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">인프런</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">구름</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">신한커리어업</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">동그라미재단</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">오픈패스</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">리메인</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">블루타이거</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">홍익대학교</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">국민대학교</div>
-<div aria-hidden="true" class="logo" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 158px; height: 72px; padding: 0 20px; border: 1px solid #262934; border-radius: 12px; background: #15171D; color: #A0A5B1; font-size: 17px; font-weight: 700; white-space: nowrap">명지대학교</div>
-</div>
+<!-- LOGOS -->
+<section aria-label="강희주가 함께 일하고 강의한 곳" style="padding: 36px 0 32px; display: flex; align-items: center; gap: 0">
+<p class="eyebrow" style="flex: 0 0 auto; margin: 0; padding: 0 14px 0 20px; line-height: 1.4; border-right: 1px solid #313131">함께 일하고<br>강의한 곳</p>
+<div style="flex: 1 1 auto; min-width: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent)">
+<svg role="img" aria-label="KB국민은행 · 삼성 · LG인화원 · NHN · 넷마블 · 홍익대학교 · 국민대학교 · 명지대학교 · 패스트캠퍼스 · 코드잇 · 인프런 · 구름 · 신한 커리어업 · 동그라미재단 · OPENPATH · 리메인 · 블루타이거" width="100%" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:block;overflow:hidden"><defs><g id="logo-set"><image href="images/logos/kb.png" x="0" y="9.0" width="124" height="22" opacity="0.9"><title>KB국민은행</title></image><image href="images/logos/samsung.png" x="160" y="11.0" width="111" height="18" opacity="0.9"><title>삼성</title></image><image href="images/logos/lg.png" x="307" y="9.0" width="91" height="22" opacity="0.9"><title>LG인화원</title></image><image href="images/logos/nhn.png" x="434" y="11.0" width="76" height="18" opacity="0.9"><title>NHN</title></image><image href="images/logos/netmarble.png" x="546" y="10.0" width="116" height="20" opacity="0.9"><title>넷마블</title></image><image href="images/logos/hongik.png" x="698" y="10.0" width="158" height="20" opacity="0.9"><title>홍익대학교</title></image><image href="images/logos/kookmin.png" x="892" y="5.0" width="100" height="30" opacity="0.9"><title>국민대학교</title></image><image href="images/logos/myongji.png" x="1028" y="2.0" width="36" height="36" opacity="0.9"><title>명지대학교</title></image><image href="images/logos/fastcampus.png" x="1100" y="10.0" width="129" height="20" opacity="0.9"><title>패스트캠퍼스</title></image><image href="images/logos/codeit.png" x="1265" y="9.0" width="77" height="22" opacity="0.9"><title>코드잇</title></image><image href="images/logos/inflearn.png" x="1378" y="9.0" width="120" height="22" opacity="0.9"><title>인프런</title></image><image href="images/logos/goorm.png" x="1534" y="9.0" width="87" height="22" opacity="0.9"><title>구름</title></image><image href="images/logos/careerup.png" x="1657" y="6.0" width="106" height="28" opacity="0.9"><title>신한 커리어업</title></image><image href="images/logos/circle.png" x="1799" y="5.0" width="89" height="30" opacity="0.9"><title>동그라미재단</title></image><image href="images/logos/openpath.png" x="1924" y="11.0" width="142" height="18" opacity="0.9"><title>OPENPATH</title></image><image href="images/logos/remain.png" x="2102" y="10.0" width="153" height="20" opacity="0.9"><title>리메인</title></image><image href="images/logos/bluetiger.png" x="2291" y="9.0" width="99" height="22" opacity="0.9"><title>블루타이거</title></image></g></defs><g><animateTransform attributeName="transform" type="translate" from="18 0" to="-2408 0" dur="87s" repeatCount="indefinite"/><use href="#logo-set" xlink:href="#logo-set"/><use href="#logo-set" xlink:href="#logo-set" x="2426"/><use href="#logo-set" xlink:href="#logo-set" x="4852"/></g></svg>
 </div>
 </section>
 
-<div style="background: #FFFFFF; color: #14171F">
-
-<section id="questions" style="max-width: 1200px; margin: 0 auto; padding: 120px 20px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px">
-<div style="display: flex; flex-direction: column; gap: 10px"><h2 style="margin: 0; font-weight: 900; font-size: clamp(30px, 3.6vw, 48px); line-height: 1.22; letter-spacing: -0.04em">요즘 붙들고 있는 질문</h2></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
-<div style="padding: 32px; border-radius: 28px; background: #0B0C10; color: #F2F3F5; display: flex; flex-direction: column; gap: 14px; min-height: 260px"><span style="font-size: 23px; font-weight: 900; line-height: 1.4; letter-spacing: -0.03em">사람은 로봇을<br>언제 믿을까?</span><span style="font-size: 15px; line-height: 1.75; color: #A0A5B1">간병 현장의 휴머노이드 앞에서 환자들이 고개를 돌렸어요. 그 장면 이후로 협업 로봇의 투명성과 신뢰를 연구합니다.</span></div>
-<div style="padding: 32px; border-radius: 28px; background: #F5F6F9; display: flex; flex-direction: column; gap: 14px; min-height: 260px"><span style="font-size: 23px; font-weight: 900; line-height: 1.4; letter-spacing: -0.03em">AI에 몸이 생기면<br>무엇이 달라질까?</span><span style="font-size: 15px; line-height: 1.75; color: #3D4352">화면 속 AI는 틀려도 다시 물으면 되지만, 몸이 있는 AI는 넘어져요. 넘어지고 다시 일어서는 서투른 로봇에 다음 도약이 있다고 봐요.</span></div>
-<div style="padding: 32px; border-radius: 28px; background: #EFEDFF; display: flex; flex-direction: column; gap: 14px; min-height: 260px"><span style="font-size: 23px; font-weight: 900; line-height: 1.4; letter-spacing: -0.03em">"삐빅, 저 지금<br>불편한가요?"</span><span style="font-size: 15px; line-height: 1.75; color: #3D4352">로봇이 먼저 물어봐야 하는 순간이 있어요. 휴머노이드가 언제, 어떤 얼굴로 그 말을 꺼내야 하는지 설계해요.</span></div>
+<!-- AI CAMPS -->
+<section id="camps" style="padding: 56px 20px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="eyebrow">AI 프로덕트 디자인 부트캠프</span>
+<h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">AI로 아이디어부터 프로토타입까지</h2>
 </div>
-<p style="margin: 0; font-size: 15px; color: #5B6375"><a href="https://scholar.google.com/scholar?hl=en&amp;q=%EA%B0%95%ED%9D%AC%EC%A3%BC" style="color: #5B47E0; font-weight: 700">논문 보기</a>. 다음 목표는 CHI, HRI, RO-MAN에 논문을 내는 거예요.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<a href="camp-detail.html" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE 기수</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: #ffffff">AI 프로덕트 디자인</h3>
+<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">아이디어부터 완성도 높은 프로토타입까지, AI로 디자인 작업을 빠르게.</p>
+<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">4주 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 기수제</div>
+</a>
+<a href="bootcamps.html" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE 기수</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: #ffffff">AI 프로덕트 전략</h3>
+<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">문제를 정하는 단계부터 AI를 써서, 더 나은 프로덕트 결정을 내려요.</p>
+<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">3주 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 기수제</div>
+</a>
+<a href="bootcamps.html" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE 기수</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: #ffffff">바이브코딩 프로토타입</h3>
+<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">코드를 몰라도 Claude Code로 실제로 돌아가는 화면을 만들어요.</p>
+<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">4주 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 기수제</div>
+</a>
+<a href="bootcamps.html" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE 기수</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: #ffffff">글로벌 프로덕트 로컬라이제이션</h3>
+<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">다른 시장에서 통한 서비스를 내 사용자에게 맞게 바꾸는 법을 배워요.</p>
+<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">4주 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 기수제</div>
+</a>
+<a href="bootcamps.html" class="btn b2" style="margin-top: 4px">부트캠프 전체 보기</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; padding-top: 20px; border-top: 1px solid #313131">
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">👥</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">라이브 기수 수업</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">국내외 디자이너, 기획자와 한 기수로 같이 들어요.</span></div>
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">✦</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">실무 AI 워크플로</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">지금 현장에서 쓰는 AI 작업 방식을 그대로 익혀요.</span></div>
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">💬</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">매주 피드백</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">과제를 내면 강희주가 직접 코멘트를 달아요.</span></div>
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">🏆</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">끝나면 남는 결과물</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">포트폴리오에 넣을 프로젝트 하나가 남아요.</span></div>
+</div>
 </section>
 
-<section id="writing" style="max-width: 1200px; margin: 0 auto; padding: 80px 20px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 32px 64px">
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 12px"><h2 style="margin: 0; font-weight: 900; font-size: clamp(30px, 3.6vw, 48px); line-height: 1.22; letter-spacing: -0.04em">로봇 앞의 사람</h2><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5B6375">연구하다 걸린 질문을 브런치에 씁니다.</p></div>
-<div style="flex: 2 1 520px; min-width: 0; border-top: 2px solid #14171F">
-<a href="https://brunch.co.kr/@sylviasolution/" class="row" style="display: flex; flex-wrap: wrap; gap: 6px 20px; padding: 22px 10px; border-bottom: 1px solid #E5E7EB; text-decoration: none"><span class="mono" style="flex: 0 0 90px; font-size: 13px; color: #5B6375">2026.04.08</span><span style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 19px; font-weight: 700">젊은 빌더들이 AI에 대해 계속해서 옳은 이유</span><span style="font-size: 14px; color: #5B6375">에세이</span></span></a>
-<a href="https://brunch.co.kr/@sylviasolution/" class="row" style="display: flex; flex-wrap: wrap; gap: 6px 20px; padding: 22px 10px; border-bottom: 1px solid #E5E7EB; text-decoration: none"><span class="mono" style="flex: 0 0 90px; font-size: 13px; color: #5B6375">2026.03.27</span><span style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 19px; font-weight: 700">서울에서 샌프란시스코로 가는 길, 실전 가이드</span><span style="font-size: 14px; color: #5B6375">필드 노트</span></span></a>
-<a href="https://brunch.co.kr/@sylviasolution/" class="row" style="display: flex; flex-wrap: wrap; gap: 6px 20px; padding: 22px 10px; border-bottom: 1px solid #E5E7EB; text-decoration: none"><span class="mono" style="flex: 0 0 90px; font-size: 13px; color: #5B6375">2026.03.12</span><span style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 19px; font-weight: 700">체화된 에이전트에 대한 조용한 논거</span><span style="font-size: 14px; color: #5B6375">연구 로그</span></span></a>
+<!-- CAREER TRAINING -->
+<section id="business" style="padding: 56px 20px; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid #313131">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="eyebrow">커리어 트레이닝</span>
+<h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">한국에서 쌓은 경력을, 다음 무대에서도</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<a href="career.html" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE 기수</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #ffffff">해외에서 읽히는 포트폴리오 부트캠프</h3>
+<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">한국 경력을 해외 담당자가 읽는 말로 바꾸고, 케이스 스터디 하나를 끝까지 써요.</p>
+<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">4주 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 기수제</div>
+</a>
+<article style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+<span aria-hidden="true" style="flex: none; width: 48px; height: 46px; border-radius: 8px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6798ff" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"></path></svg></span>
+<a href="advisory.html" class="btn" style="padding: 8px 14px; border: 1px solid #454545; border-radius: 66px; background: #1e1e1e; font-size: 13px; font-weight: 500; color: #ffffff">시작하기</a>
+</div>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #ffffff">국내외 커리어 선택 자문</h3>
+<p style="margin: 0; font-size: 14.5px; line-height: 1.5; color: #a7a7a7">한국에 남을지, 밖으로 나갈지. 강희주와 1:1로 갈 수 있는 길을 나란히 놓고 비교해요.</p>
+<div style="display: flex; align-items: center; gap: 9px; padding-top: 12px; border-top: 1px solid #313131; font-size: 13px; color: #7c7c7c">1:1 자문 <span style="width: 3px; height: 3px; border-radius: 50%; background: #7c7c7c"></span> 3개월</div>
+</article>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; padding-top: 20px; border-top: 1px solid #313131">
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">👥</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">라이브 기수 수업</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">해외를 준비하는 사람들과 같이 들어요.</span></div>
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">📈</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">경력 번역</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">한국 경력을 해외 담당자가 읽는 말로 바꿔요.</span></div>
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">🎓</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">양쪽을 다 아는 사람</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">국내와 해외에서 모두 일해본 실무자가 봐요.</span></div>
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">⏱</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">1:1 자문</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">다음 커리어 선택을 강희주와 1:1로 설계해요.</span></div>
 </div>
 </section>
 
-<section id="together" style="max-width: 1200px; margin: 0 auto; padding: 80px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px"><div style="display: flex; flex-direction: column; gap: 10px"><h2 style="margin: 0; font-weight: 900; font-size: clamp(30px, 3.6vw, 48px); line-height: 1.22; letter-spacing: -0.04em">함께할 수 있는 일</h2></div></div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px">
-<a href="corporate.html" class="door" style="display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 220px; padding: 28px; border-radius: 24px; border: 1px solid #E5E7EB; text-decoration: none"><span style="display: flex; flex-direction: column; gap: 8px"><span style="font-size: 20px; font-weight: 700">기업 교육과 자문</span><span style="font-size: 15px; line-height: 1.7; color: #3D4352">AI와 로봇을 현장에 들이는 팀과 반나절부터</span></span><span class="go" style="font-size: 15px; font-weight: 700; color: #5B47E0">자세히 →</span></a>
-<a href="course.html" class="door" style="display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 220px; padding: 28px; border-radius: 24px; border: 1px solid #E5E7EB; text-decoration: none"><span style="display: flex; flex-direction: column; gap: 8px"><span style="font-size: 20px; font-weight: 700">사람과 로봇 사이 설계하기</span><span style="font-size: 15px; line-height: 1.7; color: #3D4352">로봇을 만드는 기획자·디자이너·개발자를 위한 4주</span></span><span class="go" style="font-size: 15px; font-weight: 700; color: #5B47E0">자세히 →</span></a>
-<a href="edu.html" class="door" style="display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 220px; padding: 28px; border-radius: 24px; border: 1px solid #E5E7EB; text-decoration: none"><span style="display: flex; flex-direction: column; gap: 8px"><span style="font-size: 20px; font-weight: 700">강연과 AI 수업 만들기</span><span style="font-size: 15px; line-height: 1.7; color: #3D4352">로봇 UX 강연과 교수·강사를 위한 교안</span></span><span class="go" style="font-size: 15px; font-weight: 700; color: #5B47E0">자세히 →</span></a>
-<a href="mentoring.html" class="door" style="display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 220px; padding: 28px; border-radius: 24px; border: 1px solid #E5E7EB; text-decoration: none"><span style="display: flex; flex-direction: column; gap: 8px"><span style="font-size: 20px; font-weight: 700">커리어 멘토링</span><span style="font-size: 15px; line-height: 1.7; color: #3D4352">해외로 나가거나 한국으로 돌아오는 디자이너·엔지니어와</span></span><span class="go" style="font-size: 15px; font-weight: 700; color: #5B47E0">리턴 클럽 →</span></a>
-</div>
-</section>
-
-<section id="path" style="max-width: 1200px; margin: 0 auto; padding: 80px 20px 120px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 32px 64px">
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 12px"><h2 style="margin: 0; font-weight: 900; font-size: clamp(30px, 3.6vw, 48px); line-height: 1.22; letter-spacing: -0.04em">걸어온 길</h2><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5B6375">시드니에서 서울로, 컨설팅에서 연구실로. 몇 번 자리를 옮겨봐서 옮겨가는 사람들 이야기에 마음이 가요.</p></div>
-<ol style="flex: 2 1 520px; min-width: 0; margin: 0; padding: 0; list-style: none; border-left: 2px solid #14171F">
-<li style="padding: 0 0 26px 26px; position: relative"><span aria-hidden="true" style="position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #14171F"></span><span style="display: block; font-size: 13px; color: #5B6375">학창 시절</span><span style="font-size: 18px; font-weight: 700">스위스 국제학교</span></li>
-<li style="padding: 0 0 26px 26px; position: relative"><span aria-hidden="true" style="position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #14171F"></span><span style="display: block; font-size: 13px; color: #5B6375">학부</span><span style="font-size: 18px; font-weight: 700">University of Sydney</span></li>
-<li style="padding: 0 0 26px 26px; position: relative"><span aria-hidden="true" style="position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #14171F"></span><span style="display: block; font-size: 13px; color: #5B6375">유학</span><span style="font-size: 18px; font-weight: 700">Aalto University Media Lab</span></li>
-<li style="padding: 0 0 26px 26px; position: relative"><span aria-hidden="true" style="position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #14171F"></span><span style="display: block; font-size: 13px; color: #5B6375">현장</span><span style="font-size: 18px; font-weight: 700">IBM GBS 컨설턴트, 금융회사 PM</span></li>
-<li style="padding: 0 0 26px 26px; position: relative"><span aria-hidden="true" style="position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #14171F"></span><span style="display: block; font-size: 13px; color: #5B6375">총괄</span><span style="font-size: 18px; font-weight: 700">국내 및 해외 거래소 Team Head</span></li><li style="padding: 0 0 26px 26px; position: relative"><span aria-hidden="true" style="position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #14171F"></span><span style="display: block; font-size: 13px; color: #5B6375">연구</span><span style="font-size: 18px; font-weight: 700">홍익대 IDAS 석사, 박사과정에서 HRI, Physical AI, PUX(Physical UX/UI)</span></li>
-<li style="padding: 0 0 0 26px; position: relative"><span aria-hidden="true" style="position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #7B6CFF"></span><span style="display: block; font-size: 13px; color: #5B47E0">지금</span><span style="font-size: 18px; font-weight: 700">부산과학기술대학교 생활조형디자인과 교수</span></li>
-</ol>
-</section>
-
-</div>
-
-<section style="max-width: 1200px; margin: 0 auto; padding: 112px 20px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: center">
-<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 14px">
-<h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 44px); line-height: 1.25; letter-spacing: -0.04em">한 달에 한 번,<br>먼저 도착하는 미래</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.75; color: #A0A5B1">로봇이 삶에 스며드는 시대에 필요한 UX 관점, 현장에서 먼저 본 장면들, 다음에 올 질문들을 한 통의 편지에 담아요.</p>
-</div>
-<div style="flex: 1 1 380px">
-<form id="letter-form" style="display: flex; flex-direction: column; gap: 10px">
-<label for="letter-mail" style="font-size: 15px; font-weight: 700">이메일</label>
+<!-- SKILLS PROMO -->
+<section style="padding: 56px 20px">
+<div style="display: flex; flex-direction: column; gap: 20px; padding: 28px; border: 1px solid #313131; border-radius: 16px; background: #141414">
+<span class="eyebrow" style="color: #6798ff">AI 프로토타이핑 스킬</span>
+<h2 style="margin: 0; font-weight: 600; font-size: 26px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">AI 툴에 한국 사용자 규칙을 알려주세요</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #a7a7a7">수업에서 쓰는 SKILL.md 묶음이에요. Claude나 Figma Make에 넣으면 첫 초안부터 한국 사용자에게 맞게 나와요.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
-<input id="letter-mail" type="email" autocomplete="email" placeholder="name@company.com" style="flex: 1 1 220px; min-height: 56px; padding: 0 20px; border-radius: 999px; border: 1px solid #3A3D49; background: #15171D; color: #F2F3F5; font: inherit; font-size: 16px">
-<button id="letter-sub" type="button" class="pill" style="min-height: 56px; padding: 0 26px; border: 0; border-radius: 999px; background: #E8F87A; color: #14171F; font: inherit; font-size: 16px; font-weight: 700; cursor: pointer">구독하기</button>
+<span class="mono" style="padding: 6px 11px; border: 1px solid #313131; border-radius: 6px; background: #0a0a0a; font-size: 12px; color: #a7a7a7">korean-users.skill.md</span>
+<span class="mono" style="padding: 6px 11px; border: 1px solid #313131; border-radius: 6px; background: #0a0a0a; font-size: 12px; color: #a7a7a7">localization.skill.md</span>
+<span class="mono" style="padding: 6px 11px; border: 1px solid #313131; border-radius: 6px; background: #0a0a0a; font-size: 12px; color: #a7a7a7">typography-ko.skill.md</span>
+<span class="mono" style="padding: 6px 11px; border: 1px solid #313131; border-radius: 6px; background: #0a0a0a; font-size: 12px; color: #a7a7a7">components.skill.md</span>
 </div>
-<span style="font-size: 13px; color: #A0A5B1">언제든 한 번에 해지할 수 있어요.</span>
-</form>
-<div id="letter-done" role="status" hidden style="padding: 24px; border-radius: 22px; background: #15171D; border: 1px solid #262934; font-size: 17px; font-weight: 700">신청해 주셔서 감사합니다. 다음 편지에서 만나요.</div>
+<div style="display: flex; align-items: center; gap: 14px; padding-top: 4px">
+<a href="kit.html" class="btn b1" style="padding: 13px 22px; font-size: 15px">키트 받기</a>
+<span style="font-size: 12.5px; color: #7c7c7c">한 번 결제 · 업데이트 계속</span>
+</div>
 </div>
 </section>
 
-<footer style="max-width: 1200px; margin: 0 auto; padding: 28px 20px 56px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; font-size: 14px; color: #A0A5B1; border-top: 1px solid #1E2028">
-<div style="display: flex; flex-wrap: wrap; gap: 4px 20px"><a href="mailto:heejuk@mail.hongik.ac.kr" style="padding: 8px 0">heejuk@mail.hongik.ac.kr</a><a href="https://scholar.google.com/scholar?hl=en&amp;q=%EA%B0%95%ED%9D%AC%EC%A3%BC" style="padding: 8px 0">Google Scholar</a><a href="https://brunch.co.kr/@sylviasolution/" style="padding: 8px 0">Brunch</a><a href="#" style="padding: 8px 0">LinkedIn</a></div>
-<span style="padding: 8px 0">© 2026 강희주</span>
+<!-- PERSONAL BRAND -->
+<section id="person" style="padding: 32px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0">
+<h2 style="margin: 0; font-weight: 600; font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">글로벌 프로덕트 리더들이 선택한 멘토, 강희주.</h2>
+<p style="margin: 16px 0 24px; font-size: 16px; line-height: 1.55; color: #a7a7a7">국내외 시장에서 쌓은 경험으로, 당신의 프로덕트와 다음 커리어 선택을 함께 설계합니다. IBM, KB국민은행, 코빗을 거쳤고 국내외 거래소 사업에서 1위 성과와 투자 유치를 경험했어요.</p>
+<a href="about.html" class="btn b2" style="padding: 13px 24px; font-size: 15px">강희주 소개 보기</a>
+</section>
+
+<!-- WORKSHOPS -->
+<section style="padding: 56px 20px; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid #313131">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="eyebrow">온라인 AI 워크숍</span>
+<h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">하루 두 시간, 한 가지만 깊게</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<a href="workshops.html" style="display: flex; flex-direction: column; gap: 12px; padding: 18px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE</span>
+<h3 style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.3; color: #ffffff">Claude로 디자인 시스템 지키며 프로토타이핑하기</h3>
+<span style="font-size: 13.5px; color: #a7a7a7">라이브 AI 워크숍 · 2시간</span>
+<div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #7c7c7c"><span aria-hidden="true" style="display: flex"><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; background: linear-gradient(135deg,#6798ff,#2f4db0)"></span><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; margin-left: -7px; background: linear-gradient(135deg,#8aa9ff,#4a6fd6)"></span></span>진행 강희주</div>
+</a>
+<a href="workshops.html" style="display: flex; flex-direction: column; gap: 12px; padding: 18px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE</span>
+<h3 style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.3; color: #ffffff">해외 서비스 하나를 한국 사용자에게 맞게 뜯어보기</h3>
+<span style="font-size: 13.5px; color: #a7a7a7">라이브 AI 워크숍 · 2시간</span>
+<div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #7c7c7c"><span aria-hidden="true" style="display: flex"><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; background: linear-gradient(135deg,#6798ff,#2f4db0)"></span><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; margin-left: -7px; background: linear-gradient(135deg,#8aa9ff,#4a6fd6)"></span></span>진행 강희주</div>
+</a>
+<a href="workshops.html" style="display: flex; flex-direction: column; gap: 12px; padding: 18px; border: 1px solid #313131; border-radius: 12px; background: #1e1e1e">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid #313131; border-radius: 66px; background: #141414; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: #ffffff"><span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #6798ff"></span>LIVE</span>
+<h3 style="margin: 0; font-size: 17px; font-weight: 600; line-height: 1.3; color: #ffffff">바이브코딩으로 첫 화면 띄우기</h3>
+<span style="font-size: 13.5px; color: #a7a7a7">라이브 AI 워크숍 · 2시간</span>
+<div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #7c7c7c"><span aria-hidden="true" style="display: flex"><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; background: linear-gradient(135deg,#6798ff,#2f4db0)"></span><span style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid #1e1e1e; margin-left: -7px; background: linear-gradient(135deg,#8aa9ff,#4a6fd6)"></span></span>진행 강희주</div>
+</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; padding-top: 20px; border-top: 1px solid #313131">
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">⚡</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">짧고 깊게</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">한 주제만 두 시간 동안 파고들어요.</span></div>
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">🖥</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">라이브 실습</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">보기만 하지 않고 강희주와 같이 직접 해봐요.</span></div>
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">📐</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">끝나면 결과물</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">워크숍마다 완성된 결과물 하나가 남아요.</span></div>
+<div style="display: flex; flex-direction: column; gap: 7px"><span aria-hidden="true" style="width: 40px; height: 40px; margin-bottom: 6px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">🏆</span><h4 style="margin: 0; font-size: 16px; font-weight: 600; color: #ffffff">다음으로 이어지기</h4><span style="font-size: 14px; line-height: 1.5; color: #a7a7a7">마음에 들면 부트캠프나 1:1 자문으로 이어서 들을 수 있어요.</span></div>
+</div>
+</section>
+
+<!-- JOBS -->
+<section style="padding: 56px 20px; display: flex; flex-direction: column; gap: 22px; border-top: 1px solid #313131">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="eyebrow">열린 해외 프로젝트</span>
+<h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em; color: #ffffff">수업이 끝나면, 실제 프로젝트로</h2>
+<p style="margin: 2px 0 0; font-size: 15px; line-height: 1.55; color: #a7a7a7">강희주에게 들어온 해외 프로젝트 중 공개해도 된다고 한 것만 올려요.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 24px; border: 1px dashed #313131; border-radius: 12px; background: #141414; text-align: center">
+<span aria-hidden="true" style="align-self: center; width: 40px; height: 40px; border-radius: 10px; background: rgba(103,152,255,0.12); border: 1px solid rgba(103,152,255,0.35); display: inline-grid; place-items: center; font-size: 18px">🌏</span>
+<strong style="font-size: 16px; font-weight: 600; color: #ffffff">곧 공개할게요</strong>
+<span style="font-size: 14px; line-height: 1.55; color: #a7a7a7">수업과 자문을 함께한 분들께 먼저 안내해요. 프로젝트를 맡기고 싶다면 편하게 문의해 주세요.</span>
+<a href="inquiry.html" class="btn b2" style="margin-top: 6px">프로젝트 문의</a>
+</div>
+</section>
+
+<!-- PROOF -->
+<section style="padding: 56px 20px 64px; display: flex; flex-direction: column; gap: 18px; border-top: 1px solid #313131; text-align: center; align-items: center">
+<h2 style="margin: 0; font-weight: 600; font-size: 26px; line-height: 1.2; letter-spacing: -0.025em; color: #ffffff">멘토링 400명+, 두 시장을 오가며 쌓은 신뢰</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #a7a7a7">국민대·홍익대·NHN 강의, TOKEN2049·Devcon·IVS Kyoto 발표. 현장에서 검증한 방법을 그대로 전해요.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center">
+<span class="chip">TOKEN2049</span><span class="chip">Devcon</span><span class="chip">IVS Kyoto</span><span class="chip">국민대</span><span class="chip">홍익대</span><span class="chip">NHN</span>
+</div>
+<a href="about.html" class="btn b2" style="margin-top: 6px; padding: 13px 24px; font-size: 15px">강희주 소개</a>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top: 1px solid #313131; padding: 48px 20px 36px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 22px; font-weight: 600; color: #ffffff">SylviaLab</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #a7a7a7">다른 시장에서 통한 것을, 내 사용자에게 맞는 프로덕트로.</p>
+<a href="mailto:heejuk@mail.hongik.ac.kr" class="btn b2" style="align-self: flex-start; padding: 10px 18px; font-size: 14px">문의하기</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 28px 40px">
+<div style="display: flex; flex-direction: column; gap: 10px"><h5 class="eyebrow" style="margin: 0 0 2px">배우기</h5><a href="bootcamps.html" style="font-size: 14px; color: #a7a7a7">AI 부트캠프</a><a href="workshops.html" style="font-size: 14px; color: #a7a7a7">AI 워크숍</a><a href="career.html" style="font-size: 14px; color: #a7a7a7">커리어 부트캠프</a><a href="kit.html" style="font-size: 14px; color: #a7a7a7">SKILL.md 키트</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><h5 class="eyebrow" style="margin: 0 0 2px">함께 일하기</h5><a href="advisory.html" style="font-size: 14px; color: #a7a7a7">1:1 커리어 자문</a><a href="team.html" style="font-size: 14px; color: #a7a7a7">기업 교육</a><a href="inquiry.html" style="font-size: 14px; color: #a7a7a7">프로젝트 문의</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><h5 class="eyebrow" style="margin: 0 0 2px">소개</h5><a href="about.html" style="font-size: 14px; color: #a7a7a7">강희주</a><a href="writing.html" style="font-size: 14px; color: #a7a7a7">글</a><a href="https://brunch.co.kr/@sylviasolution/" style="font-size: 14px; color: #a7a7a7">브런치</a></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 20px; border-top: 1px solid #313131; font-size: 12.5px; color: #7c7c7c">
+<span>© 2026 강희주 · SylviaLab</span>
+<span>서울에서, 국내외 프로덕트 교육.</span>
+</div>
 </footer>
 
 </div>
-
-<script>
-(function () {
-  var pupils = document.querySelectorAll('.pupil');
-  var raf = null;
-  function onMove(e) {
-    if (raf) return;
-    raf = requestAnimationFrame(function () {
-      raf = null;
-      var x = Math.max(-1, Math.min(1, (e.clientX / window.innerWidth) * 2 - 1));
-      var y = Math.max(-1, Math.min(1, (e.clientY / window.innerHeight) * 2 - 1));
-      var t = 'translate(' + (x * 10).toFixed(1) + 'px, ' + (y * 8).toFixed(1) + 'px)';
-      for (var i = 0; i < pupils.length; i++) pupils[i].style.transform = t;
-    });
-  }
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    window.addEventListener('mousemove', onMove);
-  }
-  var sub = document.getElementById('letter-sub');
-  if (sub) {
-    sub.addEventListener('click', function () {
-      var f = document.getElementById('letter-form');
-      var d = document.getElementById('letter-done');
-      if (f) f.hidden = true;
-      if (d) d.hidden = false;
-    });
-  }
-})();
-</script>
 </body>
 </html>
