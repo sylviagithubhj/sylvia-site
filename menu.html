@@ -50,9 +50,21 @@
 <div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px">
 <a href="bootcamps.html" class="btn b1">AI 부트캠프 보기</a>
 <a href="signin.html" class="btn b2">로그인</a>
-<span class="mono" style="padding-top: 8px; text-align: center; font-size: 11px; color: #7c7c7c">EN · <span style="color: #ffffff">KO</span></span>
+<span class="mono" style="padding-top: 8px; text-align: center; font-size: 11px; color: #7c7c7c"><a id="langToggle" href="/en/" style="color:#a7a7a7">EN</a> · <span style="color: #ffffff">KO</span></span>
 </div>
 </div>
 </div>
+<script>
+(function(){
+  var a=document.getElementById('langToggle');
+  try{
+    var ref=document.referrer, u=ref?new URL(ref):null;
+    if(u&&u.origin===location.origin){
+      var p=u.pathname.replace(/^\//,'')||'index.html';
+      a.href='/en/'+(p.indexOf('en/')===0?p.slice(3):p);
+    }
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
