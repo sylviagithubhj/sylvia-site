@@ -98,10 +98,11 @@ form{display:flex;flex-direction:column;gap:18px;max-width:560px}
 .brand i{display:inline-flex;gap:2px}
 .brand i b{width:5px;height:8px;border-radius:2px;background:#fff}
 .brand i b+b{background:var(--accent)}
+.brand-tx{display:none}
 .links{display:none;gap:28px;font-size:14px;color:var(--muted)}
 .links a:hover,.links a[aria-current="page"]{color:#fff}
 .nav-r{display:flex;align-items:center;gap:8px}
-@media(min-width:960px){.links{display:flex}.menu-btn{display:none!important}}
+@media(min-width:960px){.links{display:flex}.menu-btn{display:none!important}.brand-tx{display:inline}}
 
 /* overlays */
 .overlay{position:fixed;inset:0;z-index:50;background:var(--bg);overflow:auto;animation:sheet var(--motion-base) var(--motion-ease) both}
