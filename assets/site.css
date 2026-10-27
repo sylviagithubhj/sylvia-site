@@ -131,6 +131,9 @@ form{display:flex;flex-direction:column;gap:18px;max-width:560px}
 @media(min-width:800px){.logos .lbl{padding-left:max(20px,calc((100vw - var(--max))/2 + 20px))}}
 
 .foot{border-top:1px solid var(--line);padding:48px 0 32px;color:var(--muted);font-size:14px}
+.foot .brand{padding:0;border:none;border-radius:0}
+.hero-cta{display:flex;flex-direction:column;gap:10px;max-width:640px}
+@media(min-width:960px){.hero-cta{flex-direction:row}.hero-cta .btn{flex:1 1 220px}}
 .foot .cols{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
 .foot h5{margin:0 0 12px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);font-weight:600}
 .foot .cols a{display:block;padding:5px 0}
