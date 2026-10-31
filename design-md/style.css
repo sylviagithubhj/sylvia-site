@@ -450,3 +450,33 @@ h1 .md{font-family:var(--mono);font-weight:500;letter-spacing:-0.04em;color:var(
 .copy.ico:hover{color:var(--fg);background:var(--panel-2)}
 .copy.ico.done{color:var(--ok);background:transparent}
 @media(max-width:620px){.item.row{grid-template-columns:52px minmax(0,1fr) 44px;gap:14px}.rsw{width:52px;height:52px}}
+
+/* 상세: 참고 시안 그대로 */
+.dbar{border-bottom:0;padding-block:14px 0}
+.dbar .logo{font-size:17px;font-weight:700;gap:6px}
+.dbar .logo-md{font-weight:400;color:var(--muted)}
+.back{color:#e3e5e8;font-size:15px}
+.dhead{padding-block:28px 28px;gap:14px}
+.dhead h1{font-size:clamp(36px,6vw,52px);letter-spacing:-0.03em}
+.lede{color:#c9ccd2;font-size:16px;line-height:1.65}
+.actions{margin-top:12px;gap:8px}
+.btn.wide.primary{background:#8b9cff;border-color:#8b9cff;color:#0b0c0e;border-radius:10px;height:52px}
+.btn.wide.primary:hover{background:#9eadff;border-color:#9eadff}
+.sub-act a{color:#e3e5e8;font-size:15px;gap:8px}
+.tabs button{font-size:16px;padding:0 14px}
+.tabs button[aria-selected="true"]{color:#8b9cff;font-weight:600}
+.tabs button[aria-selected="true"]::after{background:#8b9cff;left:6px;right:6px;height:3px}
+.str-row{grid-template-columns:32px minmax(0,1fr);gap:18px;padding:18px 0}
+.str-row .no{width:32px;height:32px;line-height:32px;background:#1d2026;font-size:14px}
+.str-t .why{-webkit-line-clamp:1;font-size:14.5px}
+.cc .cr{display:none}
+.cc{grid-template-columns:56px minmax(0,1fr) 40px;padding:14px 0}
+.cc .cs{border-radius:8px}
+.cl{column-gap:28px}
+.cc .cn{font-size:16px;font-weight:500}
+.cc .cv{font-family:var(--sans);font-size:15px;color:var(--muted)}
+.docsec .doc-open{height:48px;padding:0 18px;border:1px solid var(--line-2);border-radius:10px;background:transparent;color:var(--fg);font:inherit;font-size:15px;cursor:pointer}
+.docsec #doc-body{margin-top:8px}
+.docsec #doc-body[hidden]{display:none}
+.docsec .doc-mode{padding:8px 0 16px}
+.cl{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);column-gap:16px}.cc .cn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

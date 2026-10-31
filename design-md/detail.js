@@ -56,7 +56,7 @@
     var dark = c.dark ? '<span class="dk" style="background:' + esc(c.dark) + '"></span>' : '';
     return '<button type="button" class="cc" data-hex="' + esc(c.value) + '" aria-label="' + esc(c.name + ' ' + c.value + ' 복사') + '">' +
       '<span class="cs" style="background:' + esc(c.value) + '">' + dark + '</span>' +
-      '<span class="ct"><span class="cl"><span class="cn">' + esc(c.name) + '</span><span class="cv">' + esc(c.value) + (c.dark ? ' <em>다크 ' + esc(c.dark) + '</em>' : '') + '</span></span>' +
+      '<span class="ct"><span class="cl"><span class="cn">' + esc(c.name) + '</span><span class="cv">' + esc(/^#/.test(c.value) ? c.value.toUpperCase() : c.value) + (c.dark ? ' <em>다크 ' + esc(c.dark) + '</em>' : '') + '</span></span>' +
       (c.role ? '<span class="cr">' + esc(c.role) + '</span>' : '') + '</span>' +
       '<span class="ci">' + COPY_ICON + '</span>' +
       '</button>';
@@ -64,7 +64,7 @@
   function renderStyle() {
     var h = '';
     var hasRules = tok.strengths && tok.strengths.length;
-    h += '<section class="ss" id="s-strength"><div class="sh"><h2>' + (hasRules ? '핵심 규칙' : '한 줄 요약') + '</h2>' + '<span class="mono">' + esc(item.desc) + '</span></div>';
+    h += '<section class="ss" id="s-strength"><div class="sh"><h2>' + (hasRules ? '핵심 규칙' : '한 줄 요약') + '</h2>' + (hasRules ? '' : '<span class="mono">' + esc(item.desc) + '</span>') + '</div>';
     if (hasRules) {
       h += '<ol class="str">';
       tok.strengths.forEach(function (x, i) {
@@ -77,7 +77,7 @@
     h += '</section>';
     var n = tok.colors.reduce(function (a, g) { return a + g.items.length; }, 0);
     if (n) {
-      h += '<section class="ss" id="s-color"><div class="sh"><h2>컬러 토큰</h2><span class="mono">' + esc(item.name) + '의 색 ' + n + '개예요. 줄을 누르면 값이 복사돼요.</span></div>';
+      h += '<section class="ss" id="s-color"><div class="sh"><h2>컬러 토큰</h2><span class="mono">' + esc(item.name) + '의 주요 컬러 토큰이에요. 정확한 값을 써야 결과물이 일관돼요.</span></div>';
       tok.colors.forEach(function (g, gi) {
         h += '<h3 class="gl">' + esc(g.name) + ' <span>' + g.items.length + '</span></h3><div class="cgrid">';
         g.items.forEach(function (c, i) { h += i < LIMIT ? colorCard(c) : ''; });
@@ -122,7 +122,7 @@
       });
       h += '</div></section>';
     }
-    $('#p-style').innerHTML = h;
+    $('#style-body').innerHTML = h;
   }
 
   // ---- code tab
@@ -171,26 +171,33 @@
     document.querySelectorAll('#code-seg button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.fmt === fmt); });
   }
 
+  var docView = 'doc';
   function setTab(id) {
-    var tabOf = id === 'raw' ? 'doc' : id;
-    ['style', 'doc', 'code'].forEach(function (n) { $('#t-' + n).setAttribute('aria-selected', n === tabOf); });
-    ['style', 'doc', 'code', 'raw'].forEach(function (n) { $('#p-' + n).hidden = n !== id; });
-    $('#doc-mode').hidden = tabOf !== 'doc';
-    document.querySelectorAll('#doc-mode button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.mode === id); });
-    $('#toc').hidden = id !== 'doc';
-    $('.reader').classList.toggle('with-toc', id === 'doc');
+    ['style', 'code'].forEach(function (n) {
+      $('#t-' + n).setAttribute('aria-selected', n === id);
+      $('#p-' + n).hidden = n !== id;
+    });
+  }
+  function setDocView(v) {
+    docView = v;
+    $('#p-doc').hidden = v !== 'doc'; $('#p-raw').hidden = v !== 'raw';
+    document.querySelectorAll('#doc-mode button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.mode === v); });
+  }
+  function openDoc(open) {
+    $('#doc-body').hidden = !open;
+    $('#doc-open').setAttribute('aria-expanded', open);
+    $('#doc-open').textContent = open ? '전체 문서 접기' : '전체 문서 펼치기';
   }
 
   function show(it) {
     item = it;
     document.title = it.name + ' DESIGN.md · SylviaLab';
     $('#d-name').textContent = it.name;
-    $('#d-lede').textContent = it.name + '의 색·글자·모서리 규칙을 한 파일에 정리했어요. 복사해서 AI 도구에 붙여 넣으면 이 톤으로 화면을 만들어요.';
-    $('#d-region').textContent = it.region === 'ko' ? '국내' : '해외';
-    $('#d-cat').textContent = cats[it.category] || it.category;
-    $('#d-size').textContent = (it.bytes / 1024).toFixed(1) + ' KB';
+    $('#d-lede').innerHTML = esc(it.name) + '의 주요 UI 요소를 분석한 디자인 시스템 가이드예요.<br>컬러·버튼·타이포그래피를 AI 작업에 활용하세요.';
+    $('#b-dl').title = (it.bytes / 1024).toFixed(1) + ' KB';
+    openDoc(false); setDocView('doc');
     $('#d-basis').innerHTML = it.region === 'ko'
-      ? '근거 · ' + esc(it.basis || '확인 필요') + ' <button type="button" class="link" data-refs>참고 자료 보기</button>'
+      ? '근거 · ' + esc(it.basis || '확인 필요') + '. 출처와 확인 날짜는 <button type="button" class="link" data-refs>13장 참고 자료</button>에 있어요.'
       : '출처 · <a class="link" href="https://github.com/VoltAgent/awesome-design-md" rel="noopener" target="_blank">VoltAgent/awesome-design-md</a> (MIT)';
     clearTimeout(copyTimer); $('#b-copy').classList.remove('done'); $('#b-copy').innerHTML = COPY_LABEL;
     $('#b-dl').href = 'md/' + it.slug + '.md';
@@ -202,7 +209,7 @@
     fetch('tokens/' + it.slug + '.json').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (t) {
       tok = t; renderStyle(); renderCode();
     }).catch(function () {
-      tok = null; $('#p-style').innerHTML = '<p class="empty-note">스타일 미리보기를 불러오지 못했어요. 문서 탭을 봐 주세요.</p>'; renderCode();
+      tok = null; $('#style-body').innerHTML = '<p class="empty-note">스타일 미리보기를 불러오지 못했어요. 문서 탭을 봐 주세요.</p>'; renderCode();
     });
 
     fetch('md/' + it.slug + '.md').then(function (r) { if (!r.ok) throw 0; return r.text(); }).then(function (t) {
@@ -215,7 +222,7 @@
       $('#p-doc').innerHTML = head + html;
       var used = {}, toc = '<p>목차</p>';
       document.querySelectorAll('#p-doc h2').forEach(function (h) { h.id = slugify(h.textContent, used); toc += '<a href="#' + it.slug + '" data-go="' + h.id + '">' + esc(h.textContent) + '</a>'; });
-      $('#toc').innerHTML = toc;
+      if ($('#toc')) $('#toc').innerHTML = toc;
     }).catch(function () { $('#p-doc').innerHTML = '<p>파일을 불러오지 못했어요. 새로고침해 주세요.</p>'; });
   }
 
@@ -248,12 +255,13 @@
     var sr = e.target.closest('.str-row');
     if (sr) { var o = sr.getAttribute('aria-expanded') !== 'true'; sr.setAttribute('aria-expanded', o); return; }
     var dm = e.target.closest('#doc-mode button');
-    if (dm) { setTab(dm.dataset.mode); return; }
+    if (dm) { setDocView(dm.dataset.mode); return; }
+    if (e.target.closest('#doc-open')) { openDoc($('#doc-body').hidden); return; }
     if (e.target.closest('[data-refs]')) {
-      setTab('doc');
-      var hs = document.querySelectorAll('#p-doc h2'), ref = null;
-      hs.forEach(function (x) { if (/참고|Reference|Sources?/i.test(x.textContent)) ref = x; });
-      if (ref) ref.scrollIntoView({ behavior: 'smooth', block: 'start' }); else $('.tabs').scrollIntoView({ behavior: 'smooth' });
+      setTab('style'); openDoc(true); setDocView('doc');
+      var ref = null;
+      document.querySelectorAll('#p-doc h2').forEach(function (x) { if (/참고|Reference|Sources?/i.test(x.textContent)) ref = x; });
+      (ref || $('#s-doc')).scrollIntoView({ behavior: 'smooth', block: 'start' });
       return;
     }
     var tab = e.target.closest('[role="tab"]');
@@ -265,7 +273,7 @@
     fetch('catalog.json').then(function (r) { return r.json(); }).then(function (data) {
       cats = data.categories;
       var it = data.items.filter(function (i) { return i.slug === slug; })[0];
-      if (!it) { $('#d-name').textContent = '찾는 DESIGN.md가 없어요'; $('#p-style').innerHTML = '<p><a href="./">전체 목록</a>에서 다시 골라 주세요.</p>'; return; }
+      if (!it) { $('#d-name').textContent = '찾는 DESIGN.md가 없어요'; $('#style-body').innerHTML = '<p><a href="./">전체 목록</a>에서 다시 골라 주세요.</p>'; return; }
       window.scrollTo(0, 0); setTab('style'); show(it);
     });
   }
