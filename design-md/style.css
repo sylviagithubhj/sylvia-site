@@ -318,3 +318,29 @@ h1 .md{font-family:var(--mono);font-weight:500;letter-spacing:-0.04em;color:var(
 .hero .src{margin:0;font-size:12.5px;line-height:1.6;color:var(--dim)}
 .hero .src a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
 .hero .src a:hover{color:var(--fg)}
+
+/* 분석 요청 */
+.req-empty{list-style:none;padding:28px 0 8px;display:flex;flex-direction:column;gap:18px}
+.req-card{max-width:520px;padding:22px 20px;border-radius:16px;background:var(--panel);border:1px solid var(--line-2);display:flex;flex-direction:column;gap:10px}
+.req-card h2{margin:0;font-size:19px;line-height:1.4;letter-spacing:-.02em}
+.req-card p{margin:0;font-size:14px;line-height:1.6;color:var(--muted)}
+.req-btn{margin-top:4px;height:48px;border:0;border-radius:12px;background:var(--fg);color:var(--accent-ink);font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.req-btn.done{background:transparent;border:1px solid var(--ok);color:var(--ok)}
+.req-tip{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.req-try{height:36px;padding:0 14px;border:1px solid var(--line-2);border-radius:999px;background:transparent;color:var(--fg);font:inherit;font-size:13px;cursor:pointer}
+.req-try:hover,.req-foot button:hover{border-color:#4a505c}
+.req-all{margin-top:12px;height:40px;padding:0 16px;border:1px solid var(--line-2);border-radius:999px;background:transparent;color:var(--fg);font:inherit;font-size:14px;cursor:pointer}
+.req-foot{list-style:none;display:flex;align-items:center;justify-content:center;gap:10px;padding:28px 0 4px;font-size:13.5px;color:var(--dim)}
+.req-foot button{height:36px;padding:0 14px;border:1px solid var(--line-2);border-radius:999px;background:transparent;color:var(--fg);font:inherit;font-size:13.5px;cursor:pointer}
+.req-wrap{display:flex;flex-direction:column;gap:12px}.req-wrap[hidden]{display:none}
+.req-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.req-head h2{margin:0;font-size:19px}
+.req-lead{margin:0;font-size:14px;line-height:1.6;color:var(--muted)}
+.req-form input[type=text],.req-form textarea{box-sizing:border-box;width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line-2);background:var(--bg);color:var(--fg);font:inherit;font-size:16px}
+.req-form input[type=text]{height:52px}
+.req-form textarea{resize:vertical;min-height:84px;line-height:1.5}
+.req-form input[type=text]:focus,.req-form textarea:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px rgba(103,152,255,.22)}
+.req-form input::placeholder,.req-form textarea::placeholder{color:var(--dim)}
+.req-alt{height:48px;border:1px solid var(--line-2);border-radius:12px;color:var(--fg);font-size:15px;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.req-alt[aria-disabled=true]{color:#8a8f99}
+.req-done .lead-ghost{width:100%}

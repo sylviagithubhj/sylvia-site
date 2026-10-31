@@ -45,6 +45,19 @@
     $('#chips').innerHTML = html;
   }
 
+  // No result: if the filters hide matches, offer to drop them; otherwise offer a request.
+  function emptyHTML() {
+    if (!state.q) return '<li class="empty">이 조건에 맞는 곳이 없어요.</li>';
+    var keep = { region: state.region, cat: state.cat };
+    state.region = 'all'; state.cat = 'all';
+    var hidden = state.items.filter(matches).length;
+    state.region = keep.region; state.cat = keep.cat;
+    if (hidden) return '<li class="empty">이 필터에서는 없지만 전체에서는 ' + hidden + '개가 나와요.<br><button type="button" class="req-all" data-clear-filters>전체에서 보기</button></li>';
+    var tips = ['금융·결제', 'AI', '커머스·서비스'];
+    if (window.SylviaRequest) return window.SylviaRequest.emptyHTML(state.q, tips);
+    return '<li class="empty">찾는 결과가 없어요. 다른 이름이나 "금융·결제", "AI"처럼 분야로 찾아보세요.</li>';
+  }
+
   function render() {
     var rows = state.items.filter(matches).sort(function (a, b) {
       // 국내 먼저, then by name; the sort button flips the name order
@@ -52,7 +65,7 @@
       return state.dir * a.name.localeCompare(b.name, 'ko');
     });
     count.textContent = rows.length + '개';
-    if (!rows.length) { list.innerHTML = '<li class="empty">찾는 결과가 없어요. 다른 이름이나 "핀테크", "AI"처럼 분야로 찾아보세요.</li>'; return; }
+    if (!rows.length) { list.innerHTML = emptyHTML(); return; }
     var html = rows.map(function (it) {
       var sw = (it.colors.length ? it.colors : ['#333333']).map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('');
       return '<li class="item">' +
@@ -67,10 +80,18 @@
     // free guide card sits in the 9th slot so people meet it while browsing, never on arrival
     var lead = window.SylviaLead ? window.SylviaLead.listCard() : '';
     if (lead) html.splice(Math.min(8, html.length), 0, lead);
+    if (window.SylviaRequest) html.push(window.SylviaRequest.footHTML());
     list.innerHTML = html.join('');
   }
 
   document.addEventListener('click', function (e) {
+    if (e.target.closest('[data-clear-filters]')) {
+      state.region = 'all'; state.cat = 'all';
+      document.querySelectorAll('.scope button').forEach(function (x) { x.setAttribute('aria-pressed', x.dataset.region === 'all'); });
+      renderChips(); render(); return;
+    }
+    var tr = e.target.closest('[data-try]');
+    if (tr) { input.value = tr.dataset.try; state.q = input.value; render(); input.focus(); return; }
     var so = e.target.closest('#sort');
     if (so) {
       state.dir = -state.dir;
