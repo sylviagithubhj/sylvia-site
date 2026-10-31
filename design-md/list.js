@@ -1,5 +1,5 @@
 (function () {
-  var state = { q: '', region: 'all', cat: 'all', items: [], cats: {} };
+  var state = { q: '', region: 'all', cat: 'all', items: [], cats: {}, dir: 1 };
   var $ = function (s) { return document.querySelector(s); };
   var list = $('#list'), count = $('#count');
 
@@ -46,7 +46,11 @@
   }
 
   function render() {
-    var rows = state.items.filter(matches);
+    var rows = state.items.filter(matches).sort(function (a, b) {
+      // 국내 먼저, then by name; the sort button flips the name order
+      if (a.region !== b.region) return a.region === 'ko' ? -1 : 1;
+      return state.dir * a.name.localeCompare(b.name, 'ko');
+    });
     count.textContent = rows.length + '개';
     if (!rows.length) { list.innerHTML = '<li class="empty">찾는 결과가 없어요. 다른 이름이나 "핀테크", "AI"처럼 분야로 찾아보세요.</li>'; return; }
     var html = rows.map(function (it) {
@@ -67,6 +71,13 @@
   }
 
   document.addEventListener('click', function (e) {
+    var so = e.target.closest('#sort');
+    if (so) {
+      state.dir = -state.dir;
+      so.classList.toggle('desc', state.dir < 0);
+      so.setAttribute('aria-label', state.dir > 0 ? '이름순, 가나다순. 누르면 역순으로 바꿔요' : '이름순, 역순. 누르면 가나다순으로 바꿔요');
+      render(); return;
+    }
     var b = e.target.closest('.scope button');
     if (b) { state.region = b.dataset.region; document.querySelectorAll('.scope button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); }); renderChips(); render(); return; }
     var c = e.target.closest('.chip');
