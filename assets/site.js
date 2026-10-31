@@ -123,7 +123,7 @@
     ['AI 워크숍', 'workshops.html', '워크숍 · 2시간', '워크숍 claude 바이브코딩 로컬라이제이션'],
     ['해외에서 읽히는 포트폴리오 부트캠프', 'career.html', '부트캠프 · 4주', '포트폴리오 커리어 해외 이력서 케이스 스터디 취업'],
     ['커리어 전략 컨설팅', 'advisory.html', '1:1 · 한 달', '컨설팅 커리어 전략 자문 멘토링 커리어 해외 귀국 한국 아이 진로 코칭'],
-    ['DESIGN.md 모음', 'design-md/', '자료 · 104개', 'design md 디자인 시스템 토스 배민 stripe linear 색 타이포 프롬프트 claude cursor'],
+    ['SylviaLab DESIGN.md', 'design-md/', '자료 · 125개', 'design md 디자인 시스템 토스 배민 stripe linear 색 타이포 프롬프트 claude cursor'],
     ['SKILL.md 키트', 'kit.html', '키트', 'skill md claude figma 한국 사용자 로컬라이제이션'],
     ['기업 교육', 'team.html', '기업 · 팀', '기업 교육 팀 워크숍 강연'],
     ['프로젝트 문의', 'contact.html', '문의', '프로젝트 문의 한국 시장 진출 ux 진단'],

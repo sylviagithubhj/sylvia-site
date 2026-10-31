@@ -312,3 +312,9 @@ h1 .md{font-family:var(--mono);font-weight:500;letter-spacing:-0.04em;color:var(
 .sort:hover{color:var(--fg);background:var(--panel)}
 .sort svg path{fill:var(--dim);transition:fill .15s}
 .sort:not(.desc) .up,.sort.desc .down{fill:var(--fg)}
+
+/* name + source line */
+.logo .logo-md{font-weight:500;color:var(--muted)}
+.hero .src{margin:0;font-size:12.5px;line-height:1.6;color:var(--dim)}
+.hero .src a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.hero .src a:hover{color:var(--fg)}
