@@ -1827,10 +1827,17 @@
 "name": "업비트",
 "region": "ko",
 "category": "finance",
-"desc": "확인 필요. 이번 작업에서는 화면을 직접 열지 못했다.",
-"colors": [],
-"bytes": 6417,
-"basis": "실측",
+"desc": "남색에 가까운 검정 바탕 위에 흰 글자, 오르면 빨강·내리면 파랑. 장식은 거의 없고 숫자와 색으로 시세를 읽게 한다.",
+"colors": [
+"#07101d",
+"#cc494a",
+"#3673e4",
+"#2962dc",
+"#093687",
+"#d2d4d6"
+],
+"bytes": 13738,
+"basis": "실측(앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/upbit/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
