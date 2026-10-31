@@ -11,7 +11,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageStat
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KEEP = {'en-notion'}  # outlined logos that look wrong when filled
-SOFT = {'ko-amoremall', 'ko-banksalad', 'en-wired'}  # blurry sources: a light sharpen helps until better files arrive
+SOFT = {'en-wired'}  # blurry sources: a light sharpen helps until better files arrive
 SIZE = 192
 
 
