@@ -1553,7 +1553,7 @@
 "#efefef",
 "#777676"
 ],
-"bytes": 24413,
+"bytes": 52754,
 "basis": "실측(앱 캡처)·기술 블로그",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/29cm/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1572,7 +1572,7 @@
 "#b1b3b5",
 "#97999b"
 ],
-"bytes": 17694,
+"bytes": 48094,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/baemin/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1582,9 +1582,9 @@
 "name": "뱅크샐러드",
 "region": "ko",
 "category": "finance",
-"desc": "금융과 건강을 함께 묶은 비교·추천 화면. 색·크기 수치는 이번에 재지 못했다(아래 표 참고).",
+"desc": "금융과 건강을 함께 묶은 비교·추천 화면. 색·크기 수치는 이번에 재지 못했다.",
 "colors": [],
-"bytes": 8215,
+"bytes": 21070,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/banksalad/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1603,7 +1603,7 @@
 "#f7f7f8",
 "#efeff0"
 ],
-"bytes": 14930,
+"bytes": 55677,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/channeltalk/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1622,7 +1622,7 @@
 "#eeeeee",
 "#dfe3e8"
 ],
-"bytes": 10881,
+"bytes": 35289,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/coupang/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1641,7 +1641,7 @@
 "#ffd5c0",
 "#ffffff"
 ],
-"bytes": 16956,
+"bytes": 59405,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/daangn/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1660,7 +1660,7 @@
 "#ffffff",
 "#f3f3f3"
 ],
-"bytes": 11931,
+"bytes": 37292,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kakao/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1679,7 +1679,7 @@
 "#5917b8",
 "#ffffff"
 ],
-"bytes": 16747,
+"bytes": 71773,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/krds/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1698,7 +1698,7 @@
 "#666666",
 "#848f9a"
 ],
-"bytes": 13636,
+"bytes": 41470,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kurly/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1717,7 +1717,7 @@
 "#fcfcfc",
 "#f5f5f5"
 ],
-"bytes": 15388,
+"bytes": 40255,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/line/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1736,7 +1736,7 @@
 "#ebebeb",
 "#e0e0e0"
 ],
-"bytes": 29088,
+"bytes": 59944,
 "basis": "실측(웹·앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/musinsa/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1755,7 +1755,7 @@
 "#ebf4ff",
 "#ff5f00"
 ],
-"bytes": 10324,
+"bytes": 29297,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/naver/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1774,7 +1774,7 @@
 "#5c5c5c",
 "#828c94"
 ],
-"bytes": 31902,
+"bytes": 64526,
 "basis": "실측(웹·앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/ohou/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1793,7 +1793,7 @@
 "#b8bfc4",
 "#9ea7ad"
 ],
-"bytes": 17677,
+"bytes": 48817,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/ridi/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1809,7 +1809,7 @@
 "#0381fe",
 "#3e91ff"
 ],
-"bytes": 15939,
+"bytes": 36170,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/samsung-oneui/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1828,7 +1828,7 @@
 "#f9fafb",
 "#f2f4f6"
 ],
-"bytes": 14671,
+"bytes": 47777,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/toss/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1847,7 +1847,7 @@
 "#093687",
 "#d2d4d6"
 ],
-"bytes": 17825,
+"bytes": 40943,
 "basis": "실측(앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/upbit/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1866,7 +1866,7 @@
 "#171719",
 "#989ba2"
 ],
-"bytes": 15615,
+"bytes": 54128,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/wanted/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1885,7 +1885,7 @@
 "#e9eaef",
 "#f2f3f7"
 ],
-"bytes": 13621,
+"bytes": 43375,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/yanolja/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1904,7 +1904,7 @@
 "#b3b3b3",
 "#cccccc"
 ],
-"bytes": 14000,
+"bytes": 44488,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/zigbang/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1942,7 +1942,7 @@
 "#ff3d00",
 "#fdf0ec"
 ],
-"bytes": 25740,
+"bytes": 57608,
 "basis": "실측(앱 캡처 13장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/catchtable/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1961,7 +1961,7 @@
 "#feffd1",
 "#a12de9"
 ],
-"bytes": 15481,
+"bytes": 38656,
 "basis": "실측(앱 캡처 12장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/lotte-department/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1980,7 +1980,7 @@
 "#f5f5f5",
 "#ededed"
 ],
-"bytes": 20107,
+"bytes": 47489,
 "basis": "실측(앱 캡처 10장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hyundaicard-mmall/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1999,7 +1999,7 @@
 "#f5f5f5",
 "#e5e5e5"
 ],
-"bytes": 14455,
+"bytes": 39070,
 "basis": "실측(앱 캡처 6장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/emart-mall/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2018,7 +2018,7 @@
 "#ff5753",
 "#f81542"
 ],
-"bytes": 14782,
+"bytes": 36817,
 "basis": "실측(앱 캡처 9장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/oliveyoung/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2037,7 +2037,7 @@
 "#1a1a1a",
 "#ffffff"
 ],
-"bytes": 19303,
+"bytes": 44236,
 "basis": "실측(앱 캡처 9장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/zigzag/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2056,7 +2056,7 @@
 "#f2f2f2",
 "#d9d9d9"
 ],
-"bytes": 13466,
+"bytes": 34201,
 "basis": "실측(앱 캡처 10장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/eql/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2075,7 +2075,7 @@
 "#fafafa",
 "#f1f1f1"
 ],
-"bytes": 18219,
+"bytes": 43481,
 "basis": "실측(앱 캡처 10장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kakaomakers/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2094,7 +2094,7 @@
 "#ffbe14",
 "#ffffff"
 ],
-"bytes": 13280,
+"bytes": 34728,
 "basis": "실측(앱 캡처 5장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hwahae/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2113,7 +2113,7 @@
 "#eeeeee",
 "#a6a6a6"
 ],
-"bytes": 9639,
+"bytes": 27301,
 "basis": "실측(앱 캡처 2장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/yes24/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2132,7 +2132,7 @@
 "#f4f4f4",
 "#f0f0f0"
 ],
-"bytes": 8747,
+"bytes": 27180,
 "basis": "실측(앱 캡처 2장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kream/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2151,7 +2151,7 @@
 "#a3a3a3",
 "#4d4d4d"
 ],
-"bytes": 8090,
+"bytes": 23714,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/spao/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2170,7 +2170,7 @@
 "#f5f5f5",
 "#f4f4f4"
 ],
-"bytes": 9027,
+"bytes": 28268,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/onthelook/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2189,7 +2189,7 @@
 "#fa5500",
 "#f9f9f9"
 ],
-"bytes": 8835,
+"bytes": 26181,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/wconcept/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2208,7 +2208,7 @@
 "#ededed",
 "#d0d3d7"
 ],
-"bytes": 9142,
+"bytes": 25487,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hiver/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2227,7 +2227,7 @@
 "#bbbbbb",
 "#666666"
 ],
-"bytes": 9349,
+"bytes": 26761,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/amoremall/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -2246,7 +2246,7 @@
 "#4d4d4d",
 "#666666"
 ],
-"bytes": 8898,
+"bytes": 25736,
 "basis": "실측(모바일 웹 캡처 5장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/apartmentary/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
