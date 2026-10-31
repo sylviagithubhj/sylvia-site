@@ -51,20 +51,20 @@
   // ---- style tab
   var LIMIT = 12, TYPE_LIMIT = 8, copyTimer;
   var COPY_LABEL = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg>DESIGN.md 복사';
+  var COPY_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg>';
   function colorCard(c) {
-    var dark = c.dark ? '<span class="dk" style="background:' + esc(c.dark) + '" title="다크 ' + esc(c.dark) + '"></span>' : '';
-    return '<button type="button" class="cc" data-hex="' + esc(c.value) + '">' +
-      '<span class="cs" style="background:' + esc(c.value) + ';color:' + ink(c.value) + '"><span class="aa">Aa</span>' + dark + '</span>' +
-      '<span class="cn">' + esc(c.name) + '</span>' +
-      '<span class="cv">' + esc(c.value) + (c.dark ? '<em>다크 ' + esc(c.dark) + '</em>' : '') + '</span>' +
-      (c.role ? '<span class="cr">' + esc(c.role) + '</span>' : '') +
+    var dark = c.dark ? '<span class="dk" style="background:' + esc(c.dark) + '"></span>' : '';
+    return '<button type="button" class="cc" data-hex="' + esc(c.value) + '" aria-label="' + esc(c.name + ' ' + c.value + ' 복사') + '">' +
+      '<span class="cs" style="background:' + esc(c.value) + '">' + dark + '</span>' +
+      '<span class="ct"><span class="cl"><span class="cn">' + esc(c.name) + '</span><span class="cv">' + esc(c.value) + (c.dark ? ' <em>다크 ' + esc(c.dark) + '</em>' : '') + '</span></span>' +
+      (c.role ? '<span class="cr">' + esc(c.role) + '</span>' : '') + '</span>' +
+      '<span class="ci">' + COPY_ICON + '</span>' +
       '</button>';
   }
   function renderStyle() {
     var h = '';
     var hasRules = tok.strengths && tok.strengths.length;
-    h += '<section class="ss" id="s-strength"><div class="sh"><h2>' + (hasRules ? '핵심 규칙' : '한 줄 요약') + '</h2>' + (hasRules ? '<span class="mono">눌러서 자세히</span>' : '') + '</div>' +
-      '<p class="summary">' + esc(item.desc) + '</p>';
+    h += '<section class="ss" id="s-strength"><div class="sh"><h2>' + (hasRules ? '핵심 규칙' : '한 줄 요약') + '</h2>' + '<span class="mono">' + esc(item.desc) + '</span></div>';
     if (hasRules) {
       h += '<ol class="str">';
       tok.strengths.forEach(function (x, i) {
@@ -77,7 +77,7 @@
     h += '</section>';
     var n = tok.colors.reduce(function (a, g) { return a + g.items.length; }, 0);
     if (n) {
-      h += '<section class="ss" id="s-color"><div class="sh"><h2>색상</h2><span class="mono">' + n + '개 · 누르면 값 복사</span></div>';
+      h += '<section class="ss" id="s-color"><div class="sh"><h2>컬러 토큰</h2><span class="mono">' + esc(item.name) + '의 색 ' + n + '개예요. 줄을 누르면 값이 복사돼요.</span></div>';
       tok.colors.forEach(function (g, gi) {
         h += '<h3 class="gl">' + esc(g.name) + ' <span>' + g.items.length + '</span></h3><div class="cgrid">';
         g.items.forEach(function (c, i) { h += i < LIMIT ? colorCard(c) : ''; });
