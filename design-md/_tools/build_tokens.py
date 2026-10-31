@@ -293,6 +293,30 @@ def yaml_scale(d):
     return out[:14]
 
 
+
+def bullets_under(body, heading, n=6):
+    """Bullets right under a ### heading (until the next heading)."""
+    i = body.find(heading)
+    if i < 0:
+        return []
+    out = []
+    for line in body[i + len(heading):].split('\n')[1:]:
+        if line.startswith('#'):
+            break
+        m = re.match(r'^\s*[-*]\s+(.+)$', line)
+        if m and m.group(1).strip():
+            out.append(clean(m.group(1), 220))
+    return out[:n]
+
+
+def strengths(body):
+    """'### 특장점' bullets split into title and reason at the em dash."""
+    out = []
+    for b in bullets_under(body, '### 특장점'):
+        parts = re.split(r'\s+[—–-]\s+', b, maxsplit=1)
+        out.append({'title': parts[0], 'why': parts[1] if len(parts) > 1 else ''})
+    return out
+
 def build(path):
     text = open(path, encoding='utf-8').read()
     fm, body = split_front(text)
@@ -314,6 +338,8 @@ def build(path):
         'type': typ[:24],
         'radius': yaml_scale(fm.get('rounded')) or radius_from_body(secs),
         'spacing': yaml_scale(fm.get('spacing')) or spacing_from_body(secs),
+        'strengths': strengths(body),
+        'learn': bullets_under(body, '### 배울 점'),
     }
 
 

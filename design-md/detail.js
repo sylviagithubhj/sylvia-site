@@ -61,6 +61,13 @@
   }
   function renderStyle() {
     var ko = item.region === 'ko', h = '';
+    if (tok.strengths && tok.strengths.length) {
+      h += '<section class="ss" id="s-strength"><div class="sh"><h2>특장점</h2><span class="mono">이 시스템만의 강점</span></div><ol class="str">';
+      tok.strengths.forEach(function (x) { h += '<li><b>' + esc(x.title) + '</b>' + (x.why ? '<span>' + esc(x.why) + '</span>' : '') + '</li>'; });
+      h += '</ol>';
+      if (tok.learn && tok.learn.length) h += '<div class="learn"><p>배울 점</p><ul>' + tok.learn.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>';
+      h += '</section>';
+    }
     var n = tok.colors.reduce(function (a, g) { return a + g.items.length; }, 0);
     if (n) {
       h += '<section class="ss" id="s-color"><div class="sh"><h2>색상</h2><span class="mono">' + n + '개 · 누르면 값 복사</span></div>';
