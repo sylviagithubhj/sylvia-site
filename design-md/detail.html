@@ -21,7 +21,7 @@
 <div class="top"><span class="tag" id="d-region"></span><span class="tag" id="d-cat"></span><span class="size" id="d-size"></span></div>
 <h1 id="d-name">불러오는 중…</h1>
 <p class="desc" id="d-desc"></p>
-<div class="palette" id="d-pal" aria-label="주요 색상 · 누르면 HEX 복사"></div>
+<div class="strip" id="d-strip" aria-hidden="true"></div>
 <div class="actions">
 <button class="btn primary" id="b-copy" type="button">DESIGN.md 전체 복사</button>
 <a class="btn" id="b-dl" download>.md 내려받기</a>
@@ -30,13 +30,24 @@
 </section>
 
 <div class="tabs" role="tablist" aria-label="보기 방식">
-<button role="tab" id="t-doc" aria-selected="true" aria-controls="p-doc">문서</button>
-<button role="tab" id="t-raw" aria-selected="false" aria-controls="p-raw">원문 (.md)</button>
+<button role="tab" id="t-style" aria-selected="true" aria-controls="p-style">스타일</button>
+<button role="tab" id="t-doc" aria-selected="false" aria-controls="p-doc">문서</button>
+<button role="tab" id="t-code" aria-selected="false" aria-controls="p-code">코드</button>
+<button role="tab" id="t-raw" aria-selected="false" aria-controls="p-raw">원문</button>
 </div>
 <div class="reader">
-<div id="p-doc" role="tabpanel" aria-labelledby="t-doc" class="doc"></div>
+<div id="p-style" role="tabpanel" aria-labelledby="t-style" class="style"></div>
+<div id="p-doc" role="tabpanel" aria-labelledby="t-doc" class="doc" hidden></div>
+<div id="p-code" role="tabpanel" aria-labelledby="t-code" class="code" hidden>
+<div class="code-bar">
+<div class="seg" id="code-seg"><button type="button" data-fmt="css" aria-pressed="true">CSS 변수</button><button type="button" data-fmt="tw" aria-pressed="false">Tailwind v4</button><button type="button" data-fmt="json" aria-pressed="false">JSON 토큰</button></div>
+<div class="code-act"><button class="btn sm" type="button" id="code-copy">복사</button><button class="btn sm" type="button" id="code-dl">내려받기</button></div>
+</div>
+<p class="code-note">이 페이지의 스타일 탭에 나온 값만 옮겼어요. 이름은 원문 토큰 이름을 코드에 맞게 바꾼 거예요.</p>
+<pre class="raw" id="code-out"></pre>
+</div>
 <pre id="p-raw" role="tabpanel" aria-labelledby="t-raw" class="raw" hidden></pre>
-<nav class="toc" id="toc" aria-label="목차"></nav>
+<nav class="toc" id="toc" aria-label="목차" hidden></nav>
 </div>
 
 <footer class="foot">
