@@ -548,3 +548,5 @@ h1 .md{font-family:var(--mono);font-weight:500;letter-spacing:-0.04em;color:var(
 .tsep{flex:none;width:1px;height:20px;align-self:center;background:#2a2e35;margin:0 4px}
 .c-look{font-size:13px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media(max-width:719px){.c-look{font-size:12.5px}}
+/* 칩 글자 가운데 맞춤 */
+.tchip,.scope.pills button{display:inline-flex;align-items:center;justify-content:center;line-height:1;padding-top:0;padding-bottom:0}
