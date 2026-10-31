@@ -1897,6 +1897,25 @@
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/zigbang/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "en-binance-app",
+"name": "바이낸스 (앱)",
+"region": "intl",
+"category": "finance",
+"desc": "짙은 회청색 바탕에 노랑 하나. 행동은 노랑, 숫자는 촘촘하게. iOS 앱 캡처로 SylviaLab이 직접 잰 값.",
+"colors": [
+"#202630",
+"#fcd535",
+"#f0b90b",
+"#29313d",
+"#2ebd85",
+"#f6465d"
+],
+"bytes": 12046,
+"basis": "실측(앱 캡처)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/binance/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
 }
 ]
 }
