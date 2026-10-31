@@ -270,7 +270,7 @@
 
   function load() {
     var slug = (location.hash || '').slice(1);
-    fetch('catalog.json').then(function (r) { return r.json(); }).then(function (data) {
+    fetch('catalog.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (data) {
       cats = data.categories;
       var it = data.items.filter(function (i) { return i.slug === slug; })[0];
       if (!it) { $('#d-name').textContent = '찾는 DESIGN.md가 없어요'; $('#style-body').innerHTML = '<p><a href="./">전체 목록</a>에서 다시 골라 주세요.</p>'; return; }

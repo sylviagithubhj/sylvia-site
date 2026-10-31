@@ -35,18 +35,22 @@
     return (it.name + ' ' + it.desc + ' ' + (state.cats[it.category] || '') + ' ' + it.slug + ' ' + (pv.svc || '') + ' ' + (pv.look || '') + ' ' + (pv.tags || []).join(' ')).toLowerCase().indexOf(q) > -1;
   }
 
-  var STYLES = ['다크', '무채색', '둥근', '각진', '선명한 포인트'];
+  var STYLES = ['다크', '무채색', '둥근', '각진', '선명한 포인트'], TOP_CATS = 6, moreCats = false;
   function renderChips() {
     var pool = state.items.filter(function (it) { return state.region === 'all' || it.region === state.region; });
     var counts = {}; pool.forEach(function (it) { counts[it.category] = (counts[it.category] || 0) + 1; });
     var keys = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; });
     if (state.cat !== 'all' && !counts[state.cat]) state.cat = 'all';
+    // a few big categories up front; the rest stay folded unless asked for (or one of them is picked)
+    var shown = moreCats ? keys : keys.slice(0, TOP_CATS);
+    if (state.cat !== 'all' && shown.indexOf(state.cat) < 0) shown = shown.concat(state.cat);
     var html = STYLES.map(function (t) {
       return '<button type="button" class="tchip style" data-style="' + t + '" aria-pressed="' + (state.style === t) + '">' + t + '</button>';
     }).join('') + '<span class="tsep" aria-hidden="true"></span>';
-    html += keys.map(function (k) {
+    html += shown.map(function (k) {
       return '<button type="button" class="tchip" data-cat="' + k + '" aria-pressed="' + (state.cat === k) + '">' + esc(state.cats[k] || k) + '</button>';
     }).join('');
+    if (keys.length > TOP_CATS) html += '<button type="button" class="tchip more" data-more-cats aria-expanded="' + moreCats + '">' + (moreCats ? '접기' : '분야 더보기') + '</button>';
     $('#chips').innerHTML = html;
   }
 
@@ -134,6 +138,7 @@
       document.querySelectorAll('.scope button').forEach(function (x) { x.setAttribute('aria-pressed', x.dataset.region === 'all'); });
       renderChips(); render(); return;
     }
+    if (e.target.closest('[data-more-cats]')) { moreCats = !moreCats; renderChips(); return; }
     var st = e.target.closest('.tchip');
     if (st) {
       if (st.dataset.style !== undefined) state.style = state.style === st.dataset.style ? '' : st.dataset.style;
@@ -173,7 +178,7 @@
     if (e.key === '/' && document.activeElement !== input) { e.preventDefault(); input.focus(); }
   });
 
-  fetch('catalog.json').then(function (r) { return r.json(); }).then(function (data) {
+  fetch('catalog.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (data) {
     state.items = data.items.sort(function (a, b) { return a.region === b.region ? a.name.localeCompare(b.name, 'ko') : (a.region === 'ko' ? -1 : 1); });
     state.cats = data.categories;
     var ko = state.items.filter(function (i) { return i.region === 'ko'; }).length;
