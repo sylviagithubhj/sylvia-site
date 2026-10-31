@@ -160,7 +160,7 @@
     if (cp) {
       e.preventDefault();
       var slug = cp.dataset.slug;
-      var get = function () { return fetch('md/' + slug + '.md').then(function (r) { if (!r.ok) throw 0; return r.text(); }); };
+      var get = function () { return fetch('md/' + slug + '.md', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw 0; return r.text(); }); };
       var fail = function () { toast('복사하지 못했어요. 상세 페이지에서 복사해 주세요.'); };
       // ClipboardItem with a promise keeps the click's permission while the file loads (Safari needs this)
       if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {

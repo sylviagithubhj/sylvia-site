@@ -206,13 +206,13 @@
     if (window.SylviaLead) window.SylviaLead.endCard($('#lead-end'));
     $('#d-credit').innerHTML = '원본 · <a href="' + esc(it.source) + '" rel="noopener" target="_blank">' + esc(it.license) + '</a>';
 
-    fetch('tokens/' + it.slug + '.json').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (t) {
+    fetch('tokens/' + it.slug + '.json', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (t) {
       tok = t; renderStyle(); renderCode();
     }).catch(function () {
       tok = null; $('#style-body').innerHTML = '<p class="empty-note">스타일 미리보기를 불러오지 못했어요. 문서 탭을 봐 주세요.</p>'; renderCode();
     });
 
-    fetch('md/' + it.slug + '.md').then(function (r) { if (!r.ok) throw 0; return r.text(); }).then(function (t) {
+    fetch('md/' + it.slug + '.md', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw 0; return r.text(); }).then(function (t) {
       text = t;
       $('#p-raw').textContent = t;
       var m = t.match(/^---\n([\s\S]*?)\n---\n/), fm = m ? m[1] : '', body = m ? t.slice(m[0].length) : t;
