@@ -83,7 +83,7 @@
     }
 
     if (tok.type.length) {
-      var sample = ko ? '다람쥐 헌 쳇바퀴에 타고파' : 'The quick brown fox jumps';
+      var sample = 'AI디자인 공부는 실비아랩';
       var fam = tok.fonts.length ? tok.fonts : [];
       h += '<section class="ss" id="s-type"><div class="sh"><h2>타이포그래피</h2><span class="mono">' + tok.type.length + '단계</span></div>';
       if (fam.length) h += '<div class="fonts">' + fam.map(function (f, i) { return '<span class="font"><b style="font-family:\'' + esc(f) + '\',var(--sans)">Ag 가</b><span>' + esc(f) + '</span><small>' + (i === 0 ? '대표 글꼴' : '보조 글꼴') + '</small></span>'; }).join('') + '</div>';
