@@ -21,25 +21,19 @@ colors:
   gray-50: "#f9f9f9"        # 검색어 칩 바탕, 테마 묶음 상자 (이전 캡처: 하단 탭 바)
   gray-100: "#eeeeee"       # 구분선
   gray-150: "#dddddd"       # 줄 상자 테두리
-  gray-200: "#e8e8e8"       # (이전 캡처) 칩 테두리
   gray-350: "#b2b2b2"       # 사진 쪽수 알약
   gray-380: "#acacac"       # 검색창 안내 글자
-  gray-400: "#cccccc"       # (이전 캡처) 하단 탭 비선택 아이콘
-  gray-450: "#ababab"       # (이전 캡처) 하단 탭 비선택 이름
   gray-480: "#777777"       # 기준 시각 글자
   gray-500: "#7b7b7b"       # 보조 글자, 대화상자 본문
   gray-600: "#555555"       # 브랜드 이름
   gray-650: "#434343"       # 검색어 칩 글자
   gray-800: "#333333"       # 말풍선 안내, 카테고리 목록 글자
   gray-850: "#262626"       # 순위 목록 글자, 보조 버튼 글자
-  gray-900: "#191919"       # (이전 캡처) 칩 글자
   gray-950: "#111111"       # 카테고리 원 바로가기 바탕
   orange-ff4600: "#ff4600"  # 행사 태그 글자, NEW 표시
   peach-ffece5: "#ffece5"   # 행사 태그 바탕
   orange-fa5500: "#fa5500"  # 본문 강조 단어, 새 소식 점
   blue-338bff: "#338bff"    # "보고 있어요" 알약
-  pink-f01776: "#f01776"    # (이전 캡처) 플레이 버튼 그라데이션 아래쪽
-  red-fc393d: "#fc393d"     # (이전 캡처) 플레이 버튼 그라데이션 위쪽
 
   # ── Semantic ──
   primary: "{colors.black}"
@@ -112,9 +106,6 @@ size:
   band: "38px"               # 브랜드관 검정 띠
   row-box: "62px"
   tabbar: "83px"             # 홈 인디케이터 포함
-  # 이전 캡처
-  tab-selected: "32px"
-  play-button: "38px"
 
 border-width:
   hairline: "1px"
@@ -144,9 +135,6 @@ components:
   tabbar: { backgroundColor: "{colors.surface}", iconColor: "{colors.icon}", textColor: "{colors.text}", typography: "{typography.tabbar-label}", height: "{size.tabbar}", borderTop: "{colors.divider}" }
   badge-cart: { backgroundColor: "{colors.black}", textColor: "{colors.white}", rounded: "{rounded.full}" }
   tab-new-dot: { backgroundColor: "{colors.dot-orange}", rounded: "{rounded.full}" }
-  # 이전 캡처(2025년쯤 홈 1장)
-  tab-selected: { backgroundColor: "{colors.selected}", textColor: "{colors.on-selected}", typography: "{typography.tab}", rounded: "{rounded.full}", height: "{size.tab-selected}" }
-  button-play: { gradient: "{colors.red-fc393d} → {colors.pink-f01776}", textColor: "{colors.white}", rounded: "{rounded.full}", height: "{size.play-button}" }
 ---
 
 # W컨셉 디자인 시스템
@@ -194,7 +182,7 @@ components:
 
 | 층 | 예시 | 쓰는 곳 |
 |---|---|---|
-| 관찰 팔레트 | `black`, `gray-25`~`gray-900`, `orange-ff4600`, `blue-338bff` | 캡처에서 잰 값. YAML 정의에만 |
+| 관찰 팔레트 | `black`, `gray-25`~`gray-950`, `orange-ff4600`, `blue-338bff` | 캡처에서 잰 값. YAML 정의에만 |
 | 역할 이름 | `primary`, `divider`, `chip-bg`, `tag-sale-text`, `highlight` | 화면과 컴포넌트 |
 
 ### 브랜드·행동
@@ -203,7 +191,6 @@ components:
 | primary (black) | #000000 | 구매하기·쿠폰받기·대화상자 확인 버튼 바탕, 선물하기 테두리, 글자, 아이콘, 장바구니 배지, 홈 머리 바탕 |
 | on-primary (white) | #ffffff | 검정 버튼 위 글자, 홈 머리 로고 |
 | live-info | #338bff | 상품 사진 왼쪽 아래 "○ 명이 보고 있어요" 알약 바탕(흰 글자) |
-| play-pink / play-red | #f01776 / #fc393d | (이전 캡처) 하단 가운데 플레이 버튼. 2026-11-01 캡처의 하단 탭 바에는 없다 |
 
 ### 바탕·선
 | 토큰 | HEX | 쓰임 |
@@ -364,7 +351,6 @@ components:
 | 작은 주요(`button-small`) | #000000 | #ffffff 13pt + 아래 화살표 아이콘 | 없음 | 30pt(폭 약 83pt) | 0 | 가격 줄 오른쪽 쿠폰받기 |
 | 보조(`button-secondary`) | #f5f5f5 | #262626 + 오른쪽 작은 아이콘 | 없음 | 40pt(화면 폭) | 거의 0 | 브랜드관 바깥 링크 |
 | 찜 | 없음 | 검정 하트 + 아래 수 | 없음 | 확인 필요 | — | 상세 하단 왼쪽 |
-| 플레이(이전 캡처) | 분홍 그라데이션 | 흰색 | 없음 | 38pt 원 | 999px | 이전 하단 탭 가운데. 지금은 보이지 않음 |
 
 - 두 버튼 짝: 왼쪽 테두리, 오른쪽 주요. 같은 높이, 같은 폭.
 - 상태: 눌림·비활성·로딩 확인 필요.
