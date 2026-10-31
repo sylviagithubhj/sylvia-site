@@ -286,3 +286,13 @@ h1 .md{font-family:var(--mono);font-weight:500;letter-spacing:-0.04em;color:var(
 .lead-ghost{height:48px;padding:0 20px;border:1px solid var(--line-2);border-radius:10px;background:transparent;color:var(--fg);font:inherit;font-size:15px;cursor:pointer}
 .lead-head .lead-cover .t{font-size:9.5px}
 .lead-head .lead-cover .k{font-size:6.5px}
+
+/* calmer list hero: title, one line, then straight to search */
+.hero{padding-block:32px 20px;gap:8px}
+.hero h1{font-size:clamp(26px,4vw,38px);font-weight:700;letter-spacing:-0.025em;line-height:1.25}
+.hero .sub{font-size:15px;line-height:1.6;max-width:56ch}
+.hero .sub b{color:var(--fg);font-weight:600}
+@media(max-width:620px){
+  .hero{padding-block:24px 14px}
+  .search kbd{display:none}
+}
