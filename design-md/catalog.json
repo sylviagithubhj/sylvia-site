@@ -3025,8 +3025,12 @@
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/banksalad/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md",
 "pv": {
-"btn": null,
-"bg": null,
+"btn": {
+"bg": "#05a96c",
+"fg": "#ffffff",
+"r": "10px"
+},
+"bg": "#f6f7f9",
 "point": "접근성을 자동 검사 도구로 다룬다",
 "font": "",
 "basis": "실측",
@@ -4059,7 +4063,11 @@
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kream/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md",
 "pv": {
-"btn": null,
+"btn": {
+"bg": "#ef6250",
+"fg": "#ffffff",
+"r": "8px"
+},
 "bg": "#ffffff",
 "point": "UI에 강조색이 없다",
 "font": "iOS 시스템 글꼴",
@@ -4149,12 +4157,19 @@
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/wconcept/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md",
 "pv": {
-"btn": null,
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "0px"
+},
 "bg": "#ffffff",
-"point": "선택 탭을 검정 원으로 채운다",
+"point": "버튼이 완전히 각지다",
 "font": "iOS 시스템 글꼴",
 "basis": "실측",
-"tags": [],
+"tags": [
+"무채색",
+"각진"
+],
 "svc": "여성 패션 편집숍 앱",
 "look": "흰 바탕에 순수 검정, 선택은 검정 원으로"
 },
@@ -4179,12 +4194,18 @@
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hiver/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md",
 "pv": {
-"btn": null,
+"btn": {
+"bg": "#ea6939",
+"fg": "#ffffff",
+"r": "4px"
+},
 "bg": "#ffffff",
 "point": "머리 영역 전체를 한 어두운 띠로 묶는다",
 "font": "iOS 시스템 글꼴",
 "basis": "실측",
-"tags": [],
+"tags": [
+"각진"
+],
 "svc": "남성 패션 쇼핑 앱",
 "look": "어두운 머리 영역 아래 흰 본문, 황토색 선택 표시"
 },

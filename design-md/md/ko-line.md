@@ -6,12 +6,14 @@ source:
   - "https://designsystem.line.me/ (LDSM: LINE 메신저 앱 가이드)"
   - "https://designsystem.line.me/LDSG (LDSG: 해외 가족 서비스 가이드)"
   - "확인 2026-10-31"
-updated: "2026-10-31"
+  - "보조: App Store 소개 스크린샷 6장(https://apps.apple.com/kr/app/id443904275, 확인 2026-11-01). 공식 문서에 없는 화면 값만 보탰고 모두 추정"
+updated: "2026-11-01"
 
 # ─────────────────────────────────────────────
 # 단위: pt(iOS 기준). 웹으로 옮길 때 1pt = 1px.
 # 아래 primitive 이름은 공식 팔레트 이름(Gray 900 → gray-900)을 kebab-case로 옮긴 것이다.
 # semantic 이름은 SylviaLab이 문서의 쓰임 규칙에 맞춰 붙였다.
+# "추정" 주석이 붙은 값은 App Store 소개 이미지(폰 화면 폭 약 261px, 375pt로 환산)에서 읽은 것이다.
 # ─────────────────────────────────────────────
 colors:
   # ── Primitive: 브랜드 (OS별) ──
@@ -70,6 +72,10 @@ colors:
   lc-amber-600: "#ffc53d"
   lc-yellow-600: "#fffc33"
 
+  # ── 관찰 (App Store 이미지, 추정) ──
+  chat-bg-default: "#8cabd8"   # 추정. 대화방 기본 테마 바탕(테마마다 바뀜)
+  bubble-mine: "#79e278"       # 추정. 내 말풍선(같은 테마 위)
+
   # ── Semantic (화면에서는 이 이름만 쓴다) ──
   brand: "{colors.green-ios}"               # Android 빌드에서는 brand-android
   brand-android: "{colors.green-android}"
@@ -92,6 +98,11 @@ colors:
   text-faint: "{colors.gray-400}"
   text-inverse: "{colors.white}"
   dim: "{colors.black}"                     # 투명도 10% 이상으로만 쓴다
+  on-primary: "{colors.text-inverse}"       # 채움 버튼 흰 글자(공식)
+  bubble-other: "{colors.white}"            # 추정. 상대 말풍선
+  input-field: "{colors.gray-150}"          # 추정. 대화 입력창 바탕(잰 값 #f5f5f5)
+  section-gap: "{colors.gray-150}"          # 추정. 목록 묶음 사이 굵은 띠(잰 값 #f5f5f5)
+  sheet-handle: "{colors.gray-300}"         # 추정. 잰 값 #dedede, Gray 300(#dfdfdf)과 1 차이
 
 opacity:
   # LINE White·Black만 5% 단위로 조절. 다른 색은 투명도 변경 금지.
@@ -143,12 +154,14 @@ border-width:
 
 rounded:
   icon: "2px"   # 아이콘 모서리 0–2px
+  sheet: "9px"  # 추정(8~10). 바텀시트 위 두 모서리
+  full: "999px" # 추정. 말풍선, 대화 입력창, 날짜 알약
 
 layout:
   base-width: "375px"     # 167×2 + 9 + 16×2 = 375
 
 components:
-  button-primary:   { backgroundColor: "{colors.action-primary}", textColor: "{colors.text-inverse}" }
+  button-primary:   { backgroundColor: "{colors.action-primary}", textColor: "{colors.on-primary}" }   # 모서리·높이 확인 필요(공식 문서 수치 없음, 스토어 이미지에 채움 버튼 없음)
   button-disabled:  { textColor: "{colors.text-primary}", opacity: "{opacity.disabled}" }   # 배경은 기본 유지
   navbar-ios:       { backgroundColor: "{colors.navbar-ios}", textColor: "{colors.text-inverse}" }
   header-android:   { backgroundColor: "{colors.header-android}", textColor: "{colors.text-inverse}" }
@@ -160,12 +173,18 @@ components:
   sheet-liff:       { heights: "50% / 70% / 98%" }
   sheet-custom:     { heights: "0-98%" }
   modal-fullscreen: { height: "100%" }
+  # ── 아래는 App Store 소개 이미지에서 읽은 추정값 ──
+  chat-bubble-mine:  { backgroundColor: "{colors.bubble-mine}", textColor: "{colors.black}", rounded: "{rounded.full}", height: "33px" }   # 추정. 한 줄일 때
+  chat-bubble-other: { backgroundColor: "{colors.bubble-other}", textColor: "{colors.black}", rounded: "{rounded.full}", height: "33px" }  # 추정
+  date-pill:         { backgroundColor: "{colors.black}", backgroundOpacity: 0.15, textColor: "{colors.white}", rounded: "{rounded.full}", height: "23px" }   # 추정. 바탕 위 검정 약 15%
+  chat-input:        { backgroundColor: "{colors.input-field}", rounded: "{rounded.full}", height: "34px" }   # 추정. 흰 입력 줄 안
+  bottom-sheet:      { backgroundColor: "{colors.background}", rounded: "{rounded.sheet}", handleColor: "{colors.sheet-handle}", handleWidth: "48px" }   # 추정
 ---
 
 # LINE 디자인 시스템
 
-> 근거: 공개 문서 기반 (LINE Design System 공식 사이트 designsystem.line.me의 외부 공개용 LDSM·LDSG 페이지)
-> 작성: SylviaLab · 최종 수정 2026-10-31
+> 근거: 공개 문서 기반 (LINE Design System 공식 사이트 designsystem.line.me의 외부 공개용 LDSM·LDSG 페이지). 공식 문서에 없는 화면 값 일부는 App Store 소개 스크린샷 6장(확인 2026-11-01)에서 읽어 보탰고 `추정`으로 표시했다.
+> 작성: SylviaLab · 최종 수정 2026-11-01
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 둘이 어긋나면 YAML 값이 우선한다.
 
@@ -189,6 +208,7 @@ components:
 - 회색 19단계에 글자 하한을 붙였다 — #ffffff부터 #000000까지 Gray 100~900 단계가 있고, 글자는 500 단계(#949494, 대비 3.0:1) 이상을 기본으로 한다.
 - 모달·시트 높이와 닫기 규칙이 표로 정해져 있다 — 전체 화면 100%, 직접 구현 시트 0–98%, LIFF 웹앱 시트 50·70·98%이고, X 버튼 위치를 함께 놓인 버튼에 따라 왼쪽·오른쪽으로 정한다.
 - 핵심 팔레트와 보조 팔레트를 나눈다 — 핵심 UI용 Primary Palette와 배너·스토리용 LINE Colors 15계열(각 300–900 + 채도 낮춘 `p` 단계)을 따로 둔다.
+- 대화방 날짜 표시에 검정 투명도를 쓴다 — 기본 테마 바탕 #8cabd8 위 날짜 알약이 #7791b7로, 검정 약 15%를 얹은 값과 맞는다. 테마가 바뀌어도 새 색을 고르지 않는 방식이다(추정, App Store 이미지. 관찰에서 정리).
 
 ### 배울 점
 - 여러 OS에서 같은 브랜드 색이 다르게 보일 때 LINE처럼 OS별 브랜드 값(#06c755 / #4cc764)을 따로 정의한다.
@@ -201,6 +221,7 @@ components:
 - 반투명이 필요하면 흰색·검정에 `opacity.*` 값을 곱한다. 초록·파랑·남색에 투명도를 주지 않는다.
 - 눌림·hover 색을 새 HEX로 만들지 않는다. 공식 규칙은 HSV 자동 조정이고 수치가 공개되지 않았으므로 `확인 필요`로 둔다.
 - 판단이 어려우면 일반 화면(옆에서 밀려 들어옴)을 고르고 모달은 아낀다. 글자는 12pt 아래로 내리지 않는다.
+- `추정` 표시 값(말풍선·입력창·시트 모서리 등)은 App Store 홍보 이미지에서 읽은 것이다. 공식 값과 부딪히면 공식 값을 따른다. 버튼 모서리·높이는 여전히 `확인 필요`다.
 
 ## 2. 색상
 ### 색 체계
@@ -256,6 +277,22 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
 | Gray 400 | #b7b7b7 | 가장 덜 중요한 글자에만 |
 
 - 위 회색 표의 "쓰임"은 Blue·Navy·Gray 350·Gray 900을 빼면 문서의 단계 규칙에서 옮긴 것이고, 개별 지정은 아니다.
+
+### 화면에서 본 색(추정, App Store 이미지)
+공식 문서에 쓰임이 없는 자리를 스토어 이미지에서 읽었다. 홍보용 편집 이미지라 모두 `추정`이다.
+
+| 토큰 | HEX | 쓰임 |
+|---|---|---|
+| (공식 값 확인) LINE Green | #06c755 | 스토어 이미지 배경을 재면 공식 iOS 초록과 정확히 같다 |
+| chat-bg-default | #8cabd8 | 대화방 기본 테마 바탕. 대화방 상단 바도 같은 색이고 이름·아이콘은 검정. 테마에 따라 바뀐다 |
+| bubble-mine | #79e278 | 내 말풍선(위 테마 기준). LINE Colors 표에 같은 값이 없다(확인 필요) |
+| bubble-other | #ffffff | 상대 말풍선 |
+| date-pill | #7791b7 | 대화방 날짜 알약. #8cabd8에 검정 약 15%를 얹은 값과 맞는다 |
+| input-field | #f5f5f5 | 대화 입력창 바탕. Gray 150과 같은 값 |
+| section-gap | #f5f5f5 | 지갑(결제) 화면 묶음 사이 굵은 띠(약 9pt). Gray 150과 같은 값 |
+| sheet-handle | #dedede | 바텀시트 손잡이. Gray 300(#dfdfdf)과 1 차이 |
+| 초록 글자 | #16b947 근처 | 시트 안 '감지된 언어', '번역하기' 같은 링크 글자. 작은 글자라 번짐이 있어, 브랜드 #06c755와 같은 색인지 확인 필요 |
+| 본문 글자 | #000000 근처 | 말풍선·목록 글자. 공식 본문 Gray 900(#111111)과 같은지 확인 필요 |
 
 ### 상태
 | 토큰 | HEX | 쓰임 |
@@ -345,6 +382,7 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
 ## 3. 타이포그래피
 - 글꼴: OS 시스템 글꼴(LDSM). 나라별 글꼴에 따라 쓸 수 있는 굵기가 다르다. iOS는 13부터 표의 모든 굵기를 지원한다.
 - 대체 글꼴: 확인 필요(웹용 font-family 순서가 공개 문서에 없다)
+- App Store 이미지(한국어 화면)의 글자는 iOS 시스템 글꼴 모양이다(추정). 문서의 "OS 시스템 글꼴"과 맞는다.
 - 단위: pt(iOS 기준). 12pt보다 작은 글자는 권하지 않는다.
 - 아래 크기 표는 권장안이다. 크기와 굵기를 자유롭게 섞어도 된다고 문서가 밝힌다.
 - 행간·자간: 확인 필요(문서 본문에 수치 없음)
@@ -428,8 +466,10 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
 | 아이콘 모서리 | 0–2px | 아이콘 선 끝·모서리. 모서리마다 따로 지정 가능 |
 | 탭 밑줄 M | 2px | 선택 탭 표시(기본) |
 | 탭 밑줄 S | 1px | 선택 탭 표시(작은 탭) |
+| 말풍선·입력창·날짜 알약 | 높이의 절반(알약) | 추정, App Store 이미지 |
+| 바텀시트 위 모서리 | 약 9pt(8~10) | 추정, App Store 이미지(텍스트 인식 결과 시트) |
 
-- 컴포넌트 모서리: 확인 필요(공개 문서에 수치 없음)
+- 버튼·카드 모서리: 확인 필요(공개 문서에 수치 없음, 스토어 이미지에 채움 버튼·카드 없음)
 
 ### 고도(층)
 - 그림자 수치는 확인 필요.
@@ -469,7 +509,8 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
 | 비활성 | 글자를 Gray 900의 40%(흰 글자면 흰색 40%). 배경은 기본적으로 유지 |
 | 로딩 | 확인 필요 |
 
-- 크기·모서리·여백: 확인 필요
+- 크기·모서리·여백: 확인 필요. App Store 이미지 6장에도 채움 버튼이 없어 보탤 값이 없다.
+- 글자 버튼(추정): 시트 안 오른쪽 아래 '다음'은 면 없이 굵은 검정 글자, '번역하기'는 초록 아이콘 + 초록 글자로 보인다.
 - 쓰지 않는 때: 확인 필요
 
 **규칙**
@@ -482,6 +523,14 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
 - 검색창 배경(앱 상단 남색 영역 안): Navy 800 #323b54
 - 플레이스홀더: 흰 글자일 때 40% 이상 투명도
 - 크기·모서리·여백·오류 상태: 확인 필요
+
+**대화 입력 줄(추정, App Store 이미지)**
+
+| 항목 | 값 |
+|---|---|
+| 줄 | 흰 바탕, 왼쪽에 + · 카메라 · 사진 아이콘, 오른쪽에 마이크 아이콘 |
+| 입력창 | #f5f5f5 알약, 높이 약 34pt, 안내 글자 'Aa', 안쪽 오른쪽에 이모티콘 아이콘 |
+| 테두리 | 없음 |
 
 **규칙**
 - 남색 상단 영역 안 검색창은 `search-field`, 글자는 흰색, 플레이스홀더는 흰색 40% 이상으로 둔다.
@@ -523,12 +572,27 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
 - 전체 선택 수단을 함께 제공한다.
 - 카드 모서리·그림자: 확인 필요
 
+**말풍선(추정, App Store 이미지)**
+
+| 종류 | 바탕 | 글자 | 모양 |
+|---|---|---|---|
+| 내 말 | #79e278(기본 테마) | 검정 | 알약, 한 줄 높이 약 33pt, 오른쪽 정렬 |
+| 상대 말 | #ffffff | 검정 | 알약, 왼쪽에 둥근 프로필 사진 |
+| 보낸 시각 | 없음 | 작은 흰 글자 | 말풍선 바깥 아래쪽 옆 |
+| 날짜 | 바탕 위 검정 약 15% | 흰 글자 | 가운데 알약, 높이 약 23pt |
+
+- 꼬리 모양 말풍선 여부는 이미지가 작아 확인 필요.
+
+**아이콘 메뉴 격자(추정)**
+- 지갑(결제) 화면: 굵은 묶음 제목 → 4열 아이콘 + 아래 작은 이름 → #f5f5f5 굵은 띠 → 선 아이콘 + 이름 목록 줄.
+
 **규칙**
 - 라벨 줄 전체를 누를 수 있게 하고, 선택 상태를 스크린리더에 알린다(구현 권장).
 
 ### 6.5 상단 바·하단 탭 바
 - 상단 바 색: iOS 내비게이션 바 #202a43, Android 헤더 #262f4a.
 - 하단 메인 탭: 일반 화면에서는 유지, 모달에서는 감춘다.
+- 대화방 상단 바(추정, App Store 이미지): 남색이 아니라 대화방 테마 바탕(#8cabd8)과 같은 색이다. 왼쪽 뒤로(<) + 상대 이름, 오른쪽에 검색·전화·메뉴 아이콘, 모두 검정. 공식 문서의 남색 내비게이션 바(#202a43)는 다른 화면용으로 보인다(확인 필요).
 
 **모달 상단 바의 닫기(X) 위치**
 
@@ -554,7 +618,7 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
 - 모달은 X 버튼과 아래로 당겨 닫기, 일반 화면은 뒤로(<) 버튼과 옆으로 쓸기.
 - iOS는 OS 모달, Android는 Full-Screen Dialog를 쓴다. Android는 모달과 일반 화면이 들어올 때 비슷해 보이므로 모달을 아껴 쓴다.
 - 쓰지 않는 때: 순서가 있는 흐름이나 모달 안의 모달은 일반 화면을 먼저 검토한다.
-- 모서리·여백 수치: 확인 필요
+- 모서리·여백 수치: 공식 수치 없음. App Store 이미지(추정)에서는 흰 시트 위 모서리 약 9pt(8~10), 손잡이 #dedede 약 48 × 3pt가 가운데 위에 있다.
 
 **규칙**
 - 모달이 열리면 포커스를 모달 안으로 옮기고, 닫으면 연 버튼으로 돌려준다(구현 권장).
@@ -595,6 +659,8 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
   (예시 문구, SylviaLab 작성)
 - 목록 → 상세: 확인 필요
 - 검색: 상단 남색 영역 안 검색창(#323b54). 흐름은 확인 필요.
+- 대화(추정, App Store 이미지): 테마 바탕 위 상대 흰 말풍선(왼쪽, 프로필 사진), 내 초록 말풍선(오른쪽), 가운데 날짜 알약, 아래 흰 입력 줄. 스티커는 말풍선 없이 크게 놓인다.
+- 사진 속 글자 인식(추정): 사진 위로 바텀시트가 올라와 감지된 언어(초록 글자)와 인식 결과를 보여 주고, 아래에 번역 링크와 '다음'을 둔다.
 - 빈 상태·로딩·오류: 확인 필요
 - 폼·결제: 확인 필요
 
@@ -614,9 +680,15 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
 | #ffffff | #202a43 | 14.3:1 | 통과 |
 | #ffffff | #262f4a | 13.2:1 | 통과 |
 | #ff334b | #ffffff | 3.6:1 | 미달(큰 글자 3:1은 통과) |
+| #000000 | #79e278 | 13.0:1 | 통과. 내 말풍선(추정 HEX) |
+| #000000 | #ffffff | 21.0:1 | 통과. 상대 말풍선(추정) |
+| #000000 | #8cabd8 | 8.9:1 | 통과. 대화방 상단 바 이름(추정 HEX) |
+| #ffffff | #7791b7 | 3.2:1 | 미달(큰 글자 3:1은 통과). 날짜 알약(추정 HEX) |
+| #16b947 | #ffffff | 2.6:1 | 미달. 시트 안 초록 링크 글자(추정 HEX) |
 
 - 문서는 글자 하한을 3.0:1(Gray 500)로 둔다. 본문 4.5:1 기준에는 #555555(Gray 700)보다 진한 단계가 맞다. 흰 글자를 LINE 초록 위에 올리면 #06c755 2.3:1, #4cc764 2.2:1로 낮다.
-- 터치 영역: 공개 문서에 버튼 높이 수치가 없다. 확인 필요.
+- 터치 영역: 공개 문서에 버튼 높이 수치가 없다. 확인 필요. 대화 입력창 약 34pt(추정)는 44pt보다 낮아, 입력 줄 전체를 누르는 영역으로 잡는다(구현 권장).
+- 추정 대비 메모: 초록 링크 글자(2.6:1)와 날짜 알약 흰 글자(3.2:1)는 본문 기준에 못 미친다. 초록 글자는 아이콘을 함께 두어 뜻을 보탠다(구현 권장).
 - 최소 글자 크기: 12pt(Body 4). 12pt 미만은 권하지 않는다.
 - 포커스·스크린리더·글자 확대: 확인 필요
 
@@ -645,6 +717,7 @@ LINE 색은 **Primary Palette(핵심 UI) → semantic** 두 층에, 보조용 **
 - 모달에는 Android에서도 닫기(X)를 둔다.
 - 스낵바는 화면 바닥·하단 탭에서 16px 이상 띄우고 3초 뒤 사라지게 한다.
 - 직접 그리는 아이콘은 24×24px 그리드, 선 1.3·1.5·1.8pt 중 하나로 그린다.
+- 대화방 말풍선·입력창은 알약 모양, 날짜 표시는 바탕 위 검정 투명도로 만든다(추정 값, 관찰에서 정리).
 
 ### Don't
 - 흰색·검정 밖의 색에 투명도를 주지 않는다.
@@ -674,6 +747,8 @@ LINE 스타일로 모바일 화면을 디자인해 줘.
 - 투명도: 흰색·검정만 5% 단위, 글자에는 쓰지 않기
 - 비활성: 글자를 #111111의 40%로
 - 모달은 아래에서 위로, 일반 화면은 옆에서. 시트 높이 50/70/98%
+- (추정) 대화방: 바탕 #8cabd8, 내 말풍선 #79e278, 상대 #ffffff, 말풍선·입력창(#f5f5f5)은 알약, 날짜는 검정 15% 알약 + 흰 글자
+- (추정) 바텀시트 위 모서리 약 9pt, 손잡이 #dedede. 버튼 모서리는 정하지 말고 비워 둔다
 - 분위기: 무채색 바탕에 초록은 상징으로만, 다국어 길이에 여유
 ```
 
@@ -689,10 +764,12 @@ LINE 스타일로 모바일 화면을 디자인해 줘.
 - https://designsystem.line.me/LDSG/foundation/typography-en (확인 2026-10-31)
 - https://designsystem.line.me/LDSG/components/navigations/tab-en (확인 2026-10-31)
 - https://designsystem.line.me/LDSG/components/overlays/snackbar-en (확인 2026-10-31)
+- LINE App Store 앱 페이지 소개 스크린샷 6장(대화 2, 결제, 영상통화, 카메라, 글자 인식): https://apps.apple.com/kr/app/id443904275 (확인 2026-11-01)
 
 근거와 한계
 - 다크 모드 HEX, 컴포넌트 모서리·그림자, 행간, 간격 단계, 상태 색(성공·경고·정보)은 공개 문서에서 찾지 못했다.
 - 굵기 숫자는 문서의 굵기 이름을 숫자로 옮긴 것이다.
+- App Store 이미지는 홍보용으로 편집되었다(첫 장의 내 말풍선은 다른 장보다 크게 키워져 있다). 여기서 읽은 값은 모두 `추정`이고, 크기는 폰 화면 폭 약 261px를 375pt로 보고 환산했다. 채움 버튼은 이미지에 없어 버튼 모서리·높이는 여전히 확인 필요다.
 - 서비스 이름과 브랜드는 LY Corporation의 것이다. 이 문서는 식별·학습용 참고 자료로 SylviaLab이 공개 자료를 읽고 직접 작성했다.
 
 ## 부록 A. 구현 매핑
@@ -706,5 +783,6 @@ LINE 스타일로 모바일 화면을 디자인해 줘.
 
 ## 부록 B. 값의 출처 구분
 - **공식 자료 그대로**(designsystem.line.me, 확인 2026-10-31): 모든 HEX(OS별 초록, Gray 19단계, Navy·Blue 단계, Red, LINE Colors 15계열 600값), 투명도 규칙(5% 단위, 70/40/15/10%, 비활성 40%, 스낵바 85%), 글자 크기·굵기 이름, 12pt 하한, 그리드(167/9, 109/8, 82/5, 바깥 16), 탭 S 8·M 12·밑줄 1·2px·항목 2–4개·호버 70%·눌림 50%, 시트 높이(100%, 0–98%, 50·70·98%), X 버튼 위치 규칙, 스낵바 16px·3초(4–10초), 아이콘 24/20px·선 1.3/1.5/1.8pt·모서리 0–2px·45°/15°.
-- **화면에서 잰 값(관찰)**: 없음.
+- **화면에서 잰 값(관찰)**: 직접 기기 실측은 없음.
+- **App Store 이미지에서 읽은 값(추정)**: 대화방 바탕 #8cabd8, 내 말풍선 #79e278, 날짜 알약 #7791b7(검정 약 15%), 입력창·묶음 띠 #f5f5f5, 시트 손잡이 #dedede, 초록 링크 글자 #16b947 근처, 말풍선 높이 약 33pt, 입력창 약 34pt, 날짜 알약 약 23pt, 시트 위 모서리 약 9pt, 손잡이 약 48 × 3pt.
 - **SylviaLab이 정리·권장한 것**: semantic 색 이름(`text-primary`, `action-primary` 등), 굵기 이름 → 숫자 변환(Heavy 800 등), WCAG 대비 계산값, 기준 화면 375pt(그리드 합으로 추정), 컴포넌트 표의 묶음, 스낵바 예시 문구, `(구현 권장)`이 붙은 접근성 항목, 각 장의 Don't.
