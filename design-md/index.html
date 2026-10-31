@@ -15,29 +15,31 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="bar"><div class="wrap">
-<a class="logo" href="./"><svg width="14" height="10" viewBox="0 0 14 10" aria-hidden="true"><rect width="6" height="10" rx="2" fill="#fff"/><rect x="8" width="6" height="10" rx="2" fill="#6798ff"/></svg>SylviaLab <span class="logo-md">DESIGN.md</span></a>
-<nav aria-label="바로가기"><a class="pill" href="../">sylvialab.kr</a><a class="pill" href="../bootcamps.html">AI 부트캠프</a></nav>
+<header class="bar lbar"><div class="wrap">
+<a class="logo" href="./">SylviaLab</a>
+<a class="top-link" href="../">sylvialab.kr<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
 </div></header>
 
 <main class="wrap">
-<section class="hero">
-<h1>SylviaLab DESIGN.md</h1>
-<p class="sub">디자인 시스템을 복사해서 AI 도구에 붙여 넣으면 그 톤으로 화면을 만들어요.</p>
+<section class="hero hero2">
+<p class="kick">DESIGN.md</p>
+<h1>내 서비스에 어울리는<br>디자인을 찾아보세요.</h1>
+<p class="sub">스타일을 살펴보고, AI에 붙여 넣으세요.</p>
 </section>
 
-<section class="controls" aria-label="찾기">
-<label class="search" for="q"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="color:var(--dim)"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg><span style="position:absolute;left:-9999px">DESIGN.md 검색</span><input id="q" type="search" placeholder="토스, Stripe, 핀테크, AI…" autocomplete="off"><kbd>/</kbd></label>
-<div class="scope" role="group" aria-label="지역">
-<button type="button" data-region="all" aria-pressed="true">전체 <span class="n" id="n-all">125</span></button>
-<button type="button" data-region="ko" aria-pressed="false">국내 <span class="n" id="n-ko2">37</span></button>
-<button type="button" data-region="intl" aria-pressed="false">해외 <span class="n" id="n-intl2">88</span></button>
+<section class="controls controls2" aria-label="찾기">
+<label class="search" for="q"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg><span style="position:absolute;left:-9999px">DESIGN.md 검색</span><input id="q" type="search" placeholder="브랜드나 분야 검색" autocomplete="off"><kbd>/</kbd></label>
+<div class="scope pills" role="group" aria-label="지역">
+<button type="button" data-region="all" aria-pressed="true">전체</button>
+<button type="button" data-region="ko" aria-pressed="false">국내</button>
+<button type="button" data-region="intl" aria-pressed="false">해외</button>
 </div>
-<div class="chips" id="chips" role="group" aria-label="분야"></div>
 </section>
 
-<div class="meta-line"><span>DESIGN.md <b id="count" style="color:var(--fg)">0개</b></span><button type="button" class="sort" id="sort" aria-label="이름순, 가나다순. 누르면 역순으로 바꿔요">이름순<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path class="up" d="M7 2.5 10 6H4z"/><path class="down" d="M7 11.5 4 8h6z"/></svg></button></div>
-<ul class="list" id="list"><li class="empty">불러오는 중…</li></ul>
+<div class="meta-line meta2"><span id="count">0개의 디자인 가이드</span>
+<span class="meta-r"><label class="pick"><span class="vh">분야</span><select id="cat"></select><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></label>
+<button type="button" class="sort" id="sort" aria-label="이름순, 가나다순. 누르면 역순으로 바꿔요">이름순<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path class="up" d="M7 2.5 10 6H4z"/><path class="down" d="M7 11.5 4 8h6z"/></svg></button></span></div>
+<ul class="list cards" id="list"><li class="empty">불러오는 중…</li></ul>
 
 <footer class="foot">
 <p>국내 37곳은 SylviaLab이 공식 문서·오픈소스·웹 실측으로 직접 썼어요. 원본은 <a href="https://github.com/sylviagithubhj/sylvialab-design-md" rel="noopener">GitHub sylvialab-design-md</a>에 있고, CC BY 4.0이라 출처만 남기면 누구나 쓸 수 있어요. 해외 항목은 <a href="https://github.com/VoltAgent/awesome-design-md" rel="noopener">VoltAgent/awesome-design-md</a>(MIT)에서 가져왔어요.</p>

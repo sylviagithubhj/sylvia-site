@@ -10,14 +10,14 @@
     document.body.appendChild(el); setTimeout(function () { el.remove(); }, 1600);
   }
   function copyText(text, btn) {
-    var ok = function () { if (btn) { btn.classList.add('done'); btn.textContent = '복사됨'; setTimeout(function () { btn.classList.remove('done'); btn.textContent = '복사'; }, 1600); } toast('DESIGN.md를 복사했어요'); };
+    var ok = function () { if (btn) copyText.done(btn); else toast('DESIGN.md를 복사했어요'); };
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(ok, function () { fallback(text); ok(); });
     } else { fallback(text); ok(); }
   }
   copyText.done = function (btn) {
     btn.classList.add('done'); btn.textContent = '복사됨';
-    setTimeout(function () { btn.classList.remove('done'); btn.textContent = '복사'; }, 1600);
+    setTimeout(function () { btn.classList.remove('done'); btn.innerHTML = COPY_LABEL; }, 1600);
     toast('DESIGN.md를 복사했어요');
   };
   function fallback(text) {
@@ -38,12 +38,41 @@
     var counts = {}; pool.forEach(function (it) { counts[it.category] = (counts[it.category] || 0) + 1; });
     var keys = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; });
     if (state.cat !== 'all' && !counts[state.cat]) state.cat = 'all';
-    var html = '<button class="chip" data-cat="all" aria-pressed="' + (state.cat === 'all') + '">전체 분야</button>';
-    keys.forEach(function (k) {
-      html += '<button class="chip" data-cat="' + k + '" aria-pressed="' + (state.cat === k) + '">' + esc(state.cats[k] || k) + '<span class="n">' + counts[k] + '</span></button>';
-    });
-    $('#chips').innerHTML = html;
+    var html = '<option value="all">전체 분야</option>';
+    keys.forEach(function (k) { html += '<option value="' + k + '"' + (state.cat === k ? ' selected' : '') + '>' + esc(state.cats[k] || k) + ' ' + counts[k] + '</option>'; });
+    $('#cat').innerHTML = html; $('#cat').value = state.cat;
   }
+
+  // Card helpers. Key color = the document's primary button color, or its first main color
+  // when the button is white or pale gray. Nothing here is made up: values come from catalog.json.
+  function ink(hex) {
+    var m = /^#([0-9a-f]{6})/i.exec(hex || ''); if (!m) return '#ffffff';
+    var c = [0, 2, 4].map(function (i) { var x = parseInt(m[1].substr(i, 2), 16) / 255; return x <= 0.03928 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4); });
+    return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2] > 0.4 ? '#111111' : '#ffffff';
+  }
+  function pale(hex) {
+    var m = /^#([0-9a-f]{6})$/i.exec(hex || ''); if (!m) return true;
+    var n = parseInt(m[1], 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    return Math.min(r, g, b) > 225 && Math.max(r, g, b) - Math.min(r, g, b) < 20;
+  }
+  function keyColor(it, pv) {
+    var b = pv.btn && pv.btn.bg;
+    if (b && /^#[0-9a-f]{6}$/i.test(b) && !pale(b)) return b;
+    // no usable button: the first clearly colored main color, else the most saturated one
+    var chroma = function (x) { var n = parseInt(x.slice(1), 16); var r = n >> 16, g = (n >> 8) & 255, bl = n & 255; return Math.max(r, g, bl) - Math.min(r, g, bl); };
+    var first = it.colors.filter(function (x) { return /^#[0-9a-f]{6}$/i.test(x) && !pale(x) && chroma(x) > 60; })[0];
+    if (first) return first;
+    var best = null, bc = -1;
+    it.colors.forEach(function (x) {
+      var m = /^#([0-9a-f]{6})$/i.exec(x); if (!m || pale(x)) return;
+      var n = parseInt(m[1], 16), r = n >> 16, g = (n >> 8) & 255, bl = n & 255, ch = Math.max(r, g, bl) - Math.min(r, g, bl);
+      if (ch > bc) { bc = ch; best = x; }
+    });
+    return best || '#2b2f36';
+  }
+  function mono(name) { var m = /^[0-9]+/.exec(name); return m ? m[0].slice(0, 2) : name.charAt(0).toUpperCase(); }
+  var COPY_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg>';
+  var COPY_LABEL = COPY_ICON + '가이드 복사';
 
   // No result: if the filters hide matches, offer to drop them; otherwise offer a request.
   function emptyHTML() {
@@ -64,18 +93,26 @@
       if (a.region !== b.region) return a.region === 'ko' ? -1 : 1;
       return state.dir * a.name.localeCompare(b.name, 'ko');
     });
-    count.textContent = rows.length + '개';
+    count.textContent = rows.length + '개의 디자인 가이드';
     if (!rows.length) { list.innerHTML = emptyHTML(); return; }
     var html = rows.map(function (it) {
-      var sw = (it.colors.length ? it.colors : ['#333333']).map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('');
-      return '<li class="item">' +
-        '<a href="detail.html#' + it.slug + '" class="sw" aria-hidden="true" tabindex="-1">' + sw + '</a>' +
-        '<a href="detail.html#' + it.slug + '" class="body"><span class="top"><span class="name">' + esc(it.name) + '</span>' +
-        '<span class="tag ' + it.region + '">' + (it.region === 'ko' ? '국내' : '해외') + '</span>' +
-        '<span class="tag">' + esc(state.cats[it.category] || it.category) + '</span></span>' +
-        '<p class="desc">' + esc(it.desc) + '</p></a>' +
-        '<span class="side"><span class="size">' + kb(it.bytes) + '</span>' +
-        '<button class="copy" data-slug="' + it.slug + '" aria-label="' + esc(it.name) + ' DESIGN.md 복사">복사</button></span></li>';
+      var href = 'detail.html#' + it.slug, pv = it.pv || {}, key = keyColor(it, pv), keyInk = ink(key);
+      var bg = pv.bg && /^#[0-9a-f]{6}$/i.test(pv.bg) ? pv.bg : '#ffffff', txt = ink(bg);
+      var btn = pv.btn && pv.btn.bg ? pv.btn : { bg: key, fg: keyInk, r: null };
+      var dots = it.colors.slice(0, 4).map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('');
+      return '<li class="card">' +
+        '<div class="c-info">' +
+        '<a class="c-head" href="' + href + '">' + (it.logo ? '<span class="c-mono c-logo" aria-hidden="true"><img src="' + esc(it.logo) + '" alt="" loading="lazy"></span>' : '<span class="c-mono" aria-hidden="true" style="background:' + key + ';color:' + keyInk + '">' + esc(mono(it.name)) + '</span>') +
+        '<span class="c-tt"><b class="name">' + esc(it.name) + '</b><span class="c-sub">' + esc(pv.point || it.desc) + '</span></span></a>' +
+        '<span class="c-dots" aria-hidden="true">' + dots + '</span>' +
+        '<span class="c-act"><a class="c-more" href="' + href + '">자세히 보기<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>' +
+        '<button class="copy c-copy" data-slug="' + it.slug + '" aria-label="' + esc(it.name) + ' DESIGN.md 복사" style="background:' + key + ';color:' + keyInk + '">' + COPY_LABEL + '</button></span>' +
+        '</div>' +
+        '<a class="c-pv" href="' + href + '" tabindex="-1" aria-hidden="true" style="background:' + bg + ';color:' + txt + '">' +
+        '<b>AI디자인,<br>실비아랩</b><span class="c-pvs">아이디어를 나만의 서비스로 만들어 보세요.</span>' +
+        '<span class="c-btn" style="background:' + btn.bg + ';color:' + (btn.fg || ink(btn.bg)) + ';border-radius:' + (btn.r || '8px') + (pale(btn.bg) && pale(bg) ? ';box-shadow:inset 0 0 0 1px rgba(0,0,0,.18)' : '') + '">시작하기</span>' +
+        '<span class="c-link" style="color:' + (pale(bg) === pale(key) ? txt : key) + '">더 알아보기 →</span></a>' +
+        '</li>';
     });
     // free guide card sits in the 9th slot so people meet it while browsing, never on arrival
     var lead = window.SylviaLead ? window.SylviaLead.listCard() : '';
@@ -101,8 +138,6 @@
     }
     var b = e.target.closest('.scope button');
     if (b) { state.region = b.dataset.region; document.querySelectorAll('.scope button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); }); renderChips(); render(); return; }
-    var c = e.target.closest('.chip');
-    if (c) { state.cat = c.dataset.cat; renderChips(); render(); return; }
     var cp = e.target.closest('.copy');
     if (cp) {
       e.preventDefault();
@@ -119,6 +154,7 @@
       }
     }
   });
+  $('#cat').addEventListener('change', function () { state.cat = this.value; render(); });
   var input = $('#q');
   input.addEventListener('input', function () { state.q = input.value.trim(); render(); });
   document.addEventListener('keydown', function (e) {

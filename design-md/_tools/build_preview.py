@@ -127,6 +127,13 @@ def main():
         tok_path = os.path.join(ROOT, 'tokens', it['slug'] + '.json')
         tok = json.load(open(tok_path, encoding='utf-8')) if os.path.exists(tok_path) else {}
         st = tok.get('strengths') or []
+        # logo file dropped into logos/ (any of these types), named by slug without the region prefix
+        it.pop('logo', None)
+        base = it['slug'].split('-', 1)[1]
+        for ext in ('svg', 'png', 'webp', 'jpg'):
+            if os.path.exists(os.path.join(ROOT, 'logos', base + '.' + ext)):
+                it['logo'] = 'logos/' + base + '.' + ext
+                break
         it['pv'] = {
             'btn': btn,
             'bg': page_bg(colors),
