@@ -1540,10 +1540,17 @@
 "name": "29CM",
 "region": "ko",
 "category": "commerce",
-"desc": "짧은 감성 문구가 붙은 큰 이미지 카드를 이어 놓은, 잡지에 가까운 쇼핑 화면. 색·크기 수치는 이번에 재지 못했다(아래 표 참고).",
-"colors": [],
-"bytes": 9230,
-"basis": "실측",
+"desc": "검정·흰색·주황(#ff4800) 세 가지. 큰 사진과 짧은 제목을 잡지처럼 쌓고, 버튼과 칩은 각지거나 완전히 둥글게만 쓴다.",
+"colors": [
+"#000000",
+"#ff4800",
+"#ffffff",
+"#f4f4f4",
+"#efefef",
+"#777676"
+],
+"bytes": 13767,
+"basis": "실측(앱 캡처)·기술 블로그",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/29cm/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
