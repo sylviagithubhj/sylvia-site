@@ -174,6 +174,8 @@ def short_basis(b):
 def main():
     cat_path = os.path.join(ROOT, 'catalog.json')
     cat = json.load(open(cat_path, encoding='utf-8'))
+    rules_path = os.path.join(ROOT, 'data', 'rules-intl.json')
+    rules = json.load(open(rules_path, encoding='utf-8')) if os.path.exists(rules_path) else {}
     tl_path = os.path.join(ROOT, 'data', 'taglines.json')
     taglines = json.load(open(tl_path, encoding='utf-8')) if os.path.exists(tl_path) else {}
     with_btn = 0
@@ -186,6 +188,11 @@ def main():
         with_btn += bool(btn)
         tok_path = os.path.join(ROOT, 'tokens', it['slug'] + '.json')
         tok = json.load(open(tok_path, encoding='utf-8')) if os.path.exists(tok_path) else {}
+        # international entries: 핵심 규칙 / 가져갈 점 written in Korean from each English DESIGN.md
+        if it['slug'] in rules and os.path.exists(tok_path):
+            tok['strengths'] = rules[it['slug']]['strengths']
+            tok['learn'] = rules[it['slug']]['learn']
+            json.dump(tok, open(tok_path, 'w', encoding='utf-8'), ensure_ascii=False)
         st = tok.get('strengths') or []
         # logo file dropped into logos/ (any of these types), named by slug without the region prefix
         it.pop('logo', None)
