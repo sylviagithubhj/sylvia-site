@@ -1,5 +1,5 @@
 (function () {
-  var state = { q: '', region: 'all', cat: 'all', items: [], cats: {}, dir: 1 };
+  var state = { q: '', region: 'all', cat: 'all', style: '', items: [], cats: {}, dir: 1 };
   var $ = function (s) { return document.querySelector(s); };
   var list = $('#list'), count = $('#count');
 
@@ -28,19 +28,26 @@
   function matches(it) {
     if (state.region !== 'all' && it.region !== state.region) return false;
     if (state.cat !== 'all' && it.category !== state.cat) return false;
+    if (state.style && (it.pv && it.pv.tags || []).indexOf(state.style) < 0) return false;
     if (!state.q) return true;
     var q = state.q.toLowerCase();
-    return (it.name + ' ' + it.desc + ' ' + (state.cats[it.category] || '') + ' ' + it.slug).toLowerCase().indexOf(q) > -1;
+    var pv = it.pv || {};
+    return (it.name + ' ' + it.desc + ' ' + (state.cats[it.category] || '') + ' ' + it.slug + ' ' + (pv.svc || '') + ' ' + (pv.look || '') + ' ' + (pv.tags || []).join(' ')).toLowerCase().indexOf(q) > -1;
   }
 
+  var STYLES = ['다크', '무채색', '둥근', '각진', '선명한 포인트'];
   function renderChips() {
     var pool = state.items.filter(function (it) { return state.region === 'all' || it.region === state.region; });
     var counts = {}; pool.forEach(function (it) { counts[it.category] = (counts[it.category] || 0) + 1; });
     var keys = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; });
     if (state.cat !== 'all' && !counts[state.cat]) state.cat = 'all';
-    var html = '<option value="all">전체 분야</option>';
-    keys.forEach(function (k) { html += '<option value="' + k + '"' + (state.cat === k ? ' selected' : '') + '>' + esc(state.cats[k] || k) + ' ' + counts[k] + '</option>'; });
-    $('#cat').innerHTML = html; $('#cat').value = state.cat;
+    var html = STYLES.map(function (t) {
+      return '<button type="button" class="tchip style" data-style="' + t + '" aria-pressed="' + (state.style === t) + '">' + t + '</button>';
+    }).join('') + '<span class="tsep" aria-hidden="true"></span>';
+    html += keys.map(function (k) {
+      return '<button type="button" class="tchip" data-cat="' + k + '" aria-pressed="' + (state.cat === k) + '">' + esc(state.cats[k] || k) + '</button>';
+    }).join('');
+    $('#chips').innerHTML = html;
   }
 
   // Card helpers. Key color = the document's primary button color, or its first main color
@@ -77,10 +84,10 @@
   // No result: if the filters hide matches, offer to drop them; otherwise offer a request.
   function emptyHTML() {
     if (!state.q) return '<li class="empty">이 조건에 맞는 곳이 없어요.</li>';
-    var keep = { region: state.region, cat: state.cat };
-    state.region = 'all'; state.cat = 'all';
+    var keep = { region: state.region, cat: state.cat, style: state.style };
+    state.region = 'all'; state.cat = 'all'; state.style = '';
     var hidden = state.items.filter(matches).length;
-    state.region = keep.region; state.cat = keep.cat;
+    state.region = keep.region; state.cat = keep.cat; state.style = keep.style;
     if (hidden) return '<li class="empty">이 필터에서는 없지만 전체에서는 ' + hidden + '개가 나와요.<br><button type="button" class="req-all" data-clear-filters>전체에서 보기</button></li>';
     var tips = ['금융·결제', 'AI', '커머스·서비스'];
     if (window.SylviaRequest) return window.SylviaRequest.emptyHTML(state.q, tips);
@@ -103,7 +110,7 @@
       return '<li class="card">' +
         '<div class="c-info">' +
         '<a class="c-head" href="' + href + '">' + (it.logo ? '<span class="c-mono c-logo" aria-hidden="true"><img src="' + esc(it.logo) + '" alt="" loading="lazy"></span>' : '<span class="c-mono" aria-hidden="true" style="background:' + key + ';color:' + keyInk + '">' + esc(mono(it.name)) + '</span>') +
-        '<span class="c-tt"><b class="name">' + esc(it.name) + '</b><span class="c-sub">' + esc(pv.point || it.desc) + '</span></span></a>' +
+        '<span class="c-tt"><b class="name">' + esc(it.name) + '</b>' + (pv.svc ? '<span class="c-sub">' + esc(pv.svc) + '</span><span class="c-look">' + esc(pv.look) + '</span>' : '<span class="c-sub">' + esc(pv.point || it.desc) + '</span>') + '</span></a>' +
         '<span class="c-dots" aria-hidden="true">' + dots + '</span>' +
         '<span class="c-act"><a class="c-more" href="' + href + '">자세히 보기<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>' +
         '<button class="copy c-copy" data-slug="' + it.slug + '" aria-label="' + esc(it.name) + ' DESIGN.md 복사" style="background:' + key + ';color:' + keyInk + '">' + COPY_LABEL + '</button></span>' +
@@ -123,8 +130,14 @@
 
   document.addEventListener('click', function (e) {
     if (e.target.closest('[data-clear-filters]')) {
-      state.region = 'all'; state.cat = 'all';
+      state.region = 'all'; state.cat = 'all'; state.style = '';
       document.querySelectorAll('.scope button').forEach(function (x) { x.setAttribute('aria-pressed', x.dataset.region === 'all'); });
+      renderChips(); render(); return;
+    }
+    var st = e.target.closest('.tchip');
+    if (st) {
+      if (st.dataset.style !== undefined) state.style = state.style === st.dataset.style ? '' : st.dataset.style;
+      else state.cat = state.cat === st.dataset.cat ? 'all' : st.dataset.cat;
       renderChips(); render(); return;
     }
     var tr = e.target.closest('[data-try]');
@@ -154,7 +167,6 @@
       }
     }
   });
-  $('#cat').addEventListener('change', function () { state.cat = this.value; render(); });
   var input = $('#q');
   input.addEventListener('input', function () { state.q = input.value.trim(); render(); });
   document.addEventListener('keydown', function (e) {

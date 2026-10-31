@@ -53,7 +53,10 @@
 "bg": "#141415",
 "point": "",
 "font": "Inter",
-"basis": ""
+"basis": "",
+"tags": [
+"다크"
+]
 }
 },
 {
@@ -82,7 +85,10 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Airbnb Cereal VF",
-"basis": ""
+"basis": "",
+"tags": [
+"선명한 포인트"
+]
 }
 },
 {
@@ -111,7 +117,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Haas Groot Disp",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -140,7 +150,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Roboto",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -169,7 +183,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "SF Pro Display",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -198,7 +216,10 @@
 "bg": null,
 "point": "",
 "font": "BinanceNova",
-"basis": ""
+"basis": "",
+"tags": [
+"선명한 포인트"
+]
 }
 },
 {
@@ -227,7 +248,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "BMW Type Next Latin",
-"basis": ""
+"basis": "",
+"tags": [
+"각진",
+"선명한 포인트"
+]
 }
 },
 {
@@ -256,7 +281,12 @@
 "bg": "#000000",
 "point": "",
 "font": "BMWTypeNextLatin",
-"basis": ""
+"basis": "",
+"tags": [
+"다크",
+"무채색",
+"각진"
+]
 }
 },
 {
@@ -285,7 +315,11 @@
 "bg": "#000000",
 "point": "",
 "font": "Bugatti Display",
-"basis": ""
+"basis": "",
+"tags": [
+"다크",
+"무채색"
+]
 }
 },
 {
@@ -314,7 +348,10 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Cal Sans",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색"
+]
 }
 },
 {
@@ -343,7 +380,8 @@
 "bg": "#faf9f5",
 "point": "",
 "font": "Copernicus",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -372,7 +410,11 @@
 "bg": "#fffaf0",
 "point": "",
 "font": "Plain Black",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -401,7 +443,10 @@
 "bg": "#0a0a0a",
 "point": "",
 "font": "Inter",
-"basis": ""
+"basis": "",
+"tags": [
+"다크"
+]
 }
 },
 {
@@ -430,7 +475,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "CohereText",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -459,7 +508,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Coinbase Display",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -488,7 +541,11 @@
 "bg": "#0f0f0f",
 "point": "",
 "font": "abcDiatype",
-"basis": ""
+"basis": "",
+"tags": [
+"다크",
+"선명한 포인트"
+]
 }
 },
 {
@@ -517,7 +574,10 @@
 "bg": "#f7f7f4",
 "point": "",
 "font": "CursorGothic",
-"basis": ""
+"basis": "",
+"tags": [
+"선명한 포인트"
+]
 }
 },
 {
@@ -546,7 +606,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Arial Black",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"각진"
+]
 }
 },
 {
@@ -575,7 +639,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Open Sans",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -600,7 +668,10 @@
 "bg": null,
 "point": "",
 "font": "Waldenburg",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색"
+]
 }
 },
 {
@@ -629,7 +700,10 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Inter",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색"
+]
 }
 },
 {
@@ -658,7 +732,12 @@
 "bg": "#181818",
 "point": "",
 "font": "FerrariSans",
-"basis": ""
+"basis": "",
+"tags": [
+"다크",
+"각진",
+"선명한 포인트"
+]
 }
 },
 {
@@ -687,7 +766,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "figmaSans",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -716,7 +799,11 @@
 "bg": "#090909",
 "point": "",
 "font": "GT Walsheim Framer Medium",
-"basis": ""
+"basis": "",
+"tags": [
+"다크",
+"둥근"
+]
 }
 },
 {
@@ -745,7 +832,10 @@
 "bg": "#000000",
 "point": "",
 "font": "hashicorpSans",
-"basis": ""
+"basis": "",
+"tags": [
+"다크"
+]
 }
 },
 {
@@ -774,7 +864,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Forma DJR Micro",
-"basis": ""
+"basis": "",
+"tags": [
+"각진",
+"선명한 포인트"
+]
 }
 },
 {
@@ -803,7 +897,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "IBM Plex Sans",
-"basis": ""
+"basis": "",
+"tags": [
+"각진",
+"선명한 포인트"
+]
 }
 },
 {
@@ -832,7 +930,10 @@
 "bg": "#f5f1ec",
 "point": "",
 "font": "Saans",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색"
+]
 }
 },
 {
@@ -861,7 +962,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Titillium Web",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -886,7 +991,8 @@
 "bg": null,
 "point": "",
 "font": "Kraken-Brand",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -911,7 +1017,8 @@
 "bg": null,
 "point": "",
 "font": "LamboType",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -940,7 +1047,10 @@
 "bg": "#010102",
 "point": "",
 "font": "Linear Display",
-"basis": ""
+"basis": "",
+"tags": [
+"다크"
+]
 }
 },
 {
@@ -965,7 +1075,10 @@
 "bg": null,
 "point": "",
 "font": "Camera Plain Variable",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색"
+]
 }
 },
 {
@@ -990,7 +1103,8 @@
 "bg": null,
 "point": "",
 "font": "MarkForMC",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -1019,7 +1133,10 @@
 "bg": "#fbfcfd",
 "point": "",
 "font": "arcadiaDisplay",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근"
+]
 }
 },
 {
@@ -1048,7 +1165,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Optimistic VF",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -1077,7 +1198,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "DM Sans",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -1106,7 +1231,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Inter",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -1135,7 +1264,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Roobert PRO",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -1164,7 +1297,10 @@
 "bg": "#ffffff",
 "point": "",
 "font": "PP Editorial Old",
-"basis": ""
+"basis": "",
+"tags": [
+"선명한 포인트"
+]
 }
 },
 {
@@ -1193,7 +1329,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Euclid Circular A",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -1222,7 +1362,10 @@
 "bg": "#f3f5f7",
 "point": "",
 "font": "Averta CY",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근"
+]
 }
 },
 {
@@ -1251,7 +1394,10 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Gotham",
-"basis": ""
+"basis": "",
+"tags": [
+"각진"
+]
 }
 },
 {
@@ -1280,7 +1426,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Nike Futura ND",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -1309,7 +1459,11 @@
 "bg": "#7a8aba",
 "point": "",
 "font": "Arial Black",
-"basis": ""
+"basis": "",
+"tags": [
+"각진",
+"선명한 포인트"
+]
 }
 },
 {
@@ -1338,7 +1492,8 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Notion Sans",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -1367,7 +1522,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "NVIDIA-EMEA",
-"basis": ""
+"basis": "",
+"tags": [
+"각진",
+"선명한 포인트"
+]
 }
 },
 {
@@ -1396,7 +1555,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "SF Pro Rounded",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -1425,7 +1588,11 @@
 "bg": "#fdfcfc",
 "point": "",
 "font": "Berkeley Mono",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"각진"
+]
 }
 },
 {
@@ -1454,7 +1621,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Georgia",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"각진"
+]
 }
 },
 {
@@ -1483,7 +1654,11 @@
 "bg": "#f7f1e8",
 "point": "",
 "font": "Editorial New",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -1512,7 +1687,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Pin Sans",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -1541,7 +1720,11 @@
 "bg": null,
 "point": "",
 "font": "PlayStation SST",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -1570,7 +1753,10 @@
 "bg": "#eeefe9",
 "point": "",
 "font": "IBM Plex Sans Variable",
-"basis": ""
+"basis": "",
+"tags": [
+"선명한 포인트"
+]
 }
 },
 {
@@ -1595,7 +1781,8 @@
 "bg": null,
 "point": "",
 "font": "",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -1624,7 +1811,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "NouvelR",
-"basis": ""
+"basis": "",
+"tags": [
+"각진",
+"선명한 포인트"
+]
 }
 },
 {
@@ -1653,7 +1844,11 @@
 "bg": "#f9f7f3",
 "point": "",
 "font": "rb-freigeist-neue",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -1682,7 +1877,10 @@
 "bg": "#000000",
 "point": "",
 "font": "Domaine Display",
-"basis": ""
+"basis": "",
+"tags": [
+"다크"
+]
 }
 },
 {
@@ -1711,7 +1909,10 @@
 "bg": null,
 "point": "",
 "font": "Aeonik Pro",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근"
+]
 }
 },
 {
@@ -1736,7 +1937,10 @@
 "bg": null,
 "point": "",
 "font": "abcNormal",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색"
+]
 }
 },
 {
@@ -1761,7 +1965,10 @@
 "bg": null,
 "point": "",
 "font": "waldenburgNormal",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색"
+]
 }
 },
 {
@@ -1790,7 +1997,10 @@
 "bg": "#ffffff",
 "point": "",
 "font": "",
-"basis": ""
+"basis": "",
+"tags": [
+"선명한 포인트"
+]
 }
 },
 {
@@ -1819,7 +2029,10 @@
 "bg": null,
 "point": "",
 "font": "Sentri Display",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색"
+]
 }
 },
 {
@@ -1848,7 +2061,11 @@
 "bg": null,
 "point": "",
 "font": "NeueHaasGrotesk Display",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -1877,7 +2094,10 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Salesforce-Avant-Garde",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근"
+]
 }
 },
 {
@@ -1906,7 +2126,10 @@
 "bg": null,
 "point": "",
 "font": "D-DIN-Bold",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근"
+]
 }
 },
 {
@@ -1931,7 +2154,8 @@
 "bg": null,
 "point": "",
 "font": "SpotifyMixUITitle",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -1956,7 +2180,8 @@
 "bg": null,
 "point": "",
 "font": "",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -1985,7 +2210,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "sohne-var",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -2010,7 +2239,8 @@
 "bg": null,
 "point": "",
 "font": "Circular",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -2039,7 +2269,8 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Super Sans VF",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -2064,7 +2295,8 @@
 "bg": null,
 "point": "",
 "font": "Universal Sans Display",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -2089,7 +2321,8 @@
 "bg": null,
 "point": "",
 "font": "Manuka",
-"basis": ""
+"basis": "",
+"tags": []
 }
 },
 {
@@ -2118,7 +2351,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "The Future",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"각진"
+]
 }
 },
 {
@@ -2147,7 +2384,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "UberMove",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -2176,7 +2417,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Geist",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"둥근"
+]
 }
 },
 {
@@ -2205,7 +2450,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Vodafone",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -2234,7 +2483,11 @@
 "bg": "#101010",
 "point": "",
 "font": "Inter",
-"basis": ""
+"basis": "",
+"tags": [
+"다크",
+"선명한 포인트"
+]
 }
 },
 {
@@ -2263,7 +2516,11 @@
 "bg": "#2b2622",
 "point": "",
 "font": "Inter",
-"basis": ""
+"basis": "",
+"tags": [
+"다크",
+"각진"
+]
 }
 },
 {
@@ -2292,7 +2549,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "WF Visual Sans Variable",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"각진"
+]
 }
 },
 {
@@ -2321,7 +2582,11 @@
 "bg": "#ffffff",
 "point": "",
 "font": "WiredDisplay",
-"basis": ""
+"basis": "",
+"tags": [
+"무채색",
+"각진"
+]
 }
 },
 {
@@ -2350,7 +2615,10 @@
 "bg": "#ffffff",
 "point": "",
 "font": "Wise Sans",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근"
+]
 }
 },
 {
@@ -2379,7 +2647,11 @@
 "bg": "#0a0a0a",
 "point": "",
 "font": "universalSans",
-"basis": ""
+"basis": "",
+"tags": [
+"다크",
+"둥근"
+]
 }
 },
 {
@@ -2408,7 +2680,11 @@
 "bg": "#fffefb",
 "point": "",
 "font": "Degular Display",
-"basis": ""
+"basis": "",
+"tags": [
+"둥근",
+"선명한 포인트"
+]
 }
 },
 {
@@ -2438,7 +2714,13 @@
 "bg": "#ffffff",
 "point": "강조색을 할인·시간 정보에만 묶는다",
 "font": "시스템 산세리프",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"무채색",
+"각진"
+],
+"svc": "패션·리빙을 큐레이션해 파는 편집숍",
+"look": "검정·흰색에 주황 하나, 잡지처럼 쌓은 화면"
 }
 },
 {
@@ -2468,7 +2750,13 @@
 "bg": "#f3f5f7",
 "point": "토큰이 3층으로 나뉜다",
 "font": "",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"둥근",
+"선명한 포인트"
+],
+"svc": "음식·장보기 배달 앱",
+"look": "민트를 넓은 면으로 깔고 검정 글자를 크게"
 }
 },
 {
@@ -2487,7 +2775,10 @@
 "bg": null,
 "point": "접근성을 자동 검사 도구로 다룬다",
 "font": "",
-"basis": "실측"
+"basis": "실측",
+"tags": [],
+"svc": "자산·가계부·금융 비교 마이데이터 앱",
+"look": "금융과 건강을 함께 묶은 비교·추천 화면"
 }
 },
 {
@@ -2517,7 +2808,12 @@
 "bg": "#ffffff",
 "point": "회색을 투명도로 정의한다",
 "font": "Inter",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [
+"둥근"
+],
+"svc": "기업용 고객 상담·CRM 도구",
+"look": "보라빛 파랑 하나로 행동을 짚는 촘촘한 업무 화면"
 }
 },
 {
@@ -2547,7 +2843,12 @@
 "bg": "#ffffff",
 "point": "도착 날짜를 가격과 같은 무게로 보여 준다",
 "font": "Apple SD Gothic Neo",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"선명한 포인트"
+],
+"svc": "로켓배송 중심 종합 쇼핑몰",
+"look": "빽빽한 목록에 가격 빨강·도착 초록·카테고리 파랑"
 }
 },
 {
@@ -2577,7 +2878,13 @@
 "bg": "#ffffff",
 "point": "토큰이 두 층으로 나뉘어 공개된다",
 "font": "시스템 글꼴",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [
+"둥근",
+"선명한 포인트"
+],
+"svc": "동네 중고거래·커뮤니티 앱",
+"look": "흰 바탕에 주황은 가장 중요한 행동 하나에만"
 }
 },
 {
@@ -2607,7 +2914,13 @@
 "bg": "#ffffff",
 "point": "노랑을 두 값으로 나눠 쓴다",
 "font": "KakaoBig",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [
+"둥근",
+"선명한 포인트"
+],
+"svc": "카카오톡 중심 메신저·플랫폼",
+"look": "노랑과 검정으로 브랜드, 화면은 담백한 흰 바탕"
 }
 },
 {
@@ -2637,7 +2950,12 @@
 "bg": "#ffffff",
 "point": "색 단계 숫자가 곧 대비 약속이다",
 "font": "Pretendard GOV",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [
+"선명한 포인트"
+],
+"svc": "정부·공공기관 표준 디자인 시스템",
+"look": "정부 파랑 하나, 큰 글자와 넓은 행간으로 누구나 읽게"
 }
 },
 {
@@ -2667,7 +2985,10 @@
 "bg": "#ffffff",
 "point": "보라의 진하기를 역할별로 나눈다",
 "font": "Pretendard",
-"basis": "실측"
+"basis": "실측",
+"tags": [],
+"svc": "식품·생활용품 온라인 장보기 몰",
+"look": "흰 바탕에 짙은 보라 하나, 차분한 상품 목록"
 }
 },
 {
@@ -2697,7 +3018,10 @@
 "bg": "#ffffff",
 "point": "브랜드 색을 OS별로 나눠 정의한다",
 "font": "OS 시스템 글꼴",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [],
+"svc": "일본·대만·태국 등에서 쓰는 메신저 앱",
+"look": "무채색 회색 위에 LINE 초록, 남색 상단 바"
 }
 },
 {
@@ -2727,7 +3051,13 @@
 "bg": "#ffffff",
 "point": "할인을 두 색으로 쪼갠다",
 "font": "Pretendard Variable",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"각진",
+"선명한 포인트"
+],
+"svc": "패션·뷰티 온라인 편집숍",
+"look": "흰 바탕에 검정 글자, 결제는 파랑 큰 버튼 하나"
 }
 },
 {
@@ -2757,7 +3087,10 @@
 "bg": "#ffffff",
 "point": "브랜드 색을 매체별로 고정한다",
 "font": "InterVariable",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [],
+"svc": "검색 포털과 생활 서비스 플랫폼",
+"look": "네이버 그린 하나에 흰 바탕과 짙은 남색 글자"
 }
 },
 {
@@ -2787,7 +3120,12 @@
 "bg": "#ffffff",
 "point": "사진에서 바로 상품으로 간다",
 "font": "Pretendard Variable",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"선명한 포인트"
+],
+"svc": "집 꾸미기 콘텐츠와 가구 쇼핑",
+"look": "하늘색 하나로 선택·행동, 사진이 주인공"
 }
 },
 {
@@ -2817,7 +3155,13 @@
 "bg": "#ffffff",
 "point": "색을 이름 있는 11단계로 관리한다",
 "font": "Apple SD Gothic Neo",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [
+"각진",
+"선명한 포인트"
+],
+"svc": "전자책·웹툰·웹소설 서점과 뷰어",
+"look": "푸른 회색 글자에 파랑 하나, 책 표지가 주인공"
 }
 },
 {
@@ -2844,7 +3188,13 @@
 "bg": null,
 "point": "화면을 보는 영역과 누르는 영역으로 나눈다",
 "font": "SamsungOne",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [
+"둥근",
+"선명한 포인트"
+],
+"svc": "갤럭시 기기 전체의 화면 규칙",
+"look": "위는 보는 곳·아래는 누르는 곳, 둥근 조작 요소"
 }
 },
 {
@@ -2874,7 +3224,13 @@
 "bg": "#ffffff",
 "point": "색 토큰이 모드를 스스로 바꾼다",
 "font": "Toss Product Sans",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [
+"둥근",
+"선명한 포인트"
+],
+"svc": "송금·결제·자산관리를 한 앱에서 하는 금융 앱",
+"look": "흰 바탕에 파랑 하나, 한 화면에 한 가지 일"
 }
 },
 {
@@ -2904,7 +3260,13 @@
 "bg": "#07101d",
 "point": "등락 색이 화면 전체를 이끈다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"다크",
+"둥근"
+],
+"svc": "디지털 자산 거래소",
+"look": "어두운 남색 바탕, 오르면 빨강·내리면 파랑"
 }
 },
 {
@@ -2934,7 +3296,13 @@
 "bg": "#ffffff",
 "point": "모든 색이 라이트·다크 쌍으로 정의돼 있다",
 "font": "Pretendard JP",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [
+"둥근",
+"선명한 포인트"
+],
+"svc": "채용·커리어 플랫폼",
+"look": "연한 푸른 회색 위 선명한 파랑 하나, 투명한 회색 선"
 }
 },
 {
@@ -2964,7 +3332,13 @@
 "bg": "#ffffff",
 "point": "토큰 이름이 문법을 가진다",
 "font": "Pretendard",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"둥근",
+"선명한 포인트"
+],
+"svc": "숙소·항공·레저 여행 예약 서비스",
+"look": "파란 보라로 행동, 빨강으로 할인, 둥근 카드"
 }
 },
 {
@@ -2994,7 +3368,13 @@
 "bg": "#ffffff",
 "point": "버튼 규칙이 코드로 다 정해져 있다",
 "font": "Pretendard",
-"basis": "공개 문서"
+"basis": "공개 문서",
+"tags": [
+"각진",
+"선명한 포인트"
+],
+"svc": "지도와 목록으로 찾는 부동산 서비스",
+"look": "흰 바탕에 주황 하나, 모서리 4px로 단단하게"
 }
 },
 {
@@ -3020,7 +3400,8 @@
 "bg": null,
 "point": "",
 "font": "전용 산세리프",
-"basis": "실측"
+"basis": "실측",
+"tags": []
 }
 },
 {
@@ -3050,7 +3431,12 @@
 "bg": "#ffffff",
 "point": "목록 카드 자체가 예약 버튼이다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"선명한 포인트"
+],
+"svc": "식당 예약·웨이팅 앱",
+"look": "흰 바탕에 주황빨강 하나, 시간 버튼이 줄지어"
 }
 },
 {
@@ -3080,7 +3466,10 @@
 "bg": "#ffffff",
 "point": "구획을 색으로 찾게 한다",
 "font": "Noto Sans KR",
-"basis": "실측"
+"basis": "실측",
+"tags": [],
+"svc": "롯데백화점 전용 앱",
+"look": "짙은 빨강 바탕에 단색 카드를 세로로 쌓음"
 }
 },
 {
@@ -3110,7 +3499,14 @@
 "bg": "#000000",
 "point": "검정 바탕 위에 판을 쌓아 구획을 나눈다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"다크",
+"둥근",
+"선명한 포인트"
+],
+"svc": "현대카드 회원용 쇼핑몰",
+"look": "검정 바탕에 흰 판을 쌓고 주황은 할인에만"
 }
 },
 {
@@ -3140,7 +3536,10 @@
 "bg": "#ffffff",
 "point": "노랑을 머리 띠 한 덩어리에 가둔다",
 "font": "시스템 산세리프",
-"basis": "실측"
+"basis": "실측",
+"tags": [],
+"svc": "이마트 온라인 장보기 앱",
+"look": "노랑 머리 띠 아래 흰 바탕과 진한 글자"
 }
 },
 {
@@ -3170,7 +3569,13 @@
 "bg": "#ffffff",
 "point": "브랜드색이 UI에 거의 없다",
 "font": "시스템 산세리프",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"둥근",
+"선명한 포인트"
+],
+"svc": "헬스·뷰티 스토어 앱",
+"look": "검정 글자 위주, 할인과 알림은 코럴 빨강 하나"
 }
 },
 {
@@ -3200,7 +3605,12 @@
 "bg": "#ffffff",
 "point": "혜택과 행동을 한 색으로 묶는다",
 "font": "시스템 산세리프",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"둥근"
+],
+"svc": "여러 쇼핑몰을 모아 사는 여성 패션 앱",
+"look": "흰 바탕에 분홍 하나로 혜택과 행동을 칠함"
 }
 },
 {
@@ -3230,7 +3640,13 @@
 "bg": "#ffffff",
 "point": "여백이 유난히 넓다",
 "font": "시스템 산세리프",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"무채색",
+"둥근"
+],
+"svc": "한섬의 디자이너 브랜드 편집숍",
+"look": "넓은 여백과 각진 사진, 색은 할인 빨강 하나"
 }
 },
 {
@@ -3260,7 +3676,12 @@
 "bg": "#ffffff",
 "point": "사회적 증거를 행동색으로 칠한다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"각진"
+],
+"svc": "주문을 모아 만드는 카카오 커머스",
+"look": "흰 바탕에 산호빛 빨강 하나로 행동 유도"
 }
 },
 {
@@ -3290,7 +3711,12 @@
 "bg": "#ffffff",
 "point": "개인화 키워드를 색으로 강조한다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"둥근"
+],
+"svc": "성분·리뷰를 보고 사는 뷰티 앱",
+"look": "흰 바탕에 청록 포인트와 산호색 배지"
 }
 },
 {
@@ -3320,7 +3746,13 @@
 "bg": "#ffffff",
 "point": "강조를 파랑 하나에 모은다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"둥근",
+"선명한 포인트"
+],
+"svc": "온라인 서점 앱",
+"look": "흰 바탕에 파랑 하나, 책 표지가 색을 채움"
 }
 },
 {
@@ -3346,7 +3778,10 @@
 "bg": "#ffffff",
 "point": "UI에 강조색이 없다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [],
+"svc": "한정판 신발·패션 리셀 거래 앱",
+"look": "흰색·검정·옅은 회색뿐인 무채색 화면"
 }
 },
 {
@@ -3372,7 +3807,10 @@
 "bg": "#ffffff",
 "point": "첫 배너가 화면의 절반을 넘는다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [],
+"svc": "SPA 의류 브랜드 스파오 쇼핑 앱",
+"look": "흰 바탕에 빨간 로고색, 큰 모델 사진"
 }
 },
 {
@@ -3398,7 +3836,10 @@
 "bg": "#ffffff",
 "point": "착용 사진에 아이템 줄을 붙인다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [],
+"svc": "착용 사진으로 코디를 찾는 패션 앱",
+"look": "흰 바탕에 밝은 파랑 하나, 색은 사진이 채움"
 }
 },
 {
@@ -3424,7 +3865,10 @@
 "bg": "#ffffff",
 "point": "선택 탭을 검정 원으로 채운다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [],
+"svc": "여성 패션 편집숍 앱",
+"look": "흰 바탕에 순수 검정, 선택은 검정 원으로"
 }
 },
 {
@@ -3450,7 +3894,10 @@
 "bg": "#ffffff",
 "point": "머리 영역 전체를 한 어두운 띠로 묶는다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [],
+"svc": "남성 패션 쇼핑 앱",
+"look": "어두운 머리 영역 아래 흰 본문, 황토색 선택 표시"
 }
 },
 {
@@ -3480,7 +3927,13 @@
 "bg": "#ffffff",
 "point": "혜택에만 붉은색을 쓴다",
 "font": "iOS 시스템 글꼴",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"무채색",
+"둥근"
+],
+"svc": "아모레퍼시픽 화장품 쇼핑 앱",
+"look": "검정·흰색·회색으로 절제하고 색은 사진에 맡김"
 }
 },
 {
@@ -3510,7 +3963,13 @@
 "bg": "#ffffff",
 "point": "UI가 완전한 흑백이다",
 "font": "한글 산세리프",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"무채색",
+"둥근"
+],
+"svc": "아파트 리모델링 회사 웹사이트",
+"look": "흰 바탕에 검정 알약 버튼 하나, 큰 시공 사진"
 }
 },
 {
@@ -3536,7 +3995,8 @@
 "bg": null,
 "point": "",
 "font": "Noto Sans 계열",
-"basis": "실측"
+"basis": "실측",
+"tags": []
 }
 },
 {
@@ -3559,7 +4019,10 @@
 "bg": null,
 "point": "",
 "font": "",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"무채색"
+]
 }
 },
 {
@@ -3581,7 +4044,10 @@
 "bg": null,
 "point": "",
 "font": "세리프 제목체",
-"basis": "실측"
+"basis": "실측",
+"tags": [
+"무채색"
+]
 }
 }
 ]

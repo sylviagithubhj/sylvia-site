@@ -108,6 +108,64 @@ def page_bg(colors):
     return None
 
 
+def rgb(h):
+    m = re.fullmatch(r'#([0-9a-fA-F]{6})', h or '')
+    if not m:
+        return None
+    n = int(m.group(1), 16)
+    return n >> 16, (n >> 8) & 255, n & 255
+
+
+def chroma(h):
+    c = rgb(h)
+    return max(c) - min(c) if c else 0
+
+
+def lum(h):
+    c = rgb(h)
+    if not c:
+        return None
+    a = [x / 255 for x in c]
+    a = [x / 12.92 if x <= 0.03928 else ((x + 0.055) / 1.055) ** 2.4 for x in a]
+    return 0.2126 * a[0] + 0.7152 * a[1] + 0.0722 * a[2]
+
+
+def px(r):
+    m = re.fullmatch(r'(\d+(?:\.\d+)?)px', r or '')
+    return float(m.group(1)) if m else None
+
+
+def pale(h):
+    c = rgb(h)
+    return bool(c) and min(c) > 225 and max(c) - min(c) < 20
+
+
+def style_tags(it, btn, bg):
+    """Style chips from document values only. Rules:
+    다크 = page background luminance < 0.05
+    무채색 = primary button is black or gray (a white button does not count; then every main color must be gray)
+    둥근 = button corner >= 12px, 각진 = button corner <= 4px
+    선명한 포인트 = primary button chroma >= 180"""
+    tags = []
+    L = lum(bg) if bg else None
+    if L is not None and L < 0.05:
+        tags.append('다크')
+    b = btn['bg'] if btn and rgb(btn.get('bg')) else None
+    if b and not pale(b):
+        if chroma(b) < 24:
+            tags.append('무채색')
+    elif it.get('colors') and all(chroma(c) < 24 for c in it['colors'][:4] if rgb(c)):
+        tags.append('무채색')
+    r = px(btn and btn.get('r'))
+    if r is not None and r >= 12:
+        tags.append('둥근')
+    elif r is not None and r <= 4:
+        tags.append('각진')
+    if b and chroma(b) >= 180:
+        tags.append('선명한 포인트')
+    return tags
+
+
 def short_basis(b):
     b = (b or '').strip()
     return re.split(r'[(·]', b)[0].strip() if b else ''
@@ -116,6 +174,8 @@ def short_basis(b):
 def main():
     cat_path = os.path.join(ROOT, 'catalog.json')
     cat = json.load(open(cat_path, encoding='utf-8'))
+    tl_path = os.path.join(ROOT, 'data', 'taglines.json')
+    taglines = json.load(open(tl_path, encoding='utf-8')) if os.path.exists(tl_path) else {}
     with_btn = 0
     for it in cat['items']:
         d = front(os.path.join(ROOT, 'md', it['slug'] + '.md')) or {}
@@ -140,7 +200,10 @@ def main():
             'point': st[0]['title'] if st else '',
             'font': (tok.get('fonts') or [''])[0],
             'basis': short_basis(it.get('basis')),
+            'tags': style_tags(it, btn, page_bg(colors)),
         }
+        if it['slug'] in taglines:
+            it['pv']['svc'], it['pv']['look'] = taglines[it['slug']]
     json.dump(cat, open(cat_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     print('items', len(cat['items']), 'with button', with_btn)
 

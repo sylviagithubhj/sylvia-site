@@ -539,3 +539,12 @@ h1 .md{font-family:var(--mono);font-weight:500;letter-spacing:-0.04em;color:var(
   .c-link{font-size:12px}
   .c-more,.c-copy{height:38px;font-size:14px;border-radius:9px}
 }
+/* 스타일·분야 칩 줄 */
+.tagrow{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:0 max(16px,env(safe-area-inset-left,0px))}
+.tagrow::-webkit-scrollbar{display:none}
+.tchip{flex:none;height:32px;padding:0 12px;border-radius:999px;border:1px solid #2a2e35;background:transparent;color:#c9ccd2;font:inherit;font-size:13.5px;cursor:pointer;white-space:nowrap}
+.tchip.style{border-color:#3a3f6b;color:#c3cbff}
+.tchip[aria-pressed="true"]{background:#f2f3f5;border-color:#f2f3f5;color:#0b0c0e;font-weight:600}
+.tsep{flex:none;width:1px;height:20px;align-self:center;background:#2a2e35;margin:0 4px}
+.c-look{font-size:13px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:719px){.c-look{font-size:12.5px}}
