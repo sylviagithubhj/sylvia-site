@@ -38,7 +38,7 @@
     var counts = {}; pool.forEach(function (it) { counts[it.category] = (counts[it.category] || 0) + 1; });
     var keys = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; });
     if (state.cat !== 'all' && !counts[state.cat]) state.cat = 'all';
-    var html = '<button class="chip" data-cat="all" aria-pressed="' + (state.cat === 'all') + '">전체<span class="n">' + pool.length + '</span></button>';
+    var html = '<button class="chip" data-cat="all" aria-pressed="' + (state.cat === 'all') + '">전체 분야</button>';
     keys.forEach(function (k) {
       html += '<button class="chip" data-cat="' + k + '" aria-pressed="' + (state.cat === k) + '">' + esc(state.cats[k] || k) + '<span class="n">' + counts[k] + '</span></button>';
     });
@@ -67,8 +67,8 @@
   }
 
   document.addEventListener('click', function (e) {
-    var b = e.target.closest('.seg button');
-    if (b) { state.region = b.dataset.region; document.querySelectorAll('.seg button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); }); renderChips(); render(); return; }
+    var b = e.target.closest('.scope button');
+    if (b) { state.region = b.dataset.region; document.querySelectorAll('.scope button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); }); renderChips(); render(); return; }
     var c = e.target.closest('.chip');
     if (c) { state.cat = c.dataset.cat; renderChips(); render(); return; }
     var cp = e.target.closest('.copy');
@@ -97,7 +97,7 @@
     state.items = data.items.sort(function (a, b) { return a.region === b.region ? a.name.localeCompare(b.name, 'ko') : (a.region === 'ko' ? -1 : 1); });
     state.cats = data.categories;
     var ko = state.items.filter(function (i) { return i.region === 'ko'; }).length;
-    $('#n-all').textContent = state.items.length; $('#n-ko').textContent = ko; $('#n-intl').textContent = state.items.length - ko;
+    $('#n-all').textContent = state.items.length; $('#n-ko').textContent = ko; $('#n-intl').textContent = state.items.length - ko; $('#n-ko2').textContent = ko; $('#n-intl2').textContent = state.items.length - ko;
     renderChips(); render();
   }).catch(function () { list.innerHTML = '<li class="empty">목록을 불러오지 못했어요. 새로고침해 주세요.</li>'; });
 })();

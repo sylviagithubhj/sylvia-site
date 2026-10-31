@@ -28,12 +28,10 @@
 
 <section class="controls" aria-label="찾기">
 <label class="search" for="q"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="color:var(--dim)"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg><span style="position:absolute;left:-9999px">DESIGN.md 검색</span><input id="q" type="search" placeholder="토스, Stripe, 핀테크, AI…" autocomplete="off"><kbd>/</kbd></label>
-<div class="row-ctrl">
-<div class="seg" role="group" aria-label="지역">
-<button type="button" data-region="all" aria-pressed="true">전체 <span class="mono" id="n-all">125</span></button>
-<button type="button" data-region="ko" aria-pressed="false">국내</button>
-<button type="button" data-region="intl" aria-pressed="false">해외</button>
-</div>
+<div class="scope" role="group" aria-label="지역">
+<button type="button" data-region="all" aria-pressed="true">전체 <span class="n" id="n-all">125</span></button>
+<button type="button" data-region="ko" aria-pressed="false">국내 <span class="n" id="n-ko2">37</span></button>
+<button type="button" data-region="intl" aria-pressed="false">해외 <span class="n" id="n-intl2">88</span></button>
 </div>
 <div class="chips" id="chips" role="group" aria-label="분야"></div>
 </section>

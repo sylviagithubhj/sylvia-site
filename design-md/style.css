@@ -296,3 +296,12 @@ h1 .md{font-family:var(--mono);font-weight:500;letter-spacing:-0.04em;color:var(
   .hero{padding-block:24px 14px}
   .search kbd{display:none}
 }
+
+/* region tabs (전체·국내·해외) */
+.scope{display:flex;gap:22px;border-bottom:1px solid var(--line);margin-top:2px}
+.scope button{position:relative;height:44px;padding:0 2px;border:0;background:none;color:var(--dim);font:inherit;font-size:15px;cursor:pointer;white-space:nowrap}
+.scope button .n{font-family:var(--mono);font-size:12px;margin-left:3px;color:var(--dim)}
+.scope button[aria-pressed="true"]{color:var(--fg);font-weight:700}
+.scope button[aria-pressed="true"] .n{color:var(--muted)}
+.scope button[aria-pressed="true"]::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;border-radius:2px;background:var(--fg)}
+.scope button:hover{color:var(--fg)}
