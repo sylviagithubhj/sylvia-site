@@ -1,5 +1,5 @@
 (function () {
-  var EMAIL = 'heejuk@mail.hongik.ac.kr';
+  var EMAIL = 'doyouknowhj@gmail.com';
   function track(name, props) {
     try { if (window.amplitude) window.amplitude.track(name, props || {}); } catch (e) {}
   }
