@@ -5,7 +5,7 @@
    The form is live only when CONFIG.action is set (Stibee subscribe form). Add ?lead=preview to try it before that. */
 (function () {
   var CONFIG = {
-    action: '',            // Stibee form action URL (from the form's HTML code), e.g. https://stibee.com/api/v1.0/lists/XXXX/public/subscribers
+    action: 'https://stibee.com/api/v1.0/lists/Ev82VdoFDdiAZOHYGqclnE-jgNRD3A==/public/subscribers', // Stibee form (뉴스레터 "AI 디자인 공부, 계속 해나가요")
     pageUrl: 'https://page.stibee.com/subscriptions/527185', // Stibee hosted signup page, used when there is no action URL
     emailField: 'email',   // field names from the Stibee form code
     adField: '',           // Stibee's ad-consent field name, if the form has one
@@ -81,19 +81,18 @@
       '<span class="lead-hint">스티비 신청 페이지가 새 창으로 열려요. 이메일과 동의는 거기서 받아요.</span>' +
       '</div>' :
       '<form class="lead-form" novalidate>' +
-      '<label for="lead-email">가이드를 받을 이메일</label>' +
+      '<label for="lead-email">이메일</label>' +
       '<input id="lead-email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" aria-describedby="lead-hint" required>' +
-      '<span id="lead-hint" class="lead-hint">스팸 없이 가이드와 고른 소식만 보내요.</span>' +
-      '<label class="lead-check"><input type="checkbox" id="lead-agree" required><span>(필수) 가이드 제공과 신청 안내를 위해 이메일을 수집·이용하는 데 동의해요.</span></label>' +
-      '<details class="lead-more"><summary>수집 내용 자세히</summary><p>수집 항목: 이메일 · 목적: 무료 가이드 제공, 선택 동의 시 AI 디자인 스터디 소식 발송 · 보유 기간: 구독 해지 또는 삭제 요청 시까지 · 문의: doyouknowhj@gmail.com</p></details>' +
-      '<label class="lead-check"><input type="checkbox" id="lead-news"><span>(선택) AI 디자인 스터디 소식과 꿀팁도 받을래요. 광고성 정보 수신에 동의해요.</span></label>' +
-      '<button type="submit" class="lead-submit" disabled>무료로 받기</button>' +
+      '<span id="lead-hint" class="lead-hint">뉴스레터 \'AI 디자인 공부, 계속 해나가요\'를 구독하면 가이드를 바로 드려요. 언제든 해지할 수 있어요.</span>' +
+      '<label class="lead-check"><input type="checkbox" id="lead-agree" required><span>(필수) 뉴스레터 발송을 위한 개인정보 수집·이용에 동의해요.</span></label>' +
+      '<details class="lead-more"><summary>개인정보 수집 및 이용 자세히</summary><p>뉴스레터 발송을 위한 최소한의 개인정보(이메일)를 수집하고 이용합니다. 수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다. 구독자 관리는 스티비(Stibee)로 합니다. 문의: doyouknowhj@gmail.com</p></details>' +
+      '<button type="submit" class="lead-submit" disabled>구독하고 무료로 받기</button>' +
       '</form>') + '</div>' +
       '<div class="lead-done" role="status" hidden>' +
       '<span class="lead-ok" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>' +
-      '<h2>' + (mode === 'page' ? '신청 페이지를 열었어요' : '신청했어요') + '</h2><p>' + (mode === 'page' ? '신청을 마치셨다면 가이드를 바로 받아 가세요.' : '가이드를 바로 받아 가세요.') + '</p>' +
+      '<h2>' + (mode === 'page' ? '신청 페이지를 열었어요' : '구독 신청했어요') + '</h2><p>' + (mode === 'page' ? '신청을 마치셨다면 가이드를 바로 받아 가세요.' : '가이드를 바로 받아 가세요.') + '</p>' +
       '<a class="lead-submit" href="' + CONFIG.guide + '" download>가이드 내려받기 (PDF)</a>' +
-      '<p class="lead-news-note" hidden>소식 구독 확인 메일을 보냈어요. 메일 속 버튼을 누르면 구독이 끝나요.</p>' +
+      '<p class="lead-news-note" hidden>다음 AI 디자인 공부 소식은 메일로 보내 드릴게요.</p>' +
       '<button type="button" class="lead-ghost" data-lead-close>계속 둘러보기</button></div>' +
       '</section>';
     document.body.appendChild(w);
@@ -110,7 +109,7 @@
       return w;
     }
     var f = w.querySelector('form'), email = w.querySelector('#lead-email'), agree = w.querySelector('#lead-agree'),
-      news = w.querySelector('#lead-news'), btn = f.querySelector('.lead-submit'), hint = w.querySelector('#lead-hint');
+      btn = f.querySelector('.lead-submit'), hint = w.querySelector('#lead-hint');
     var ok = function () { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()); };
     var sync = function () { btn.disabled = !(ok() && agree.checked); };
     email.addEventListener('input', function () {
@@ -129,18 +128,25 @@
         st.subscribed = true; save(st);
         w.querySelector('.lead-form-wrap').hidden = true;
         w.querySelector('.lead-done').hidden = false;
-        w.querySelector('.lead-news-note').hidden = !(news.checked && CONFIG.action);
+        w.querySelector('.lead-news-note').hidden = !CONFIG.action;
         document.querySelectorAll('.lead-li, .lead-line, #lead-end').forEach(function (n) { n.hidden = true; });
         w.querySelector('.lead-done .lead-submit').focus();
       };
       if (!CONFIG.action) { done(); return; } // preview mode: nothing is sent
-      var fd = new FormData();
-      fd.append(CONFIG.emailField, email.value.trim());
-      if (CONFIG.adField && news.checked) fd.append(CONFIG.adField, CONFIG.adValue);
-      fetch(CONFIG.action, { method: 'POST', mode: 'no-cors', body: fd }).then(done, function () {
-        btn.disabled = false; btn.textContent = '무료로 받기';
-        hint.classList.add('err'); hint.textContent = '보내지 못했어요. 잠시 뒤 다시 시도해 주세요.';
-      });
+      // Post exactly like Stibee's own form does (a plain form POST), into a hidden frame so the page stays put.
+      var frame = document.createElement('iframe');
+      frame.name = 'lead-sink-' + Date.now(); frame.hidden = true; frame.setAttribute('aria-hidden', 'true'); frame.tabIndex = -1;
+      document.body.appendChild(frame);
+      var post = document.createElement('form');
+      post.method = 'POST'; post.action = CONFIG.action; post.target = frame.name; post.acceptCharset = 'utf-8'; post.hidden = true;
+      var field = document.createElement('input');
+      field.type = 'hidden'; field.name = CONFIG.emailField; field.value = email.value.trim();
+      post.appendChild(field); document.body.appendChild(post);
+      var finished = false;
+      var finish = function () { if (finished) return; finished = true; post.remove(); done(); };
+      frame.addEventListener('load', finish);
+      setTimeout(finish, 4000); // a cross-origin answer may not fire load in every browser
+      post.submit();
     });
     w.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') close();
