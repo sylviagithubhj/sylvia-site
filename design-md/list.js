@@ -49,7 +49,7 @@
     var rows = state.items.filter(matches);
     count.textContent = rows.length + '개';
     if (!rows.length) { list.innerHTML = '<li class="empty">찾는 결과가 없어요. 다른 이름이나 "핀테크", "AI"처럼 분야로 찾아보세요.</li>'; return; }
-    list.innerHTML = rows.map(function (it) {
+    var html = rows.map(function (it) {
       var sw = (it.colors.length ? it.colors : ['#333333']).map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('');
       return '<li class="item">' +
         '<a href="detail.html#' + it.slug + '" class="sw" aria-hidden="true" tabindex="-1">' + sw + '</a>' +
@@ -59,7 +59,11 @@
         '<p class="desc">' + esc(it.desc) + '</p></a>' +
         '<span class="side"><span class="size">' + kb(it.bytes) + '</span>' +
         '<button class="copy" data-slug="' + it.slug + '" aria-label="' + esc(it.name) + ' DESIGN.md 복사">복사</button></span></li>';
-    }).join('');
+    });
+    // free guide card sits in the 9th slot so people meet it while browsing, never on arrival
+    var lead = window.SylviaLead ? window.SylviaLead.listCard() : '';
+    if (lead) html.splice(Math.min(8, html.length), 0, lead);
+    list.innerHTML = html.join('');
   }
 
   document.addEventListener('click', function (e) {

@@ -185,6 +185,7 @@
     $('#b-dl').href = 'md/' + it.slug + '.md';
     $('#b-dl').setAttribute('download', it.slug.replace(/^(ko|en)-/, '') + '-DESIGN.md');
     $('#b-src').href = it.source;
+    if (window.SylviaLead) window.SylviaLead.endCard($('#lead-end'));
     $('#d-credit').innerHTML = '원본 · <a href="' + esc(it.source) + '" rel="noopener" target="_blank">' + esc(it.license) + '</a>';
 
     fetch('tokens/' + it.slug + '.json').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (t) {
@@ -230,7 +231,7 @@
     if (e.target.closest('#b-copy')) {
       var b = $('#b-copy');
       if (!text) return;
-      copy(text, function () { b.classList.add('done'); b.textContent = '복사됨 · AI 도구에 붙여 넣으세요'; setTimeout(function () { b.classList.remove('done'); b.textContent = 'DESIGN.md 전체 복사'; }, 2200); });
+      copy(text, function () { if (window.SylviaLead) window.SylviaLead.afterCopy(document.querySelector('.actions')); b.classList.add('done'); b.textContent = '복사됨 · AI 도구에 붙여 넣으세요'; setTimeout(function () { b.classList.remove('done'); b.textContent = 'DESIGN.md 전체 복사'; }, 2200); });
       return;
     }
     var tab = e.target.closest('[role="tab"]');
