@@ -58,6 +58,28 @@
     return '<li class="empty">찾는 결과가 없어요. 다른 이름이나 "금융·결제", "AI"처럼 분야로 찾아보세요.</li>';
   }
 
+  // List preview: the document's own primary button, drawn on its own page background.
+  // Documents without a button definition show their main colors instead (nothing is made up).
+  function ink(hex) {
+    var m = /^#([0-9a-f]{6})/i.exec(hex || ''); if (!m) return '#ffffff';
+    var c = [0, 2, 4].map(function (i) { var x = parseInt(m[1].substr(i, 2), 16) / 255; return x <= 0.03928 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4); });
+    return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2] > 0.4 ? '#111111' : '#ffffff';
+  }
+  function tile(it, pv) {
+    if (pv.btn) {
+      var b = pv.btn, edge = (b.bg || '').toLowerCase() === (pv.bg || '').toLowerCase() ? ';box-shadow:inset 0 0 0 1px rgba(127,127,127,.45)' : '';
+      return '<span class="pv-btn" style="background:' + b.bg + ';color:' + (b.fg || ink(b.bg)) + ';border-radius:' + (b.r || '6px') + edge + '">시작하기</span>';
+    }
+    return '<span class="pv-sw">' + (it.colors.length ? it.colors : ['#333333']).slice(0, 4).map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('') + '</span>';
+  }
+  function specs(it, pv) {
+    var out = [];
+    if (pv.btn) { out.push(pv.btn.bg); if (pv.btn.r) out.push('버튼 ' + pv.btn.r); }
+    else if (it.colors[0]) out.push(it.colors[0]);
+    if (pv.font) out.push(pv.font);
+    return out.join(' · ');
+  }
+
   function render() {
     var rows = state.items.filter(matches).sort(function (a, b) {
       // 국내 먼저, then by name; the sort button flips the name order
@@ -67,13 +89,13 @@
     count.textContent = rows.length + '개';
     if (!rows.length) { list.innerHTML = emptyHTML(); return; }
     var html = rows.map(function (it) {
-      var sw = (it.colors.length ? it.colors : ['#333333']).map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('');
+      var href = 'detail.html#' + it.slug, pv = it.pv || {};
       return '<li class="item">' +
-        '<a href="detail.html#' + it.slug + '" class="sw" aria-hidden="true" tabindex="-1">' + sw + '</a>' +
-        '<a href="detail.html#' + it.slug + '" class="body"><span class="top"><span class="name">' + esc(it.name) + '</span>' +
-        '<span class="tag ' + it.region + '">' + (it.region === 'ko' ? '국내' : '해외') + '</span>' +
-        '<span class="tag">' + esc(state.cats[it.category] || it.category) + '</span></span>' +
-        '<p class="desc">' + esc(it.desc) + '</p></a>' +
+        '<a href="' + href + '" class="pv" aria-hidden="true" tabindex="-1" style="background:' + (pv.bg || '#171a1f') + '">' + tile(it, pv) + '</a>' +
+        '<a href="' + href + '" class="body"><span class="top"><span class="name">' + esc(it.name) + '</span>' +
+        '<span class="meta">' + (it.region === 'ko' ? '국내' : '해외') + ' · ' + esc(state.cats[it.category] || it.category) + (pv.basis ? ' · ' + esc(pv.basis) : '') + '</span></span>' +
+        '<p class="desc">' + esc(pv.point || it.desc) + '</p>' +
+        (specs(it, pv) ? '<span class="spec">' + esc(specs(it, pv)) + '</span>' : '') + '</a>' +
         '<span class="side"><span class="size">' + kb(it.bytes) + '</span>' +
         '<button class="copy" data-slug="' + it.slug + '" aria-label="' + esc(it.name) + ' DESIGN.md 복사">복사</button></span></li>';
     });

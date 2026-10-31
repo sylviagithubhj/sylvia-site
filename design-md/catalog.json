@@ -43,7 +43,18 @@
 ],
 "bytes": 23906,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/1win",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#00b24b",
+"fg": "#ffffff",
+"r": "10px"
+},
+"bg": "#141415",
+"point": "",
+"font": "Inter",
+"basis": ""
+}
 },
 {
 "slug": "en-airbnb",
@@ -61,7 +72,18 @@
 ],
 "bytes": 30517,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/airbnb",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ff385c",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Airbnb Cereal VF",
+"basis": ""
+}
 },
 {
 "slug": "en-airtable",
@@ -79,7 +101,18 @@
 ],
 "bytes": 35266,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/airtable",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#181d26",
+"fg": "#ffffff",
+"r": "12px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Haas Groot Disp",
+"basis": ""
+}
 },
 {
 "slug": "en-aljazeera",
@@ -97,7 +130,18 @@
 ],
 "bytes": 28031,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/aljazeera",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Roboto",
+"basis": ""
+}
 },
 {
 "slug": "en-apple",
@@ -115,7 +159,18 @@
 ],
 "bytes": 37096,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/apple",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0066cc",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "SF Pro Display",
+"basis": ""
+}
 },
 {
 "slug": "en-binance",
@@ -133,7 +188,18 @@
 ],
 "bytes": 39918,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/binance",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#fcd535",
+"fg": "#181a20",
+"r": "6px"
+},
+"bg": null,
+"point": "",
+"font": "BinanceNova",
+"basis": ""
+}
 },
 {
 "slug": "en-bmw",
@@ -151,7 +217,18 @@
 ],
 "bytes": 27907,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/bmw",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#1c69d4",
+"fg": "#ffffff",
+"r": "0px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "BMW Type Next Latin",
+"basis": ""
+}
 },
 {
 "slug": "en-bmw-m",
@@ -169,7 +246,18 @@
 ],
 "bytes": 30697,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/bmw-m",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "0px"
+},
+"bg": "#000000",
+"point": "",
+"font": "BMWTypeNextLatin",
+"basis": ""
+}
 },
 {
 "slug": "en-bugatti",
@@ -187,7 +275,18 @@
 ],
 "bytes": 28535,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/bugatti",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": null
+},
+"bg": "#000000",
+"point": "",
+"font": "Bugatti Display",
+"basis": ""
+}
 },
 {
 "slug": "en-cal",
@@ -205,7 +304,18 @@
 ],
 "bytes": 31176,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/cal",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#111111",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Cal Sans",
+"basis": ""
+}
 },
 {
 "slug": "en-claude",
@@ -223,7 +333,18 @@
 ],
 "bytes": 33586,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/claude",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#cc785c",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#faf9f5",
+"point": "",
+"font": "Copernicus",
+"basis": ""
+}
 },
 {
 "slug": "en-clay",
@@ -241,7 +362,18 @@
 ],
 "bytes": 25705,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/clay",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0a0a0a",
+"fg": "#ffffff",
+"r": "12px"
+},
+"bg": "#fffaf0",
+"point": "",
+"font": "Plain Black",
+"basis": ""
+}
 },
 {
 "slug": "en-clickhouse",
@@ -259,7 +391,18 @@
 ],
 "bytes": 25986,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/clickhouse",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#faff69",
+"fg": "#0a0a0a",
+"r": "8px"
+},
+"bg": "#0a0a0a",
+"point": "",
+"font": "Inter",
+"basis": ""
+}
 },
 {
 "slug": "en-cohere",
@@ -277,7 +420,18 @@
 ],
 "bytes": 20020,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/cohere",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#17171c",
+"fg": "#ffffff",
+"r": "32px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "CohereText",
+"basis": ""
+}
 },
 {
 "slug": "en-coinbase",
@@ -295,7 +449,18 @@
 ],
 "bytes": 25853,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/coinbase",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0052ff",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Coinbase Display",
+"basis": ""
+}
 },
 {
 "slug": "en-composio",
@@ -313,7 +478,18 @@
 ],
 "bytes": 20606,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/composio",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0007cd",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#0f0f0f",
+"point": "",
+"font": "abcDiatype",
+"basis": ""
+}
 },
 {
 "slug": "en-cursor",
@@ -331,7 +507,18 @@
 ],
 "bytes": 21771,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/cursor",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#f54e00",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#f7f7f4",
+"point": "",
+"font": "CursorGothic",
+"basis": ""
+}
 },
 {
 "slug": "en-dell-1996",
@@ -349,7 +536,18 @@
 ],
 "bytes": 34592,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/dell-1996",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "0px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Arial Black",
+"basis": ""
+}
 },
 {
 "slug": "en-dji",
@@ -367,7 +565,18 @@
 ],
 "bytes": 42268,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/dji",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0070d5",
+"fg": "#ffffff",
+"r": "60px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Open Sans",
+"basis": ""
+}
 },
 {
 "slug": "en-elevenlabs",
@@ -385,7 +594,14 @@
 ],
 "bytes": 20943,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/elevenlabs",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "Waldenburg",
+"basis": ""
+}
 },
 {
 "slug": "en-expo",
@@ -403,7 +619,18 @@
 ],
 "bytes": 21660,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/expo",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Inter",
+"basis": ""
+}
 },
 {
 "slug": "en-ferrari",
@@ -421,7 +648,18 @@
 ],
 "bytes": 24365,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/ferrari",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#da291c",
+"fg": "#ffffff",
+"r": "0px"
+},
+"bg": "#181818",
+"point": "",
+"font": "FerrariSans",
+"basis": ""
+}
 },
 {
 "slug": "en-figma",
@@ -439,7 +677,18 @@
 ],
 "bytes": 32316,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/figma",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "50px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "figmaSans",
+"basis": ""
+}
 },
 {
 "slug": "en-framer",
@@ -457,7 +706,18 @@
 ],
 "bytes": 29119,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/framer",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ffffff",
+"fg": "#000000",
+"r": "999px"
+},
+"bg": "#090909",
+"point": "",
+"font": "GT Walsheim Framer Medium",
+"basis": ""
+}
 },
 {
 "slug": "en-hashicorp",
@@ -475,7 +735,18 @@
 ],
 "bytes": 28023,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/hashicorp",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ffffff",
+"fg": "#000000",
+"r": "8px"
+},
+"bg": "#000000",
+"point": "",
+"font": "hashicorpSans",
+"basis": ""
+}
 },
 {
 "slug": "en-hp",
@@ -493,7 +764,18 @@
 ],
 "bytes": 36335,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/hp",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#024ad8",
+"fg": "#ffffff",
+"r": "4px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Forma DJR Micro",
+"basis": ""
+}
 },
 {
 "slug": "en-ibm",
@@ -511,7 +793,18 @@
 ],
 "bytes": 26481,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/ibm",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0f62fe",
+"fg": "#ffffff",
+"r": "0px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "IBM Plex Sans",
+"basis": ""
+}
 },
 {
 "slug": "en-intercom",
@@ -529,7 +822,18 @@
 ],
 "bytes": 23278,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/intercom",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#111111",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#f5f1ec",
+"point": "",
+"font": "Saans",
+"basis": ""
+}
 },
 {
 "slug": "en-jobright",
@@ -547,7 +851,18 @@
 ],
 "bytes": 26861,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/jobright",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "28px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Titillium Web",
+"basis": ""
+}
 },
 {
 "slug": "en-kraken",
@@ -565,7 +880,14 @@
 ],
 "bytes": 4350,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/kraken",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "Kraken-Brand",
+"basis": ""
+}
 },
 {
 "slug": "en-lamborghini",
@@ -583,7 +905,14 @@
 ],
 "bytes": 21119,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/lamborghini",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "LamboType",
+"basis": ""
+}
 },
 {
 "slug": "en-linear-app",
@@ -601,7 +930,18 @@
 ],
 "bytes": 24354,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/linear.app",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#5e6ad2",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#010102",
+"point": "",
+"font": "Linear Display",
+"basis": ""
+}
 },
 {
 "slug": "en-lovable",
@@ -619,7 +959,14 @@
 ],
 "bytes": 17384,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/lovable",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "Camera Plain Variable",
+"basis": ""
+}
 },
 {
 "slug": "en-mastercard",
@@ -637,7 +984,14 @@
 ],
 "bytes": 26995,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mastercard",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "MarkForMC",
+"basis": ""
+}
 },
 {
 "slug": "en-mercury",
@@ -655,7 +1009,18 @@
 ],
 "bytes": 25065,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mercury",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#5266eb",
+"fg": "#ffffff",
+"r": "32px"
+},
+"bg": "#fbfcfd",
+"point": "",
+"font": "arcadiaDisplay",
+"basis": ""
+}
 },
 {
 "slug": "en-meta",
@@ -673,7 +1038,18 @@
 ],
 "bytes": 37986,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/meta",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Optimistic VF",
+"basis": ""
+}
 },
 {
 "slug": "en-minimax",
@@ -691,7 +1067,18 @@
 ],
 "bytes": 37920,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/minimax",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0a0a0a",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "DM Sans",
+"basis": ""
+}
 },
 {
 "slug": "en-mintlify",
@@ -709,7 +1096,18 @@
 ],
 "bytes": 44083,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mintlify",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0a0a0a",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Inter",
+"basis": ""
+}
 },
 {
 "slug": "en-miro",
@@ -727,7 +1125,18 @@
 ],
 "bytes": 36542,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/miro",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#1c1c1e",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Roobert PRO",
+"basis": ""
+}
 },
 {
 "slug": "en-mistral-ai",
@@ -745,7 +1154,18 @@
 ],
 "bytes": 35508,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mistral.ai",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#fa520f",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "PP Editorial Old",
+"basis": ""
+}
 },
 {
 "slug": "en-mongodb",
@@ -763,7 +1183,18 @@
 ],
 "bytes": 32077,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mongodb",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#00ed64",
+"fg": "#001e2b",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Euclid Circular A",
+"basis": ""
+}
 },
 {
 "slug": "en-mydealz",
@@ -781,7 +1212,18 @@
 ],
 "bytes": 25797,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mydealz",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#30a83c",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#f3f5f7",
+"point": "",
+"font": "Averta CY",
+"basis": ""
+}
 },
 {
 "slug": "en-nerdwallet",
@@ -799,7 +1241,18 @@
 ],
 "bytes": 36240,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nerdwallet",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#008254",
+"fg": "#ffffff",
+"r": "2px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Gotham",
+"basis": ""
+}
 },
 {
 "slug": "en-nike",
@@ -817,7 +1270,18 @@
 ],
 "bytes": 36697,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nike",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#111111",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Nike Futura ND",
+"basis": ""
+}
 },
 {
 "slug": "en-nintendo-2001",
@@ -835,7 +1299,18 @@
 ],
 "bytes": 38977,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nintendo-2001",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ecab37",
+"fg": "#21242e",
+"r": "2px"
+},
+"bg": "#7a8aba",
+"point": "",
+"font": "Arial Black",
+"basis": ""
+}
 },
 {
 "slug": "en-notion",
@@ -853,7 +1328,18 @@
 ],
 "bytes": 35176,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/notion",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#5645d4",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Notion Sans",
+"basis": ""
+}
 },
 {
 "slug": "en-nvidia",
@@ -871,7 +1357,18 @@
 ],
 "bytes": 35591,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nvidia",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#76b900",
+"fg": "#000000",
+"r": "2px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "NVIDIA-EMEA",
+"basis": ""
+}
 },
 {
 "slug": "en-ollama",
@@ -889,7 +1386,18 @@
 ],
 "bytes": 32747,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/ollama",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "SF Pro Rounded",
+"basis": ""
+}
 },
 {
 "slug": "en-opencode-ai",
@@ -907,7 +1415,18 @@
 ],
 "bytes": 32647,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/opencode.ai",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#201d1d",
+"fg": "#fdfcfc",
+"r": "4px"
+},
+"bg": "#fdfcfc",
+"point": "",
+"font": "Berkeley Mono",
+"basis": ""
+}
 },
 {
 "slug": "en-oracle",
@@ -925,7 +1444,18 @@
 ],
 "bytes": 42525,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/oracle",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#312d2a",
+"fg": "#ffffff",
+"r": "4px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Georgia",
+"basis": ""
+}
 },
 {
 "slug": "en-oura",
@@ -943,7 +1473,18 @@
 ],
 "bytes": 31798,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/oura",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#2a72de",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#f7f1e8",
+"point": "",
+"font": "Editorial New",
+"basis": ""
+}
 },
 {
 "slug": "en-pinterest",
@@ -961,7 +1502,18 @@
 ],
 "bytes": 36392,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/pinterest",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#e60023",
+"fg": "#ffffff",
+"r": "16px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Pin Sans",
+"basis": ""
+}
 },
 {
 "slug": "en-playstation",
@@ -979,7 +1531,18 @@
 ],
 "bytes": 39766,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/playstation",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0070d1",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": null,
+"point": "",
+"font": "PlayStation SST",
+"basis": ""
+}
 },
 {
 "slug": "en-posthog",
@@ -997,7 +1560,18 @@
 ],
 "bytes": 40498,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/posthog",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#f7a501",
+"fg": "#23251d",
+"r": "6px"
+},
+"bg": "#eeefe9",
+"point": "",
+"font": "IBM Plex Sans Variable",
+"basis": ""
+}
 },
 {
 "slug": "en-raycast",
@@ -1015,7 +1589,14 @@
 ],
 "bytes": 41275,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/raycast",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "",
+"basis": ""
+}
 },
 {
 "slug": "en-renault",
@@ -1033,7 +1614,18 @@
 ],
 "bytes": 30076,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/renault",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ffed00",
+"fg": "#000000",
+"r": "2px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "NouvelR",
+"basis": ""
+}
 },
 {
 "slug": "en-replicate",
@@ -1051,7 +1643,18 @@
 ],
 "bytes": 31495,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/replicate",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ea2804",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#f9f7f3",
+"point": "",
+"font": "rb-freigeist-neue",
+"basis": ""
+}
 },
 {
 "slug": "en-resend",
@@ -1069,7 +1672,18 @@
 ],
 "bytes": 31461,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/resend",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#fcfdff",
+"fg": "#000000",
+"r": "8px"
+},
+"bg": "#000000",
+"point": "",
+"font": "Domaine Display",
+"basis": ""
+}
 },
 {
 "slug": "en-revolut",
@@ -1087,7 +1701,18 @@
 ],
 "bytes": 32034,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/revolut",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ffffff",
+"fg": "#000000",
+"r": "999px"
+},
+"bg": null,
+"point": "",
+"font": "Aeonik Pro",
+"basis": ""
+}
 },
 {
 "slug": "en-runwayml",
@@ -1105,7 +1730,14 @@
 ],
 "bytes": 14353,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/runwayml",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "abcNormal",
+"basis": ""
+}
 },
 {
 "slug": "en-sanity",
@@ -1123,7 +1755,14 @@
 ],
 "bytes": 21231,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/sanity",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "waldenburgNormal",
+"basis": ""
+}
 },
 {
 "slug": "en-sap",
@@ -1141,7 +1780,18 @@
 ],
 "bytes": 33615,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/sap",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#0057d2",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "",
+"basis": ""
+}
 },
 {
 "slug": "en-sentry",
@@ -1159,7 +1809,18 @@
 ],
 "bytes": 35444,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/sentry",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#150f23",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": null,
+"point": "",
+"font": "Sentri Display",
+"basis": ""
+}
 },
 {
 "slug": "en-shopify",
@@ -1177,7 +1838,18 @@
 ],
 "bytes": 27067,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/shopify",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": null,
+"point": "",
+"font": "NeueHaasGrotesk Display",
+"basis": ""
+}
 },
 {
 "slug": "en-slack",
@@ -1195,7 +1867,18 @@
 ],
 "bytes": 24529,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/slack",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#4a154b",
+"fg": "#ffffff",
+"r": "90px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Salesforce-Avant-Garde",
+"basis": ""
+}
 },
 {
 "slug": "en-spacex",
@@ -1213,7 +1896,18 @@
 ],
 "bytes": 19679,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/spacex",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#f0f0fa",
+"fg": "#000000",
+"r": "32px"
+},
+"bg": null,
+"point": "",
+"font": "D-DIN-Bold",
+"basis": ""
+}
 },
 {
 "slug": "en-spotify",
@@ -1231,7 +1925,14 @@
 ],
 "bytes": 12955,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/spotify",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "SpotifyMixUITitle",
+"basis": ""
+}
 },
 {
 "slug": "en-starbucks",
@@ -1249,7 +1950,14 @@
 ],
 "bytes": 37329,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/starbucks",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "",
+"basis": ""
+}
 },
 {
 "slug": "en-stripe",
@@ -1267,7 +1975,18 @@
 ],
 "bytes": 24606,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/stripe",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#533afd",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "sohne-var",
+"basis": ""
+}
 },
 {
 "slug": "en-supabase",
@@ -1285,7 +2004,14 @@
 ],
 "bytes": 21315,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/supabase",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "Circular",
+"basis": ""
+}
 },
 {
 "slug": "en-superhuman",
@@ -1303,7 +2029,18 @@
 ],
 "bytes": 21877,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/superhuman",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ffffff",
+"fg": "#0e3030",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Super Sans VF",
+"basis": ""
+}
 },
 {
 "slug": "en-tesla",
@@ -1321,7 +2058,14 @@
 ],
 "bytes": 22212,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/tesla",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "Universal Sans Display",
+"basis": ""
+}
 },
 {
 "slug": "en-theverge",
@@ -1339,7 +2083,14 @@
 ],
 "bytes": 28368,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/theverge",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "Manuka",
+"basis": ""
+}
 },
 {
 "slug": "en-together-ai",
@@ -1357,7 +2108,18 @@
 ],
 "bytes": 38343,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/together.ai",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "4px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "The Future",
+"basis": ""
+}
 },
 {
 "slug": "en-uber",
@@ -1375,7 +2137,18 @@
 ],
 "bytes": 34760,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/uber",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "UberMove",
+"basis": ""
+}
 },
 {
 "slug": "en-vercel",
@@ -1393,7 +2166,18 @@
 ],
 "bytes": 41405,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/vercel",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#171717",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Geist",
+"basis": ""
+}
 },
 {
 "slug": "en-vodafone",
@@ -1411,7 +2195,18 @@
 ],
 "bytes": 28106,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/vodafone",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#e60000",
+"fg": "#ffffff",
+"r": "60px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Vodafone",
+"basis": ""
+}
 },
 {
 "slug": "en-voltagent",
@@ -1429,7 +2224,18 @@
 ],
 "bytes": 25915,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/voltagent",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#00d992",
+"fg": "#101010",
+"r": "6px"
+},
+"bg": "#101010",
+"point": "",
+"font": "Inter",
+"basis": ""
+}
 },
 {
 "slug": "en-warp",
@@ -1447,7 +2253,18 @@
 ],
 "bytes": 24438,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/warp",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#f7f5f0",
+"fg": "#2b2622",
+"r": "3px"
+},
+"bg": "#2b2622",
+"point": "",
+"font": "Inter",
+"basis": ""
+}
 },
 {
 "slug": "en-webflow",
@@ -1465,7 +2282,18 @@
 ],
 "bytes": 28179,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/webflow",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#080808",
+"fg": "#ffffff",
+"r": "4px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "WF Visual Sans Variable",
+"basis": ""
+}
 },
 {
 "slug": "en-wired",
@@ -1483,7 +2311,18 @@
 ],
 "bytes": 23661,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/wired",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "0px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "WiredDisplay",
+"basis": ""
+}
 },
 {
 "slug": "en-wise",
@@ -1501,7 +2340,18 @@
 ],
 "bytes": 24586,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/wise",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#9fe870",
+"fg": "#0e0f0c",
+"r": "24px"
+},
+"bg": "#ffffff",
+"point": "",
+"font": "Wise Sans",
+"basis": ""
+}
 },
 {
 "slug": "en-x-ai",
@@ -1519,7 +2369,18 @@
 ],
 "bytes": 21781,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/x.ai",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ffffff",
+"fg": "#0a0a0a",
+"r": "999px"
+},
+"bg": "#0a0a0a",
+"point": "",
+"font": "universalSans",
+"basis": ""
+}
 },
 {
 "slug": "en-zapier",
@@ -1537,7 +2398,18 @@
 ],
 "bytes": 22995,
 "source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/zapier",
-"license": "MIT · VoltAgent/awesome-design-md"
+"license": "MIT · VoltAgent/awesome-design-md",
+"pv": {
+"btn": {
+"bg": "#ff4f00",
+"fg": "#fffefb",
+"r": "12px"
+},
+"bg": "#fffefb",
+"point": "",
+"font": "Degular Display",
+"basis": ""
+}
 },
 {
 "slug": "ko-29cm",
@@ -1556,7 +2428,18 @@
 "bytes": 52754,
 "basis": "실측(앱 캡처)·기술 블로그",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/29cm/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "4px"
+},
+"bg": "#ffffff",
+"point": "강조색을 할인·시간 정보에만 묶는다",
+"font": "시스템 산세리프",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-baemin",
@@ -1575,7 +2458,18 @@
 "bytes": 48094,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/baemin/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#0cefd3",
+"fg": "#000000",
+"r": "12px"
+},
+"bg": "#f3f5f7",
+"point": "토큰이 3층으로 나뉜다",
+"font": "",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-banksalad",
@@ -1587,7 +2481,14 @@
 "bytes": 21070,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/banksalad/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "접근성을 자동 검사 도구로 다룬다",
+"font": "",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-channeltalk",
@@ -1606,7 +2507,18 @@
 "bytes": 55677,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/channeltalk/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#6157ea",
+"fg": "#ffffff",
+"r": "12px"
+},
+"bg": "#ffffff",
+"point": "회색을 투명도로 정의한다",
+"font": "Inter",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-coupang",
@@ -1625,7 +2537,18 @@
 "bytes": 35289,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/coupang/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#346aff",
+"fg": null,
+"r": null
+},
+"bg": "#ffffff",
+"point": "도착 날짜를 가격과 같은 무게로 보여 준다",
+"font": "Apple SD Gothic Neo",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-daangn",
@@ -1644,7 +2567,18 @@
 "bytes": 59405,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/daangn/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#ff6600",
+"fg": "#ffffff",
+"r": "12px"
+},
+"bg": "#ffffff",
+"point": "토큰이 두 층으로 나뉘어 공개된다",
+"font": "시스템 글꼴",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-kakao",
@@ -1663,7 +2597,18 @@
 "bytes": 37292,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kakao/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#fee500",
+"fg": "#000000d9",
+"r": "12px"
+},
+"bg": "#ffffff",
+"point": "노랑을 두 값으로 나눠 쓴다",
+"font": "KakaoBig",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-krds",
@@ -1682,7 +2627,18 @@
 "bytes": 71773,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/krds/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#256ef4",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "색 단계 숫자가 곧 대비 약속이다",
+"font": "Pretendard GOV",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-kurly",
@@ -1701,7 +2657,18 @@
 "bytes": 41470,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kurly/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#5f0080",
+"fg": "#ffffff",
+"r": "6px"
+},
+"bg": "#ffffff",
+"point": "보라의 진하기를 역할별로 나눈다",
+"font": "Pretendard",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-line",
@@ -1720,7 +2687,18 @@
 "bytes": 40255,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/line/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#638dff",
+"fg": "#ffffff",
+"r": null
+},
+"bg": "#ffffff",
+"point": "브랜드 색을 OS별로 나눠 정의한다",
+"font": "OS 시스템 글꼴",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-musinsa",
@@ -1739,7 +2717,18 @@
 "bytes": 59944,
 "basis": "실측(웹·앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/musinsa/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#0078ff",
+"fg": "#ffffff",
+"r": "4px"
+},
+"bg": "#ffffff",
+"point": "할인을 두 색으로 쪼갠다",
+"font": "Pretendard Variable",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-naver",
@@ -1758,7 +2747,18 @@
 "bytes": 29297,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/naver/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#f1f1f4",
+"fg": "#1d1d1f",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "브랜드 색을 매체별로 고정한다",
+"font": "InterVariable",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-ohou",
@@ -1777,7 +2777,18 @@
 "bytes": 64526,
 "basis": "실측(웹·앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/ohou/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#00a1ff",
+"fg": "#ffffff",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "사진에서 바로 상품으로 간다",
+"font": "Pretendard Variable",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-ridi",
@@ -1796,7 +2807,18 @@
 "bytes": 48817,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/ridi/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#1f8ce6",
+"fg": "#ffffff",
+"r": "4px"
+},
+"bg": "#ffffff",
+"point": "색을 이름 있는 11단계로 관리한다",
+"font": "Apple SD Gothic Neo",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-samsung-oneui",
@@ -1812,7 +2834,18 @@
 "bytes": 36170,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/samsung-oneui/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#0072de",
+"fg": null,
+"r": "18px"
+},
+"bg": null,
+"point": "화면을 보는 영역과 누르는 영역으로 나눈다",
+"font": "SamsungOne",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-toss",
@@ -1831,7 +2864,18 @@
 "bytes": 47777,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/toss/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#3182f6",
+"fg": "#ffffff",
+"r": "14px"
+},
+"bg": "#ffffff",
+"point": "색 토큰이 모드를 스스로 바꾼다",
+"font": "Toss Product Sans",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-upbit",
@@ -1850,7 +2894,18 @@
 "bytes": 40943,
 "basis": "실측(앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/upbit/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#5ba472",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#07101d",
+"point": "등락 색이 화면 전체를 이끈다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-wanted",
@@ -1869,7 +2924,18 @@
 "bytes": 54128,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/wanted/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#0066ff",
+"fg": "#ffffff",
+"r": "14px"
+},
+"bg": "#ffffff",
+"point": "모든 색이 라이트·다크 쌍으로 정의돼 있다",
+"font": "Pretendard JP",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "ko-yanolja",
@@ -1888,7 +2954,18 @@
 "bytes": 43375,
 "basis": "실측",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/yanolja/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#4154ff",
+"fg": "#ffffff",
+"r": "16px"
+},
+"bg": "#ffffff",
+"point": "토큰 이름이 문법을 가진다",
+"font": "Pretendard",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-zigbang",
@@ -1907,7 +2984,18 @@
 "bytes": 44488,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/zigbang/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#ff6905",
+"fg": "#ffffff",
+"r": "4px"
+},
+"bg": "#ffffff",
+"point": "버튼 규칙이 코드로 다 정해져 있다",
+"font": "Pretendard",
+"basis": "공개 문서"
+}
 },
 {
 "slug": "en-binance-app",
@@ -1926,7 +3014,14 @@
 "bytes": 12046,
 "basis": "실측(앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/binance/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "전용 산세리프",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-catchtable",
@@ -1945,7 +3040,18 @@
 "bytes": 57608,
 "basis": "실측(앱 캡처 13장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/catchtable/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#eb4f27",
+"fg": "#ffffff",
+"r": "6px"
+},
+"bg": "#ffffff",
+"point": "목록 카드 자체가 예약 버튼이다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-lotte-department",
@@ -1964,7 +3070,18 @@
 "bytes": 38656,
 "basis": "실측(앱 캡처 12장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/lotte-department/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#ffffff",
+"fg": "#000000",
+"r": "8px"
+},
+"bg": "#ffffff",
+"point": "구획을 색으로 찾게 한다",
+"font": "Noto Sans KR",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-hyundaicard-mmall",
@@ -1983,7 +3100,18 @@
 "bytes": 47489,
 "basis": "실측(앱 캡처 10장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hyundaicard-mmall/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#e8542d",
+"fg": "#000000",
+"r": "999px"
+},
+"bg": "#000000",
+"point": "검정 바탕 위에 판을 쌓아 구획을 나눈다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-emart-mall",
@@ -2002,7 +3130,18 @@
 "bytes": 39070,
 "basis": "실측(앱 캡처 6장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/emart-mall/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#ffffff",
+"fg": null,
+"r": "6px"
+},
+"bg": "#ffffff",
+"point": "노랑을 머리 띠 한 덩어리에 가둔다",
+"font": "시스템 산세리프",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-oliveyoung",
@@ -2021,7 +3160,18 @@
 "bytes": 36817,
 "basis": "실측(앱 캡처 9장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/oliveyoung/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#82dc28",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "브랜드색이 UI에 거의 없다",
+"font": "시스템 산세리프",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-zigzag",
@@ -2040,7 +3190,18 @@
 "bytes": 44236,
 "basis": "실측(앱 캡처 9장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/zigzag/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#e976dd",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "혜택과 행동을 한 색으로 묶는다",
+"font": "시스템 산세리프",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-eql",
@@ -2059,7 +3220,18 @@
 "bytes": 34201,
 "basis": "실측(앱 캡처 10장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/eql/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": null,
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "여백이 유난히 넓다",
+"font": "시스템 산세리프",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-kakaomakers",
@@ -2078,7 +3250,18 @@
 "bytes": 43481,
 "basis": "실측(앱 캡처 10장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kakaomakers/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#ed554d",
+"fg": "#ffffff",
+"r": "2px"
+},
+"bg": "#ffffff",
+"point": "사회적 증거를 행동색으로 칠한다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-hwahae",
@@ -2097,7 +3280,18 @@
 "bytes": 34728,
 "basis": "실측(앱 캡처 5장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hwahae/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#eefbfb",
+"fg": "#111111",
+"r": "12px"
+},
+"bg": "#ffffff",
+"point": "개인화 키워드를 색으로 강조한다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-yes24",
@@ -2116,7 +3310,18 @@
 "bytes": 27301,
 "basis": "실측(앱 캡처 2장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/yes24/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#0080ff",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "강조를 파랑 하나에 모은다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-kream",
@@ -2135,7 +3340,14 @@
 "bytes": 27180,
 "basis": "실측(앱 캡처 2장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kream/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": "#ffffff",
+"point": "UI에 강조색이 없다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-spao",
@@ -2154,7 +3366,14 @@
 "bytes": 23714,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/spao/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": "#ffffff",
+"point": "첫 배너가 화면의 절반을 넘는다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-onthelook",
@@ -2173,7 +3392,14 @@
 "bytes": 28268,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/onthelook/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": "#ffffff",
+"point": "착용 사진에 아이템 줄을 붙인다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-wconcept",
@@ -2192,7 +3418,14 @@
 "bytes": 26181,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/wconcept/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": "#ffffff",
+"point": "선택 탭을 검정 원으로 채운다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-hiver",
@@ -2211,7 +3444,14 @@
 "bytes": 25487,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hiver/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": "#ffffff",
+"point": "머리 영역 전체를 한 어두운 띠로 묶는다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-amoremall",
@@ -2230,7 +3470,18 @@
 "bytes": 26761,
 "basis": "실측(앱 캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/amoremall/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#000000",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "혜택에만 붉은색을 쓴다",
+"font": "iOS 시스템 글꼴",
+"basis": "실측"
+}
 },
 {
 "slug": "ko-apartmentary",
@@ -2249,7 +3500,18 @@
 "bytes": 25736,
 "basis": "실측(모바일 웹 캡처 5장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/apartmentary/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": {
+"bg": "#13130b",
+"fg": "#ffffff",
+"r": "999px"
+},
+"bg": "#ffffff",
+"point": "UI가 완전한 흑백이다",
+"font": "한글 산세리프",
+"basis": "실측"
+}
 },
 {
 "slug": "en-ikea",
@@ -2268,7 +3530,14 @@
 "bytes": 10356,
 "basis": "실측(앱 캡처 3장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/ikea/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "Noto Sans 계열",
+"basis": "실측"
+}
 },
 {
 "slug": "en-zarahome",
@@ -2284,7 +3553,14 @@
 "bytes": 7288,
 "basis": "실측(캡처 1장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/zarahome/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "",
+"basis": "실측"
+}
 },
 {
 "slug": "en-kinfolk",
@@ -2299,7 +3575,14 @@
 "bytes": 7156,
 "basis": "실측(모바일 웹 캡처 5장)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kinfolk/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"pv": {
+"btn": null,
+"bg": null,
+"point": "",
+"font": "세리프 제목체",
+"basis": "실측"
+}
 }
 ]
 }
