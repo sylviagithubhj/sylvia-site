@@ -10,15 +10,14 @@
     document.body.appendChild(el); setTimeout(function () { el.remove(); }, 1600);
   }
   function copyText(text, btn) {
-    var ok = function () { if (btn) copyText.done(btn, true); else toast('DESIGN.md를 복사했어요'); };
+    var ok = function () { if (btn) { btn.classList.add('done'); btn.textContent = '복사됨'; setTimeout(function () { btn.classList.remove('done'); btn.textContent = '복사'; }, 1600); } toast('DESIGN.md를 복사했어요'); };
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(ok, function () { fallback(text); ok(); });
     } else { fallback(text); ok(); }
   }
   copyText.done = function (btn) {
-    var CHECK = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
-    btn.classList.add('done'); btn.innerHTML = CHECK;
-    setTimeout(function () { btn.classList.remove('done'); btn.innerHTML = COPY_ICON; }, 1600);
+    btn.classList.add('done'); btn.textContent = '복사됨';
+    setTimeout(function () { btn.classList.remove('done'); btn.textContent = '복사'; }, 1600);
     toast('DESIGN.md를 복사했어요');
   };
   function fallback(text) {
@@ -59,20 +58,6 @@
     return '<li class="empty">찾는 결과가 없어요. 다른 이름이나 "금융·결제", "AI"처럼 분야로 찾아보세요.</li>';
   }
 
-  // The swatch is the document's primary button color, or its first main color.
-  // A white or pale gray button says little about the brand, so the first main color wins then.
-  function pale(hex) {
-    var m = /^#([0-9a-f]{6})$/i.exec(hex || ''); if (!m) return true;
-    var n = parseInt(m[1], 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
-    return Math.min(r, g, b) > 225 && Math.max(r, g, b) - Math.min(r, g, b) < 20;
-  }
-  function keyColor(it, pv) {
-    var b = pv.btn && pv.btn.bg;
-    if (b && /^#[0-9a-f]{6}$/i.test(b) && !pale(b)) return b;
-    return it.colors[0] || b || '#333333';
-  }
-  var COPY_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg>';
-
   function render() {
     var rows = state.items.filter(matches).sort(function (a, b) {
       // 국내 먼저, then by name; the sort button flips the name order
@@ -82,13 +67,15 @@
     count.textContent = rows.length + '개';
     if (!rows.length) { list.innerHTML = emptyHTML(); return; }
     var html = rows.map(function (it) {
-      var href = 'detail.html#' + it.slug, pv = it.pv || {}, key = keyColor(it, pv);
-      return '<li class="item row">' +
-        '<a href="' + href + '" class="rsw" aria-hidden="true" tabindex="-1" style="background:' + key + '"></a>' +
-        '<a href="' + href + '" class="body"><span class="top"><span class="name">' + esc(it.name) + '</span>' +
-        '<span class="hex">' + esc(key.toUpperCase()) + '</span></span>' +
-        '<span class="desc">' + esc(pv.point || it.desc) + '</span></a>' +
-        '<button class="copy ico" data-slug="' + it.slug + '" aria-label="' + esc(it.name) + ' DESIGN.md 복사">' + COPY_ICON + '</button></li>';
+      var sw = (it.colors.length ? it.colors : ['#333333']).map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('');
+      return '<li class="item">' +
+        '<a href="detail.html#' + it.slug + '" class="sw" aria-hidden="true" tabindex="-1">' + sw + '</a>' +
+        '<a href="detail.html#' + it.slug + '" class="body"><span class="top"><span class="name">' + esc(it.name) + '</span>' +
+        '<span class="tag ' + it.region + '">' + (it.region === 'ko' ? '국내' : '해외') + '</span>' +
+        '<span class="tag">' + esc(state.cats[it.category] || it.category) + '</span></span>' +
+        '<p class="desc">' + esc(it.desc) + '</p></a>' +
+        '<span class="side"><span class="size">' + kb(it.bytes) + '</span>' +
+        '<button class="copy" data-slug="' + it.slug + '" aria-label="' + esc(it.name) + ' DESIGN.md 복사">복사</button></span></li>';
     });
     // free guide card sits in the 9th slot so people meet it while browsing, never on arrival
     var lead = window.SylviaLead ? window.SylviaLead.listCard() : '';
