@@ -253,7 +253,7 @@ def px_list(line):
 
 def radius_from_body(secs):
     out = []
-    sec = find(secs, '모서리', 'radius', 'shape', 'depth', 'layout')
+    sec = find(secs, '모서리', '모양', 'radius', 'shape', 'depth', 'layout')
     for _, head, rows in tables(sec):
         cv = col(head, '값', 'value', 'radius')
         if cv < 0:
@@ -302,7 +302,11 @@ def build(path):
     colors = colors_from_body(csec)
     if sum(len(g['items']) for g in colors) < 3 and fm.get('colors'):
         colors = colors_from_yaml(fm['colors'])
-    typ = type_from_yaml(fm.get('typography')) or type_from_body(tsec)
+    # SylviaLab v2 files carry `source:` in front matter: their body tables hold the usage notes, so read those first.
+    if fm.get('source'):
+        typ = type_from_body(tsec) or type_from_yaml(fm.get('typography'))
+    else:
+        typ = type_from_yaml(fm.get('typography')) or type_from_body(tsec)
     typ.sort(key=lambda t: -t['size'])
     return {
         'fonts': fonts(tsec, fm.get('typography'), typ),
