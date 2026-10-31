@@ -83,7 +83,7 @@
       '<form class="lead-form" novalidate>' +
       '<label for="lead-email">이메일</label>' +
       '<input id="lead-email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" aria-describedby="lead-hint" required>' +
-      '<span id="lead-hint" class="lead-hint">분석 노트와 함께 뉴스레터를 받아요. 언제든 그만 받을 수 있어요.</span>' +
+      '<span id="lead-hint" class="lead-hint">AI 디자인 뉴스레터를 받아요. 언제든 그만 받을 수 있어요.</span>' +
       '<label class="lead-check"><input type="checkbox" id="lead-agree" required><span>(필수) 뉴스레터 발송을 위한 개인정보 수집·이용에 동의해요.</span></label>' +
       '<details class="lead-more"><summary>개인정보 수집 및 이용 자세히</summary><p>뉴스레터 발송을 위한 최소한의 개인정보(이메일)를 수집하고 이용합니다. 수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다. 구독자 관리는 스티비(Stibee)로 합니다. 문의: doyouknowhj@gmail.com</p></details>' +
       '<button type="submit" class="lead-submit" disabled>분석 노트 받기</button>' +
@@ -113,7 +113,7 @@
     var ok = function () { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()); };
     var sync = function () { btn.disabled = !(ok() && agree.checked); };
     email.addEventListener('input', function () {
-      email.setAttribute('aria-invalid', 'false'); hint.classList.remove('err'); hint.textContent = '분석 노트와 함께 뉴스레터를 받아요. 언제든 그만 받을 수 있어요.';
+      email.setAttribute('aria-invalid', 'false'); hint.classList.remove('err'); hint.textContent = 'AI 디자인 뉴스레터를 받아요. 언제든 그만 받을 수 있어요.';
       sync();
     });
     email.addEventListener('blur', function () {
