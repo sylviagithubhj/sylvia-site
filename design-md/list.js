@@ -108,7 +108,8 @@
     state.items = data.items.sort(function (a, b) { return a.region === b.region ? a.name.localeCompare(b.name, 'ko') : (a.region === 'ko' ? -1 : 1); });
     state.cats = data.categories;
     var ko = state.items.filter(function (i) { return i.region === 'ko'; }).length;
-    $('#n-all').textContent = state.items.length; $('#n-ko').textContent = ko; $('#n-intl').textContent = state.items.length - ko; $('#n-ko2').textContent = ko; $('#n-intl2').textContent = state.items.length - ko;
+    var setN = function (sel, v) { var el = $(sel); if (el) el.textContent = v; };
+    setN('#n-all', state.items.length); setN('#n-ko', ko); setN('#n-intl', state.items.length - ko); setN('#n-ko2', ko); setN('#n-intl2', state.items.length - ko);
     renderChips(); render();
   }).catch(function () { list.innerHTML = '<li class="empty">목록을 불러오지 못했어요. 새로고침해 주세요.</li>'; });
 })();
