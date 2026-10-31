@@ -500,25 +500,42 @@ h1 .md{font-family:var(--mono);font-weight:500;letter-spacing:-0.04em;color:var(
   .c-info{justify-content:space-between}
   .c-pv{min-height:240px}
 }
-@media(max-width:719px){.c-pv{min-height:0;padding:22px 16px;gap:8px}.c-pv b{font-size:19px}.c-btn{height:40px}.c-info{gap:16px}}
 .c-logo{background:#fff;overflow:hidden;padding:6px;box-sizing:border-box}
 .c-logo img{width:100%;height:100%;object-fit:contain}
-/* 모바일도 좌우: 왼쪽 정보, 오른쪽 예시 화면 */
+
+/* 목록 카드 모바일: 참고 화면 비율 (로고·이름 → 색 점 → 예시 화면 → 버튼 두 개) */
 @media(max-width:719px){
-  .card{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:12px;padding:14px;border-radius:16px}
-  .c-info{gap:12px;justify-content:space-between}
-  .c-head{flex-direction:column;align-items:flex-start;gap:10px}
-  .c-mono{width:40px;height:40px;border-radius:10px;font-size:16px}
+  .lbar{padding-block:10px 0}
+  .lbar .logo{font-size:18px}
+  .top-link{font-size:14px}
+  .hero2{padding-block:14px 14px;gap:6px}
+  .hero2 .kick{font-size:11px;letter-spacing:.16em}
+  .hero2 h1{font-size:27px;line-height:1.3}
+  .hero2 .sub{font-size:15px}
+  .controls2{gap:12px;padding-block:2px 0}
+  .controls2 .search{height:44px;border-radius:10px;padding:0 14px;gap:10px}
+  .controls2 .search svg{width:18px;height:18px}
+  .controls2 .search input{font-size:16px}
+  .scope.pills{gap:8px}
+  .scope.pills button{height:32px;padding:0 15px;border-radius:10px;font-size:14px}
+  .meta2{padding-block:14px 10px;font-size:14px}
+  .pick select,.meta2 .sort{font-size:14px}
+  .list.cards{gap:12px}
+  .card{grid-template-columns:1fr;gap:12px;padding:14px;border-radius:16px}
+  .c-info{display:contents}
+  .c-head{order:1;gap:14px}
+  .c-dots{order:2;gap:10px;padding-left:2px}
+  .c-pv{order:3}
+  .c-act{order:4;grid-template-columns:1fr 1fr;gap:8px}
+  .c-mono{width:44px;height:44px;border-radius:10px;font-size:17px}
   .card .name{font-size:17px}
-  .c-sub{font-size:12.5px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-  .c-dots{gap:6px}
-  .c-dots i{width:20px;height:20px}
-  .c-act{grid-template-columns:1fr;gap:8px}
-  .c-more,.c-copy{height:40px;font-size:13.5px;border-radius:9px}
-  .c-more svg,.c-copy svg{width:14px;height:14px}
-  .c-pv{min-height:0;padding:14px 10px;gap:6px;border-radius:12px}
-  .c-pv b{font-size:18px;line-height:1.25}
-  .c-pvs{font-size:10.5px;line-height:1.4}
-  .c-btn{min-width:0;width:100%;max-width:130px;height:34px;padding:0 10px;font-size:12.5px;margin-top:4px}
-  .c-link{font-size:11.5px}
+  .c-sub{font-size:13px}
+  .c-dots i{width:22px;height:22px}
+  .c-pv{min-height:0;height:150px;padding:12px 14px;gap:5px;border-radius:12px}
+  .c-pv b{font-size:21px;line-height:1.25}
+  .c-pv b br{display:none}
+  .c-pvs{font-size:12px}
+  .c-btn{min-width:0;width:120px;height:30px;padding:0 10px;font-size:12.5px;margin-top:4px}
+  .c-link{font-size:12px}
+  .c-more,.c-copy{height:38px;font-size:14px;border-radius:9px}
 }

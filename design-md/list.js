@@ -109,7 +109,7 @@
         '<button class="copy c-copy" data-slug="' + it.slug + '" aria-label="' + esc(it.name) + ' DESIGN.md 복사" style="background:' + key + ';color:' + keyInk + '">' + COPY_LABEL + '</button></span>' +
         '</div>' +
         '<a class="c-pv" href="' + href + '" tabindex="-1" aria-hidden="true" style="background:' + bg + ';color:' + txt + '">' +
-        '<b>AI디자인,<br>실비아랩</b><span class="c-pvs">아이디어를 나만의 서비스로 만들어 보세요.</span>' +
+        '<b>AI디자인,<br> 실비아랩</b><span class="c-pvs">아이디어를 나만의 서비스로 만들어 보세요.</span>' +
         '<span class="c-btn" style="background:' + btn.bg + ';color:' + (btn.fg || ink(btn.bg)) + ';border-radius:' + (btn.r || '8px') + (pale(btn.bg) && pale(bg) ? ';box-shadow:inset 0 0 0 1px rgba(0,0,0,.18)' : '') + '">시작하기</span>' +
         '<span class="c-link" style="color:' + (pale(bg) === pale(key) ? txt : key) + '">더 알아보기 →</span></a>' +
         '</li>';
