@@ -20,7 +20,11 @@
 "etc": "기타",
 "gov": "공공",
 "messenger": "메신저",
-"travel": "여행"
+"travel": "여행",
+"reservation": "예약",
+"beauty": "뷰티",
+"fashion": "패션",
+"living": "리빙·인테리어"
 },
 "items": [
 {
@@ -1549,7 +1553,7 @@
 "#efefef",
 "#777676"
 ],
-"bytes": 13767,
+"bytes": 24413,
 "basis": "실측(앱 캡처)·기술 블로그",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/29cm/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
@@ -1723,7 +1727,7 @@
 "name": "무신사",
 "region": "ko",
 "category": "commerce",
-"desc": "거의 검정(#1a1b1f) 상단 바 아래로 흰 바탕과 검정·회색 글자만 쓰고, 색은 할인 빨강(#f31110)과 쿠폰 파랑(#245eff)에만 준다. 글자는 11~13px로 작고 촘촘하다.",
+"desc": "흰 바탕에 검정·회색 글자. 웹은 거의 검정(#1a1b1f) 상단 바를 쓰고, 앱 구매 흐름은 파랑(#0078ff) 큰 버튼 하나로 결제까지 끌고 간다. 할인은 빨강, 할인 금액은 하늘색 숫자로 보여 준다.",
 "colors": [
 "#ffffff",
 "#fafafa",
@@ -1732,8 +1736,8 @@
 "#ebebeb",
 "#e0e0e0"
 ],
-"bytes": 11838,
-"basis": "실측",
+"bytes": 29088,
+"basis": "실측(웹·앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/musinsa/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
@@ -1761,7 +1765,7 @@
 "name": "오늘의집",
 "region": "ko",
 "category": "commerce",
-"desc": "흰 바탕과 거의 검정 글자(#141414) 위에 하늘색(#00a1ff) 하나로 선택·행동을 표시하고, 할인만 빨강(#ff4650)으로 띄우는 사진 중심 화면.",
+"desc": "흰 바탕과 진한 회색 글자 위에 하늘색 하나로 선택·행동을 표시하고, 할인만 빨강으로 띄우는 사진 중심 화면.",
 "colors": [
 "#141414",
 "#2f3438",
@@ -1770,8 +1774,8 @@
 "#5c5c5c",
 "#828c94"
 ],
-"bytes": 15367,
-"basis": "실측",
+"bytes": 31902,
+"basis": "실측(웹·앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/ohou/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
 },
@@ -1922,6 +1926,379 @@
 "bytes": 12046,
 "basis": "실측(앱 캡처)",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/binance/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-catchtable",
+"name": "캐치테이블",
+"region": "ko",
+"category": "reservation",
+"desc": "흰 바탕에 검정 글자, 행동은 모두 주황빨강(#eb4f27) 하나로. 목록 카드마다 예약 가능한 시간 버튼이 주황 덩어리로 줄지어 나온다.",
+"colors": [
+"#eb4f27",
+"#f9eee8",
+"#f8efe8",
+"#ffffff",
+"#ff3d00",
+"#fdf0ec"
+],
+"bytes": 25740,
+"basis": "실측(앱 캡처 13장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/catchtable/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-lotte-department",
+"name": "롯데백화점",
+"region": "ko",
+"category": "commerce",
+"desc": "짙은 빨강 그러데이션 바탕 위에 모서리 16pt 카드를 세로로 쌓는다. 카드마다 보라·파랑·주황·검정 같은 단색을 통째로 칠하고, 안쪽 글자와 버튼은 흰 바탕·검정 글자로 단정하게 둔다.",
+"colors": [
+"#000000",
+"#ffffff",
+"#e7f574",
+"#e2f762",
+"#feffd1",
+"#a12de9"
+],
+"bytes": 15481,
+"basis": "실측(앱 캡처 12장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/lotte-department/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-hyundaicard-mmall",
+"name": "현대카드 M몰",
+"region": "ko",
+"category": "commerce",
+"desc": "검정 바탕 위에 모서리가 둥근 흰 판을 차곡차곡 쌓는다. 색은 검정·흰색·회색이 거의 전부이고, 할인과 행동 유도만 주황(#e8542d)으로 찍는다.",
+"colors": [
+"#000000",
+"#ffffff",
+"#e8542d",
+"#f7f7f7",
+"#f5f5f5",
+"#ededed"
+],
+"bytes": 20107,
+"basis": "실측(앱 캡처 10장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hyundaicard-mmall/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-emart-mall",
+"name": "이마트몰",
+"region": "ko",
+"category": "commerce",
+"desc": "노랑(#ffd040) 머리 띠 아래 흰 바탕, 검정에 가까운 글자(#222222). 프리미엄 탭은 큰 사진과 영문 구획 제목으로 잡지처럼 보여준다.",
+"colors": [
+"#ffd040",
+"#222222",
+"#ffffff",
+"#fcfcfc",
+"#f5f5f5",
+"#e5e5e5"
+],
+"bytes": 14455,
+"basis": "실측(앱 캡처 6장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/emart-mall/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-oliveyoung",
+"name": "올리브영",
+"region": "ko",
+"category": "beauty",
+"desc": "흰 바탕에 거의 검정(#131518) 글자, 브랜드 연두(#82dc28)는 로고와 몇몇 지점에만. 할인과 알림은 코럴 빨강(#ff5753) 하나로 처리한다.",
+"colors": [
+"#82dc28",
+"#74d22d",
+"#131518",
+"#ffffff",
+"#ff5753",
+"#f81542"
+],
+"bytes": 14782,
+"basis": "실측(앱 캡처 9장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/oliveyoung/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-zigzag",
+"name": "지그재그",
+"region": "ko",
+"category": "fashion",
+"desc": "흰 바탕과 진한 회검정 글자 위에 분홍(#e976dd) 하나로 혜택과 행동을 칠한다. 상단 바만 검정에 가까운 어두운 띠다.",
+"colors": [
+"#e976dd",
+"#fcf0f7",
+"#ed90e2",
+"#121313",
+"#1a1a1a",
+"#ffffff"
+],
+"bytes": 19303,
+"basis": "실측(앱 캡처 9장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/zigzag/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-eql",
+"name": "EQL",
+"region": "ko",
+"category": "fashion",
+"desc": "흰 바탕, 검정 글자, 큰 사진. 넓은 좌우 여백(40pt)과 각진 사진으로 잡지처럼 보이고, 색은 할인 빨강(#ea3323) 하나만 쓴다.",
+"colors": [
+"#000000",
+"#ffffff",
+"#ea3323",
+"#f7f7f7",
+"#f2f2f2",
+"#d9d9d9"
+],
+"bytes": 13466,
+"basis": "실측(앱 캡처 10장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/eql/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-kakaomakers",
+"name": "카카오메이커스",
+"region": "ko",
+"category": "commerce",
+"desc": "흰 바탕에 거의 검정(#1a1a1a) 글자, 행동은 산호빛 빨강(#ed554d) 하나. 결제 단계에서만 카카오 노랑이 나온다.",
+"colors": [
+"#1a1a1a",
+"#ed554d",
+"#ffffff",
+"#1e1e1e",
+"#fafafa",
+"#f1f1f1"
+],
+"bytes": 18219,
+"basis": "실측(앱 캡처 10장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kakaomakers/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-hwahae",
+"name": "화해",
+"region": "ko",
+"category": "beauty",
+"desc": "흰 바탕에 청록(#00a5aa) 포인트와 산호색(#ff8c82) 알약 배지. 상품 카드는 얇은 회색 테두리 상자에 담고, 리뷰 별점과 할인율을 숫자로 크게 보여 준다.",
+"colors": [
+"#00a5aa",
+"#eefbfb",
+"#06d1c9",
+"#ff8c82",
+"#ffbe14",
+"#ffffff"
+],
+"bytes": 13280,
+"basis": "실측(앱 캡처 5장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hwahae/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-yes24",
+"name": "예스24",
+"region": "ko",
+"category": "content",
+"desc": "흰 바탕에 진회색 글자, 선명한 파랑(#0080ff) 하나로 선택·별점·가운데 버튼을 표시한다. 책 표지가 화면 색을 대부분 채운다.",
+"colors": [
+"#0080ff",
+"#66beff",
+"#ffffff",
+"#f6f6f6",
+"#eeeeee",
+"#a6a6a6"
+],
+"bytes": 9639,
+"basis": "실측(앱 캡처 2장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/yes24/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-kream",
+"name": "KREAM",
+"region": "ko",
+"category": "fashion",
+"desc": "흰 바탕에 거의 검정(#222222) 글자, 옅은 회색(#f4f4f4) 면만 쓰는 무채색 화면. 색은 배너 사진과 빨간 새 소식 점이 맡는다.",
+"colors": [
+"#222222",
+"#ffffff",
+"#f15746",
+"#f7f7f7",
+"#f4f4f4",
+"#f0f0f0"
+],
+"bytes": 8747,
+"basis": "실측(앱 캡처 2장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kream/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-spao",
+"name": "SPAO",
+"region": "ko",
+"category": "fashion",
+"desc": "흰 바탕에 거의 검정(#1a1a1a) 글자, 빨간 로고색(#c41e20)이 머리 쪽에서 브랜드를 표시한다. 화면 대부분을 큰 모델 사진이 채운다.",
+"colors": [
+"#c41e20",
+"#ac0f15",
+"#1a1a1a",
+"#ffffff",
+"#a3a3a3",
+"#4d4d4d"
+],
+"bytes": 8090,
+"basis": "실측(앱 캡처 1장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/spao/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-onthelook",
+"name": "온더룩",
+"region": "ko",
+"category": "fashion",
+"desc": "흰 바탕에 검정 글자, 밝은 파랑(#2496ff) 하나를 칩·안내 문구 강조에 쓴다. 색은 대부분 코디 사진이 채운다.",
+"colors": [
+"#2496ff",
+"#edf7ff",
+"#000000",
+"#ffffff",
+"#f5f5f5",
+"#f4f4f4"
+],
+"bytes": 9027,
+"basis": "실측(앱 캡처 1장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/onthelook/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-wconcept",
+"name": "W컨셉",
+"region": "ko",
+"category": "fashion",
+"desc": "흰 바탕에 순수 검정(#000000) 글자와 아이콘. 선택은 검정 원으로 채우고, 하단 가운데 분홍 그라데이션 \"플레이\" 버튼 하나만 색이 강하다.",
+"colors": [
+"#000000",
+"#ffffff",
+"#f01776",
+"#fc393d",
+"#fa5500",
+"#f9f9f9"
+],
+"bytes": 8835,
+"basis": "실측(앱 캡처 1장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/wconcept/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-hiver",
+"name": "하이버",
+"region": "ko",
+"category": "fashion",
+"desc": "어두운 회검정(#1a1a1a) 머리 영역 아래에 흰 본문을 둔다. 강조는 탭마다 다른 색 글자와, 하단 탭 바의 황토색(#c9974d) 선택 표시로 한다.",
+"colors": [
+"#1a1a1a",
+"#c9974d",
+"#ffffff",
+"#f2f3f5",
+"#ededed",
+"#d0d3d7"
+],
+"bytes": 9142,
+"basis": "실측(앱 캡처 1장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/hiver/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-amoremall",
+"name": "아모레몰",
+"region": "ko",
+"category": "beauty",
+"desc": "흰 바탕에 검정 글자, 회색 탭. 색은 사진과 배너가 맡고, UI는 검정·흰색·회색으로 절제한다. 붉은 색은 쿠폰·\"hot\" 같은 혜택 표시에만 쓴다.",
+"colors": [
+"#000000",
+"#ffffff",
+"#3a416f",
+"#e7e7e7",
+"#bbbbbb",
+"#666666"
+],
+"bytes": 9349,
+"basis": "실측(앱 캡처 1장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/amoremall/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "ko-apartmentary",
+"name": "아파트멘터리",
+"region": "ko",
+"category": "living",
+"desc": "흰 바탕에 진한 회색 글자, 거의 검정인 알약 버튼 하나. 시공 사진을 크게 깔고 색은 사진에 맡긴다.",
+"colors": [
+"#13130b",
+"#000000",
+"#ffffff",
+"#212121",
+"#4d4d4d",
+"#666666"
+],
+"bytes": 8898,
+"basis": "실측(모바일 웹 캡처 5장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/apartmentary/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "en-ikea",
+"name": "이케아(앱)",
+"region": "intl",
+"category": "living",
+"desc": "흰 바탕에 거의 검정(#111111) 글자, 큰 사진. 브랜드 파랑(#0058a3)은 카드 하나에만 넓게 쓰고, 버튼은 검정 알약이다.",
+"colors": [
+"#0058a3",
+"#111111",
+"#000000",
+"#ffffff",
+"#f4f4f4",
+"#929292"
+],
+"bytes": 10356,
+"basis": "실측(앱 캡처 3장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/ikea/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "en-zarahome",
+"name": "자라홈",
+"region": "intl",
+"category": "living",
+"desc": "흰 바탕에 진회검정(#1e1e1e) 글자만 있다. 색, 선, 상자 없이 글자 크기·굵기·들여쓰기·빈 줄로만 구조를 만든다.",
+"colors": [
+"#1e1e1e",
+"#ffffff",
+"#e4e4e4"
+],
+"bytes": 7288,
+"basis": "실측(캡처 1장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/zarahome/DESIGN.md",
+"license": "CC BY 4.0 · SylviaLab DESIGN.md"
+},
+{
+"slug": "en-kinfolk",
+"name": "킨포크",
+"region": "intl",
+"category": "media",
+"desc": "흰 바탕, 검정 글자, 큰 사진. 색은 거의 없고 세리프 제목과 산세리프 본문, 넉넉한 여백으로 잡지 지면처럼 읽힌다.",
+"colors": [
+"#ffffff",
+"#000000"
+],
+"bytes": 7156,
+"basis": "실측(모바일 웹 캡처 5장)",
+"source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/kinfolk/DESIGN.md",
 "license": "CC BY 4.0 · SylviaLab DESIGN.md"
 }
 ]
