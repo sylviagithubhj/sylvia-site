@@ -49,7 +49,8 @@
   function ink(v) { var c = rgb(v); if (!c || c[3] < 0.5) return '#fff'; return lum(c) > 0.42 ? '#111' : '#fff'; }
 
   // ---- style tab
-  var LIMIT = 12, TYPE_LIMIT = 8;
+  var LIMIT = 12, TYPE_LIMIT = 8, copyTimer;
+  var COPY_LABEL = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg>DESIGN.md 복사';
   function colorCard(c) {
     var dark = c.dark ? '<span class="dk" style="background:' + esc(c.dark) + '" title="다크 ' + esc(c.dark) + '"></span>' : '';
     return '<button type="button" class="cc" data-hex="' + esc(c.value) + '">' +
@@ -60,14 +61,20 @@
       '</button>';
   }
   function renderStyle() {
-    var ko = item.region === 'ko', h = '';
-    if (tok.strengths && tok.strengths.length) {
-      h += '<section class="ss" id="s-strength"><div class="sh"><h2>특장점</h2><span class="mono">이 시스템만의 강점</span></div><ol class="str">';
-      tok.strengths.forEach(function (x) { h += '<li><b>' + esc(x.title) + '</b>' + (x.why ? '<span>' + esc(x.why) + '</span>' : '') + '</li>'; });
+    var h = '';
+    var hasRules = tok.strengths && tok.strengths.length;
+    h += '<section class="ss" id="s-strength"><div class="sh"><h2>' + (hasRules ? '핵심 규칙' : '한 줄 요약') + '</h2>' + (hasRules ? '<span class="mono">눌러서 자세히</span>' : '') + '</div>' +
+      '<p class="summary">' + esc(item.desc) + '</p>';
+    if (hasRules) {
+      h += '<ol class="str">';
+      tok.strengths.forEach(function (x, i) {
+        h += '<li><button type="button" class="str-row" aria-expanded="false"><span class="no" aria-hidden="true">' + (i + 1) + '</span>' +
+          '<span class="str-t"><b>' + esc(x.title) + '</b>' + (x.why ? '<span class="why">' + esc(x.why) + '</span>' : '') + '</span></button></li>';
+      });
       h += '</ol>';
-      if (tok.learn && tok.learn.length) h += '<div class="learn"><p>배울 점</p><ul>' + tok.learn.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>';
-      h += '</section>';
+      if (tok.learn && tok.learn.length) h += '<h3 class="learn-h">내 작업에 가져갈 점</h3><ul class="learn">' + tok.learn.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
     }
+    h += '</section>';
     var n = tok.colors.reduce(function (a, g) { return a + g.items.length; }, 0);
     if (n) {
       h += '<section class="ss" id="s-color"><div class="sh"><h2>색상</h2><span class="mono">' + n + '개 · 누르면 값 복사</span></div>';
@@ -165,10 +172,11 @@
   }
 
   function setTab(id) {
-    ['style', 'doc', 'code', 'raw'].forEach(function (n) {
-      $('#t-' + n).setAttribute('aria-selected', n === id);
-      $('#p-' + n).hidden = n !== id;
-    });
+    var tabOf = id === 'raw' ? 'doc' : id;
+    ['style', 'doc', 'code'].forEach(function (n) { $('#t-' + n).setAttribute('aria-selected', n === tabOf); });
+    ['style', 'doc', 'code', 'raw'].forEach(function (n) { $('#p-' + n).hidden = n !== id; });
+    $('#doc-mode').hidden = tabOf !== 'doc';
+    document.querySelectorAll('#doc-mode button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.mode === id); });
     $('#toc').hidden = id !== 'doc';
     $('.reader').classList.toggle('with-toc', id === 'doc');
   }
@@ -176,12 +184,15 @@
   function show(it) {
     item = it;
     document.title = it.name + ' DESIGN.md · SylviaLab';
-    $('#c-name').textContent = it.name; $('#d-name').textContent = it.name;
-    $('#d-desc').textContent = it.desc;
-    $('#d-region').textContent = it.region === 'ko' ? '국내' : '해외'; $('#d-region').className = 'tag ' + it.region;
+    $('#d-name').textContent = it.name;
+    $('#d-lede').textContent = it.name + '의 색·글자·모서리 규칙을 한 파일에 정리했어요. 복사해서 AI 도구에 붙여 넣으면 이 톤으로 화면을 만들어요.';
+    $('#d-region').textContent = it.region === 'ko' ? '국내' : '해외';
     $('#d-cat').textContent = cats[it.category] || it.category;
-    $('#d-size').textContent = (it.basis ? '근거: ' + it.basis + ' · ' : '') + (it.bytes / 1024).toFixed(1) + ' KB';
-    $('#d-strip').innerHTML = it.colors.map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('');
+    $('#d-size').textContent = (it.bytes / 1024).toFixed(1) + ' KB';
+    $('#d-basis').innerHTML = it.region === 'ko'
+      ? '근거 · ' + esc(it.basis || '확인 필요') + ' <button type="button" class="link" data-refs>참고 자료 보기</button>'
+      : '출처 · <a class="link" href="https://github.com/VoltAgent/awesome-design-md" rel="noopener" target="_blank">VoltAgent/awesome-design-md</a> (MIT)';
+    clearTimeout(copyTimer); $('#b-copy').classList.remove('done'); $('#b-copy').innerHTML = COPY_LABEL;
     $('#b-dl').href = 'md/' + it.slug + '.md';
     $('#b-dl').setAttribute('download', it.slug.replace(/^(ko|en)-/, '') + '-DESIGN.md');
     $('#b-src').href = it.source;
@@ -231,7 +242,18 @@
     if (e.target.closest('#b-copy')) {
       var b = $('#b-copy');
       if (!text) return;
-      copy(text, function () { if (window.SylviaLead) window.SylviaLead.afterCopy(document.querySelector('.actions')); b.classList.add('done'); b.textContent = '복사됨 · AI 도구에 붙여 넣으세요'; setTimeout(function () { b.classList.remove('done'); b.textContent = 'DESIGN.md 전체 복사'; }, 2200); });
+      copy(text, function () { if (window.SylviaLead) window.SylviaLead.afterCopy(document.querySelector('.actions')); b.classList.add('done'); b.textContent = '복사됨 · AI 도구에 붙여 넣으세요'; clearTimeout(copyTimer); copyTimer = setTimeout(function () { b.classList.remove('done'); b.innerHTML = COPY_LABEL; }, 2200); });
+      return;
+    }
+    var sr = e.target.closest('.str-row');
+    if (sr) { var o = sr.getAttribute('aria-expanded') !== 'true'; sr.setAttribute('aria-expanded', o); return; }
+    var dm = e.target.closest('#doc-mode button');
+    if (dm) { setTab(dm.dataset.mode); return; }
+    if (e.target.closest('[data-refs]')) {
+      setTab('doc');
+      var hs = document.querySelectorAll('#p-doc h2'), ref = null;
+      hs.forEach(function (x) { if (/참고|Reference|Sources?/i.test(x.textContent)) ref = x; });
+      if (ref) ref.scrollIntoView({ behavior: 'smooth', block: 'start' }); else $('.tabs').scrollIntoView({ behavior: 'smooth' });
       return;
     }
     var tab = e.target.closest('[role="tab"]');
