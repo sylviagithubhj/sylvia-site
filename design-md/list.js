@@ -113,7 +113,7 @@
       var dots = it.colors.slice(0, 4).map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('');
       return '<li class="card">' +
         '<div class="c-info">' +
-        '<a class="c-head" href="' + href + '">' + (it.logo ? '<span class="c-mono c-logo" aria-hidden="true"><img src="' + esc(it.logo) + '" alt="" loading="lazy"></span>' : '<span class="c-mono" aria-hidden="true" style="background:' + key + ';color:' + keyInk + '">' + esc(mono(it.name)) + '</span>') +
+        '<a class="c-head" href="' + href + '">' + (it.logo ? '<span class="c-mono c-logo" aria-hidden="true"><img src="' + esc(it.logo) + '?v=2" alt="" loading="lazy"></span>' : '<span class="c-mono" aria-hidden="true" style="background:' + key + ';color:' + keyInk + '">' + esc(mono(it.name)) + '</span>') +
         '<span class="c-tt"><b class="name">' + esc(it.name) + '</b>' + (pv.svc ? '<span class="c-sub">' + esc(pv.svc) + '</span><span class="c-look">' + esc(pv.look) + '</span>' : '<span class="c-sub">' + esc(pv.point || it.desc) + '</span>') + '</span></a>' +
         '<span class="c-dots" aria-hidden="true">' + dots + '</span>' +
         '<span class="c-act"><a class="c-more" href="' + href + '">자세히 보기<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>' +
