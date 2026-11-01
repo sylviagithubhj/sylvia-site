@@ -10,7 +10,7 @@ source:
   - "https://ridibooks.com/ 메타 정보·문구 관찰 (2026-10-31)"
 updated: "2026-10-31"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 색 이름은 @ridi/colors 공식 이름을 kebab-case로 옮겼다(dodgerBlue50 → dodger-blue-50).
@@ -203,7 +203,7 @@ components:
 
 > 근거: 공개 문서 기반 (리디 공식 오픈소스 ridi/design-system 저장소 문서·코드, npm @ridi/colors 0.7.1 · @ridi/web-ui 0.8.0 · @ridi/rsg 2.0.18) + 일부 관찰 (실측일 2026-10-31, WebFetch로 ridibooks.com 메타 정보와 화면 문구만 확인. 이 작업 환경에서는 브라우저·Playwright로 사이트를 열 수 없어 computed style은 재지 못함)
 > 작성: SylviaLab · 최종 수정 2026-10-31
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 둘이 어긋나면 YAML 값을 따른다.
 

@@ -10,7 +10,7 @@ source:
   - "https://www.musinsa.com/products/6405586"
 updated: "2026-10-31"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 1. 색 — 관찰 팔레트 (공식 단계 팔레트 없음. 이름은 SylviaLab이 붙임)
@@ -208,7 +208,7 @@ components:
 
 > 근거: 관찰 기반 (웹: macOS Chrome 데스크톱 · 창 너비 1362px · computed style 직접 읽음, 실측일 2026-10-31) + (앱 캡처: 레이어 날짜 2024-10-21 iOS 앱 상품 옵션·장바구니·주문서·결제수단·약관 동의·주문 완료·주문 상세 화면 12장, 375pt 폭 1배율 이미지에서 픽셀 측정. 실측일 2026-10-31) + (앱 캡처 추가: 2025년 6월쯤 iOS 앱 홈 첫 화면 1장(375pt 폭 1배율)·검색 시작 화면 1장(430pt 폭 1배율), 실측일 2026-10-31)
 > 작성: SylviaLab · 최종 수정 2026-10-31
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다.
 

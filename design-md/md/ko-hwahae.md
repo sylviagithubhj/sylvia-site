@@ -6,7 +6,7 @@ source:
   - "관찰: iOS 앱 홈 첫 화면 1장 + 홈 스크롤 4장, 375pt 1배율 픽셀 측정 (실측 2026-10-31, 촬영 시기 미상)"
 updated: "2026-10-31"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 colors:
   # 공개 토큰이 없다. 회색은 밝기 순 관찰 단계, 나머지는 역할 이름(이름은 SylviaLab).
@@ -125,7 +125,7 @@ components:
 
 > 근거: 관찰 기반 (앱 캡처: 촬영 시기 확인 필요, iOS 앱 홈 화면과 홈 스크롤 5장, 375pt 폭 1배율 이미지에서 픽셀 측정. 실측일 2026-10-31)
 > 작성: SylviaLab · 최종 수정 2026-10-31
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다.
 

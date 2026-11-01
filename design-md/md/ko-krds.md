@@ -8,7 +8,7 @@ source:
   - "같은 저장소 resources/css/common/common.css, resources/css/component/component.css, html/code/*.html"
 updated: "2026-10-31"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 단위 규칙: html 루트 62.5%(=10px), 크기는 rem으로 구현한다 (1.7rem = 17px).
@@ -392,7 +392,7 @@ components:
 
 > 근거: 공개 문서 기반 (krds.go.kr 스타일 가이드 + KRDS-uiux/krds-uiux 오픈소스 토큰·CSS)
 > 작성: SylviaLab · 최종 수정 2026-10-31
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 KRDS(Korea Design System, 대한민국 디지털 정부 디자인 시스템)를 따르는 화면을 만들 때 쓰는 기준이다. 위 YAML은 공식 토큰 값이고, 아래 글은 그 값을 **언제, 왜, 어떻게** 쓰는지 설명한다. 둘이 다르면 YAML이 우선한다. 값의 출처는 맨 아래 부록 B에 나눠 적었다.
 

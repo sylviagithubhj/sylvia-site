@@ -8,7 +8,7 @@ source:
   - "공개 디자인 시스템 문서·코드: 확인하지 않음"
 updated: "2026-10-31"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 단위: 1pt = 1px. 1배율 캡처라 크기·모서리 ±1pt, 작은 글자 색은 실제보다 밝게 읽혔을 수 있다.
@@ -143,7 +143,7 @@ components:
 
 > 근거: 관찰 기반 (앱 캡처: 2024년 12월 iOS 이마트몰 앱 홈의 "프리미엄" 탭 화면 6장(긴 한 페이지를 나눈 조각), 375pt 폭 1배율 이미지에서 픽셀 측정. 실측일 2026-10-31)
 > 작성: SylviaLab · 최종 수정 2026-10-31
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 둘이 어긋나면 YAML 값을 따른다.
 

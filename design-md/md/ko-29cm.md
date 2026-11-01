@@ -7,7 +7,7 @@ source:
   - "29CM 기술 블로그 2025-01-15 (디자인 시스템 Ruler 소개) — 구성 사실만"
 updated: "2026-10-31"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 단위: 375pt 폭 1배율 캡처에서 잰 값. 1pt = CSS 1px로 적는다.
@@ -173,7 +173,7 @@ components:
 
 > 근거: 관찰 기반 (앱 캡처: 2025년 2월 이구홈위크 기간 iOS 앱 홈 화면 10장 + 2025년 6월쯤 카테고리(가구·인테리어) 1장·장바구니 1장·검색 시작 1장, 375pt 폭 1배율 이미지에서 픽셀 측정(검색 1장은 430pt 폭 1배율). 실측일 2026-10-31) + 회사 기술 블로그 1편(디자인 시스템 Ruler 소개)
 > 작성: SylviaLab · 최종 수정 2026-10-31
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다.
 

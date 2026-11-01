@@ -8,7 +8,7 @@ source:
   - "회사 기술 블로그(홈 탭 개편, 접근성) — 구성 사실만, 수치 없음"
 updated: "2026-11-01"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 # 아래 값은 모두 App Store 홍보 스크린샷(221×480px JPEG, 폰 화면 폭 약 177px)에서 읽은 추정값이다.
 # 홍보용으로 편집된 이미지일 수 있고 JPEG 번짐이 있다. 기기 캡처나 computed style로 다시 재야 한다.
@@ -79,7 +79,7 @@ components:
 
 > 근거: 관찰 기반 (실측일 2026-10-31, WebFetch로 banksalad.com 홈 텍스트·메타 정보와 App Store 페이지 확인. 이 작업 환경은 브라우저·Playwright로 사이트를 열 수 없어 computed style은 재지 못함) + App Store 스크린샷 6장 픽셀 측정(관찰 기반, 2026-11-01 확인, 추정 포함)
 > 작성: SylviaLab · 최종 수정 2026-11-01
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 색·크기 값은 모두 App Store 홍보 스크린샷(작은 JPEG)에서 읽은 `추정`이다. 기기 캡처로 다시 재기 전에는 참고용으로만 쓴다.
 

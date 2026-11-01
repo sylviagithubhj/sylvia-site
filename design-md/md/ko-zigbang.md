@@ -7,7 +7,7 @@ source:
   - "https://www.zigbang.com/ , https://www.zigbang.com/home/oneroom/map (computed style 실측, 2026-10-31)"
 updated: "2026-10-31"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 # 단위: 원본 px. 이름 중 orange1·gray10 같은 팔레트 이름은 ZUIX Color 열거형 이름이고,
 # 역할 이름(text-primary 등)은 SylviaLab이 붙인 것이다.
@@ -199,7 +199,7 @@ components:
 
 > 근거: 공개 문서 기반 + 관찰 기반 (실측일 2026-10-31, Claude 데스크톱 앱 내장 브라우저(Chromium) · 데스크톱 폭. 직방이 공개 주소로 띄워 둔 ZUIX2 Storybook의 컴포넌트 코드에서 토큰 값을 읽고, zigbang.com 화면 computed style과 대조함. 작업 컨테이너의 셸은 이 사이트에 접속하지 못하고 WebFetch는 robots 규칙으로 막혀 이 방법을 썼다.)
 > 작성: SylviaLab · 최종 수정 2026-10-31
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다.
 

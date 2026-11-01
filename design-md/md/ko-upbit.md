@@ -7,7 +7,7 @@ source:
   - "App Store 앱 설명(기능 목록·말투), docs.upbit.com·github.com/upbit-official(디자인 자료 없음 확인)"
 updated: "2026-10-31"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 colors:
   # 다크 모드만 관찰했다. 단계 팔레트가 없어 "관찰 색 → 역할 이름" 한 층(semantic)으로 적는다. 이름은 SylviaLab.
@@ -131,7 +131,7 @@ components:
 
 > 근거: 관찰 기반 (앱 캡처, 실측일 2026-10-31, iOS 업비트 앱 다크 모드, 아이폰 393×852pt 화면 3배율 캡처 7장: 스플래시, 거래소(시세 목록), 코인정보 마켓 2장, 투자내역, 입출금, 더보기)
 > 작성: SylviaLab · 최종 수정 2026-10-31
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 이 문서의 색은 모두 다크 모드 값이다(라이트 모드는 찾지 못했다).
 

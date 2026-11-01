@@ -7,7 +7,7 @@ source:
   - "관찰(앱 캡처): iOS 앱 홈 화면 1장, 375pt 폭 1배율, 2025년 6월쯤 추정, 실측 2026-10-31 (이전 캡처)"
 updated: "2026-11-01"
 license: "CC BY 4.0"
-attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
+attribution: "sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/) · CC BY 4.0"
 
 # 색은 3배율 캡처 픽셀을 그대로 읽은 실측값. 크기는 px ÷ 3 (±1pt)
 # '이전 캡처'라고 적은 값은 2025년쯤 홈 화면 1장에서 잰 값이라 지금과 다를 수 있다
@@ -143,7 +143,7 @@ components:
 
 > 근거: 관찰 기반(실측일 2026-11-01, 앱 캡처 6장). iPhone 3배율 캡처(1179×2556px, 393pt 폭)에서 픽셀을 읽었다. 색은 실측, 크기는 px ÷ 3으로 환산한 실측(±1pt). 이전에 잰 홈 화면 1장(375pt 1배율, 2025년 6월쯤 추정, 실측 2026-10-31) 값도 `이전 캡처`라고 밝혀 남겼다.
 > 작성: SylviaLab · 최종 수정 2026-11-01
-> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → sylvialab.kr · SylviaLab DESIGN.md (https://sylvialab.kr/design-md/)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다.
 
