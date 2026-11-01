@@ -28,41 +28,6 @@
 },
 "items": [
 {
-"slug": "en-1win",
-"name": "1win",
-"region": "intl",
-"category": "commerce",
-"desc": "An analysis of 1win's design language — a near-black crypto casino and sportsbook built on Inter at heavy weights, where a vivid green action color and an electric blue secondary carry every CTA across dense, full-bleed…",
-"colors": [
-"#00b24b",
-"#ffffff",
-"#0075ff",
-"#141415",
-"#2e3035",
-"#2d2f33"
-],
-"bytes": 23906,
-"source": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/1win",
-"license": "MIT · VoltAgent/awesome-design-md",
-"pv": {
-"btn": {
-"bg": "#00b24b",
-"fg": "#ffffff",
-"r": "10px"
-},
-"bg": "#141415",
-"point": "행동 색은 초록과 파랑 둘뿐이다",
-"font": "Inter",
-"basis": "",
-"tags": [
-"다크"
-],
-"svc": "온라인 카지노·스포츠 베팅 사이트",
-"look": "검은 바탕에 초록·파랑 버튼, 게임 타일 빽빽"
-},
-"logo": "logos/1win.webp"
-},
-{
 "slug": "en-airbnb",
 "name": "Airbnb",
 "region": "intl",

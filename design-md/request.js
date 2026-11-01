@@ -2,7 +2,7 @@
    There is no server here, so a request leaves as an email (mailto) or a GitHub issue.
    Requested names are remembered in this browser only, so the button can say "요청했어요". */
 (function () {
-  var TO = 'doyouknowhj@gmail.com';
+  var TO = 'heeju.s.kang@gmail.com';
   var ISSUES = 'https://github.com/sylviagithubhj/sylvialab-design-md/issues/new';
   var KEY = 'sl-req-v1';
 
