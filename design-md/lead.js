@@ -171,8 +171,38 @@
     if (!subscribed()) { st.snoozeUntil = Date.now() + CONFIG.snoozeDays * 864e5; save(st); }
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
+
+  // ④ scroll nudge: a bottom bar once the visitor has browsed a bit (about 1.2 screens on the list, 40% of a detail page).
+  //    Once per visit; closing it snoozes like the sheet; never after signing up.
+  var bar, barShown = false;
+  function showBar() {
+    if (barShown || !enabled || subscribed() || snoozed()) return;
+    try { if (sessionStorage.getItem('sl-lead-bar')) return; } catch (e) {}
+    barShown = true;
+    try { sessionStorage.setItem('sl-lead-bar', '1'); } catch (e) {}
+    bar = document.createElement('div');
+    bar.className = 'lead-bar'; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', '분석 노트 안내');
+    bar.innerHTML = '<span class="lead-mini" aria-hidden="true"><i style="background:#3182f6"></i><i style="background:#ff6600"></i><i style="background:#ff4800"></i></span>' +
+      '<span class="lead-bar-tx"><b>디자인 시스템 125개 분석 노트</b><span>무료 PDF · 이메일로 바로 받아요</span></span>' +
+      '<button type="button" class="lead-bar-go" data-lead-open>받기</button>' +
+      '<button type="button" class="lead-bar-x" aria-label="닫기">×</button>';
+    document.body.appendChild(bar);
+    requestAnimationFrame(function () { bar.classList.add('on'); });
+    bar.querySelector('.lead-bar-x').addEventListener('click', function () {
+      st.snoozeUntil = Date.now() + CONFIG.snoozeDays * 864e5; save(st); hideBar();
+    });
+  }
+  function hideBar() { if (bar) { bar.classList.remove('on'); setTimeout(function () { if (bar) bar.hidden = true; }, 250); } }
+  function onScroll() {
+    if (barShown) { window.removeEventListener('scroll', onScroll); return; }
+    var detail = /detail\.html/.test(location.pathname);
+    var room = document.documentElement.scrollHeight - innerHeight;
+    var past = detail ? (room > 0 && scrollY > room * 0.4) : scrollY > innerHeight * 1.2;
+    if (past) showBar();
+  }
+  if (enabled && !subscribed()) window.addEventListener('scroll', onScroll, { passive: true });
   document.addEventListener('click', function (e) {
-    if (e.target.closest('[data-lead-open]')) { e.preventDefault(); open(); return; }
+    if (e.target.closest('[data-lead-open]')) { e.preventDefault(); hideBar(); open(); return; }
     if (e.target.closest('[data-lead-close]')) { e.preventDefault(); close(); }
   });
 
