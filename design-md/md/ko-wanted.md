@@ -7,6 +7,8 @@ source:
   - "https://github.com/wanteddev/montage-web packages/theme (atomic, semantic, typography, radius, spacing, opacity, breakpoint)"
   - "https://github.com/wanteddev/montage-web packages/core (button, text-field, chip, tab, bottom-navigation, modal, toast, snackbar, card, list-card, section-message, with-interaction)"
 updated: "2026-10-31"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 색 이름: 원시(atomic)는 `blue-50`처럼, 역할(semantic)은 SylviaLab 줄임 이름.
@@ -289,6 +291,7 @@ components:
 
 > 근거: 공개 문서 기반 (Montage 공식 문서 montage.wanted.co.kr, 오픈소스 저장소 wanteddev/montage-web의 theme·core 패키지)
 > 작성: SylviaLab · 최종 수정 2026-10-31
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 둘이 어긋나면 YAML 값을 따른다.
 

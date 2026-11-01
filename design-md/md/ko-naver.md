@@ -7,6 +7,8 @@ source:
   - "navercorp.com 메인·브랜드 리소스 computed style·CSS 변수 실측(2026-10-31, macOS Chrome 1362px)"
   - "https://guide.ncloud-docs.com/docs/sso-button-design-guide (계열사 참고)"
 updated: "2026-10-31"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 # 주의: 포털 naver.com은 접근이 막혀 재지 못했다. 아래 값은 브랜드 색(공식)과
 # 회사 사이트 navercorp.com(관찰)의 값이다. 포털 화면 값으로 쓰지 않는다.
@@ -106,6 +108,7 @@ components:
 
 > 근거: 공개 문서 기반(브랜드 색: 네이버 공식 브랜드 리소스) + 관찰 기반 (실측일 2026-10-31, macOS Chrome 데스크톱 · 창 너비 1362px · navercorp.com computed style과 CSS 변수)
 > 작성: SylviaLab · 최종 수정 2026-10-31
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다.
 

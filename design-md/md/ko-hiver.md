@@ -7,6 +7,8 @@ source:
   - "실측일 2026-10-31, 375pt 1배율 픽셀 측정. 화면 1장뿐이라 모든 값은 참고용"
   - "App Store 소개 스크린샷 5장 (2026-11-01 확인). 편집된 홍보 이미지라 여기서 읽은 값은 모두 추정"
 updated: "2026-11-01"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 1. 색 — 관찰 팔레트(primitive) → 역할(semantic)
@@ -122,6 +124,7 @@ components:
 
 > 근거: 관찰 기반 (앱 캡처: 여름 시즌 구획이 보이는 시기(연도 확인 필요), iOS 앱 홈 화면 1장, 375pt 폭 1배율 이미지에서 픽셀 측정. 실측일 2026-10-31) + App Store 소개 스크린샷 5장(2026-11-01 확인, 추정 포함)
 > 작성: SylviaLab · 최종 수정 2026-11-01
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 >
 > App Store 스크린샷은 홍보용으로 편집된 이미지다. 그 속 앱 화면은 폭 약 177px로 줄어 있어(375pt 폭으로 보고 약 2.1배 환산), 여기서 읽은 색과 크기는 모두 `추정`이라고 적었다.
 

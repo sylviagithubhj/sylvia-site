@@ -6,6 +6,8 @@ source:
   - "관찰: iOS 앱 홈 첫 화면 캡처 1장, 375pt 1배율 픽셀 측정 (실측 2026-10-31, 캡처는 2025년 6월쯤 추정)"
   - "관찰(추정): App Store 스크린샷 4장(홈, 회원 혜택, 매장 재고 조회, 브랜드 소개) 픽셀 측정, 수집·확인 2026-11-01"
 updated: "2026-11-01"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 colors:
   # 캡처 1장이라 값이 적다. 관찰 색 → 역할 이름 한 층(이름은 SylviaLab).
@@ -89,6 +91,7 @@ components:
 
 > 근거: 관찰 기반 (앱 캡처: 여름 데님 기획 배너가 보이는 시기(2025년 6월쯤 추정), iOS 앱 홈 화면 1장, 375pt 폭 1배율 이미지에서 픽셀 측정. 실측일 2026-10-31) + App Store 스크린샷 4장 픽셀 측정(관찰 기반, 2026-11-01 확인, 추정 포함)
 > 작성: SylviaLab · 최종 수정 2026-11-01
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 홈 캡처 1장과 App Store 홍보 스크린샷 4장으로 만든 문서라 모든 값과 규칙은 참고용이다. 스크린샷에서 읽은 값에는 `추정`을 붙였다.
 

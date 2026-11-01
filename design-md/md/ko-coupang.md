@@ -9,6 +9,8 @@ source:
   - "검색 결과·상품 상세는 접근 제한으로 값 없음"
   - "관찰(앱, 추정): App Store 스크린샷 10장 https://apps.apple.com/kr/app/id454434967 (수집·확인 2026-11-01). 홍보용 편집 이미지라 여기서 읽은 값은 모두 추정"
 updated: "2026-11-01"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 이름은 SylviaLab이 쓰임에 맞춰 붙였다. 관찰 팔레트 → 역할 이름 두 층.
@@ -166,6 +168,7 @@ components:
 
 > 근거: 관찰 기반 (실측일 2026-10-31, macOS Chrome 데스크톱 · 창 너비 1362px · Claude in Chrome으로 computed style 직접 읽음) + App Store 앱 스크린샷 10장(2026-11-01 확인, 추정 포함)
 > 작성: SylviaLab · 최종 수정 2026-11-01
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 
 작업 환경의 셸과 WebFetch로는 coupang.com에 접속할 수 없었다(접속 오류). 그래서 연결된 Chrome 브라우저에서 공개 페이지를 열고 값을 읽었다. 로그인하지 않은 상태다. 검색 결과와 상품 상세 페이지는 "사용 권한이 제한된 페이지" 안내로 막혀서 재지 못했다. 실측 화면은 홈과 카테고리 목록 두 곳이다.
 

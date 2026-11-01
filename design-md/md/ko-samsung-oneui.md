@@ -9,6 +9,8 @@ source:
   - "https://developer.samsung.com/one-ui/motion/basic.html (모션)"
   - "https://developer.samsung.com/design-system/font (SamsungOne)"
 updated: "2026-10-31"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 # 단위: 문서의 dp 값을 1dp = 1px로 옮겼다
 
@@ -100,6 +102,7 @@ components:
 
 > 근거: 공개 문서 기반 (Samsung Developers One UI 디자인 가이드, Samsung Design System 페이지)
 > 작성: SylviaLab · 최종 수정 2026-10-31
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 문서의 dp 값은 YAML에 1dp = 1px로 옮겼다.
 

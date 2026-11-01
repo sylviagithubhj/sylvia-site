@@ -5,6 +5,8 @@ description: "브랜드 연두는 로고에만 아끼고, 강조는 코럴 빨�
 source:
   - "관찰: iOS 앱 홈 탭 캡처 9장(스크롤 8장 + 첫 진입 팝업 1장), 375pt 1배율 픽셀 측정 (실측 2026-10-31, 캡처는 5~6월 무렵)"
 updated: "2026-10-31"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 colors:
   # 공개 토큰이 없어 단계 팔레트는 없다. 회색만 밝기 순으로 관찰 단계를 붙였다(이름은 SylviaLab).
@@ -120,6 +122,7 @@ components:
 
 > 근거: 관찰 기반 (앱 캡처: 5~6월 무렵 iOS 앱 홈 탭 화면 9장(홈 위부터 아래까지 스크롤 8장 + 첫 진입 팝업 1장), 375pt 폭 1배율 이미지에서 픽셀 측정. 실측일 2026-10-31)
 > 작성: SylviaLab · 최종 수정 2026-10-31
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다.
 

@@ -7,6 +7,8 @@ source:
   - "https://www.baemin.com/ (--ref-*, --sem-mint-*, --sem-base-*, --com-mint-* 변수 1,746개)"
   - "https://www.woowahan.com/fonts (공식 글꼴)"
 updated: "2026-10-31"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 1. 색 — Primitive (--ref-color-*, 1→8 단계, gray는 1→12)
@@ -241,6 +243,7 @@ components:
 
 > 근거: 관찰 기반 (실측일 2026-10-31, macOS Chrome 데스크톱 · 창 너비 1362px · Claude in Chrome으로 computed style과 CSS 변수 직접 읽음) + 글꼴은 우아한형제들 공식 글꼴 페이지
 > 작성: SylviaLab · 최종 수정 2026-10-31
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다.
 

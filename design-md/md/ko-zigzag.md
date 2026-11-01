@@ -6,6 +6,8 @@ source:
   - "관찰: 지그재그 iOS 앱 캡처 10장 (2023년 11월께 주문·결제 흐름 8장, 2025년 여름 홈 1장·검색 시작 1장)"
   - "실측일 2026-10-31, 375pt 1배율 픽셀 측정 (검색 1장은 430px → 393pt 환산)"
 updated: "2026-10-31"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 1. 색 — 관찰 팔레트(primitive) → 역할(semantic)
@@ -155,6 +157,7 @@ components:
 
 > 근거: 관찰 기반 (앱 캡처: 2023년 11월께 iOS 앱 주문·결제 흐름 화면 8장(서로 다른 화면 7종) + 2025년 여름 할인 행사 기간 홈 1장(어두운 화면)·검색 시작 1장, 375pt 폭 1배율 이미지(검색 1장은 393pt 기기를 430px로 담은 이미지)에서 픽셀 측정. 실측일 2026-10-31)
 > 작성: SylviaLab · 최종 수정 2026-10-31
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 둘이 다르면 YAML이 우선이다.
 

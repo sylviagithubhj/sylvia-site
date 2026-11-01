@@ -10,6 +10,8 @@ source:
   - "npm @toss/tds-typography 0.0.3"
   - "npm @toss/tds-mobile 2.5.1"
 updated: "2026-10-31"
+license: "CC BY 4.0"
+attribution: "SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md) · CC BY 4.0"
 
 # ─────────────────────────────────────────────
 # 1. 색 — Primitive (tds-colors 라이트 값, 50~900 단계)
@@ -230,6 +232,7 @@ components:
 
 > 근거: 공개 문서 기반 (앱인토스 개발자 문서 + npm 공개 패키지 @toss/tds-colors 0.1.0, @toss/tds-typography 0.0.3, @toss/tds-mobile 2.5.1)
 > 작성: SylviaLab · 최종 수정 2026-10-31
+> 라이선스: CC BY 4.0 · 다시 쓰거나 고쳐 쓸 때 출처를 꼭 남겨 주세요 → SylviaLab DESIGN.md (https://github.com/sylviagithubhj/sylvialab-design-md)
 
 이 문서는 디자인 시스템의 다섯 층(원칙, 토큰, 컴포넌트, 사용 규칙, 구현·검증)을 한 파일로 줄인 요약이다. 맨 위 YAML은 도구와 AI가 그대로 읽는 값이고, 아래 글은 그 값을 언제·왜 쓰는지 설명한다. 둘이 다르면 YAML 값이 우선한다.
 
