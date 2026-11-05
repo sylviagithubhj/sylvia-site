@@ -3316,7 +3316,7 @@
 "bytes": 29297,
 "basis": "공개 문서",
 "source": "https://github.com/sylviagithubhj/sylvialab-design-md/blob/main/companies/naver/DESIGN.md",
-"license": "CC BY 4.0 · SylviaLab DESIGN.md",
+"license": "CC BY-NC 4.0 · SylviaLab DESIGN.md",
 "pv": {
 "btn": {
 "bg": "#f1f1f4",
@@ -3331,7 +3331,8 @@
 "svc": "검색 포털과 생활 서비스 플랫폼",
 "look": "네이버 그린 하나에 흰 바탕과 짙은 남색 글자"
 },
-"logo": "logos/naver.webp"
+"logo": "logos/naver.webp",
+"rights": "이 자료는 네이버(NAVER)의 공개 화면과 브랜드 리소스를 기반으로 한 비공식 분석 자료이며, 관련 상표 및 디자인에 대한 권리는 NAVER Corp.에 있습니다."
 },
 {
 "slug": "ko-ohou",

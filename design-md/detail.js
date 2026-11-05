@@ -194,11 +194,14 @@
     document.title = it.name + ' DESIGN.md · SylviaLab';
     $('#d-name').textContent = it.name;
     $('#d-lede').innerHTML = esc(it.name) + '의 주요 UI 요소를 분석한 디자인 시스템 가이드예요.<br>컬러·버튼·타이포그래피를 AI 작업에 활용하세요.';
+    var rn = $('#d-rights'); if (!rn) { rn = document.createElement('p'); rn.id = 'd-rights'; rn.className = 'rights-note'; $('#d-lede').after(rn); }
+    rn.hidden = !it.rights; rn.textContent = it.rights ? it.rights + ' · CC BY-NC 4.0 (비영리만)' : '';
     $('#b-dl').title = (it.bytes / 1024).toFixed(1) + ' KB';
     openDoc(false); setDocView('doc');
     $('#d-basis').innerHTML = it.region === 'ko'
       ? '근거 · ' + esc(it.basis || '확인 필요') + '. 출처와 확인 날짜는 <button type="button" class="link" data-refs>13장 참고 자료</button>에 있어요.'
       : '출처 · <a class="link" href="https://github.com/VoltAgent/awesome-design-md" rel="noopener" target="_blank">VoltAgent/awesome-design-md</a> (MIT)';
+    if (it.rights) $('#d-basis').innerHTML += '<br>' + esc(it.rights) + ' 라이선스는 <a class="link" href="https://creativecommons.org/licenses/by-nc/4.0/deed.ko" rel="noopener" target="_blank">CC BY-NC 4.0</a>이라 비영리 목적으로만 쓸 수 있어요.';
     clearTimeout(copyTimer); $('#b-copy').classList.remove('done'); $('#b-copy').innerHTML = COPY_LABEL;
     $('#b-dl').href = 'md/' + it.slug + '.md';
     $('#b-dl').setAttribute('download', it.slug.replace(/^(ko|en)-/, '') + '-DESIGN.md');

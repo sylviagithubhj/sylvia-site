@@ -574,3 +574,6 @@ h1 .md{font-family:var(--mono);font-weight:500;letter-spacing:-0.04em;color:var(
 .lead-bar-go{flex:none;height:42px;padding:0 18px;border:0;border-radius:11px;background:var(--accent);color:var(--accent-ink);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
 .lead-bar-x{flex:none;width:32px;height:32px;border:0;background:transparent;color:var(--dim);font-size:20px;line-height:1;cursor:pointer}
 @media(prefers-reduced-motion:reduce){.lead-bar{transition:none}}
+
+.rights-note{margin:12px 0 0;padding:10px 12px;border:1px solid rgba(255,255,255,.14);border-radius:10px;font-size:13px;line-height:1.55;color:var(--dim,#9aa0a6)}
+.rights-note[hidden]{display:none}
